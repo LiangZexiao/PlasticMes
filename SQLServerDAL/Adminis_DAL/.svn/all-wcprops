@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/vssver2.scc
+END
+Employee_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/Employee_DAL.cs
+END
+SysClassInfo_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/SysClassInfo_DAL.cs
+END
+GroupProgramMap_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/GroupProgramMap_DAL.cs
+END
+SysProgramInfo_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/SysProgramInfo_DAL.cs
+END
+Department_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/Department_DAL.cs
+END
+UserProgramMap_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/UserProgramMap_DAL.cs
+END
+GroupInfo_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/GroupInfo_DAL.cs
+END
+UserInfo_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Adminis_DAL/UserInfo_DAL.cs
+END

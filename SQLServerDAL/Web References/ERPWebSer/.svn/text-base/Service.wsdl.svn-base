@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://192.168.1.253:9000/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://192.168.1.253:9000/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.1.253:9000/">
+      <s:element name="OLEDBQueryProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrWhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OLEDBQueryProductResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryDispatchOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrWhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryDispatchOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OLEDBQueryDispatchOrderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryDispatchOrderDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrWhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryDispatchOrderDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OLEDBQueryDispatchOrderDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryProductDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrWhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryProductDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OLEDBQueryProductDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryBOM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrWhere" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryBOMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OLEDBQueryBOMResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OLEDBQueryWireDetail">
+        <s:complexType />
+      </s:element>
+      <s:element name="OLEDBQueryWireDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OLEDBQueryWireDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OLEDBQueryProductSoapIn">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryProduct" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryProductSoapOut">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryDispatchOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryDispatchOrder" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryDispatchOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryDispatchOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryDispatchOrderDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryDispatchOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryDispatchOrderDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryDispatchOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryProductDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryProductDetail" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryProductDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryProductDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryBOMSoapIn">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryBOM" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryBOMSoapOut">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryBOMResponse" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryWireDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryWireDetail" />
+  </wsdl:message>
+  <wsdl:message name="OLEDBQueryWireDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:OLEDBQueryWireDetailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="OLEDBQueryProduct">
+      <wsdl:input message="tns:OLEDBQueryProductSoapIn" />
+      <wsdl:output message="tns:OLEDBQueryProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryDispatchOrder">
+      <wsdl:input message="tns:OLEDBQueryDispatchOrderSoapIn" />
+      <wsdl:output message="tns:OLEDBQueryDispatchOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryDispatchOrderDetail">
+      <wsdl:input message="tns:OLEDBQueryDispatchOrderDetailSoapIn" />
+      <wsdl:output message="tns:OLEDBQueryDispatchOrderDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryProductDetail">
+      <wsdl:input message="tns:OLEDBQueryProductDetailSoapIn" />
+      <wsdl:output message="tns:OLEDBQueryProductDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryBOM">
+      <wsdl:input message="tns:OLEDBQueryBOMSoapIn" />
+      <wsdl:output message="tns:OLEDBQueryBOMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryWireDetail">
+      <wsdl:input message="tns:OLEDBQueryWireDetailSoapIn" />
+      <wsdl:output message="tns:OLEDBQueryWireDetailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OLEDBQueryProduct">
+      <soap:operation soapAction="http://192.168.1.253:9000/OLEDBQueryProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryDispatchOrder">
+      <soap:operation soapAction="http://192.168.1.253:9000/OLEDBQueryDispatchOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryDispatchOrderDetail">
+      <soap:operation soapAction="http://192.168.1.253:9000/OLEDBQueryDispatchOrderDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryProductDetail">
+      <soap:operation soapAction="http://192.168.1.253:9000/OLEDBQueryProductDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryBOM">
+      <soap:operation soapAction="http://192.168.1.253:9000/OLEDBQueryBOM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryWireDetail">
+      <soap:operation soapAction="http://192.168.1.253:9000/OLEDBQueryWireDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OLEDBQueryProduct">
+      <soap12:operation soapAction="http://192.168.1.253:9000/OLEDBQueryProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryDispatchOrder">
+      <soap12:operation soapAction="http://192.168.1.253:9000/OLEDBQueryDispatchOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryDispatchOrderDetail">
+      <soap12:operation soapAction="http://192.168.1.253:9000/OLEDBQueryDispatchOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryProductDetail">
+      <soap12:operation soapAction="http://192.168.1.253:9000/OLEDBQueryProductDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryBOM">
+      <soap12:operation soapAction="http://192.168.1.253:9000/OLEDBQueryBOM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OLEDBQueryWireDetail">
+      <soap12:operation soapAction="http://192.168.1.253:9000/OLEDBQueryWireDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://192.168.1.253:9000/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://192.168.1.253:9000/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

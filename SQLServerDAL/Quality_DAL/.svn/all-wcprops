@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/YinShanProject/!svn/ver/742/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL
+END
+QualityTrack_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/YinShanProject/!svn/ver/742/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL/QualityTrack_DAL.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL/vssver2.scc
+END
+StandTechnicsParams_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL/StandTechnicsParams_DAL.cs
+END
+StandTemp_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL/StandTemp_DAL.cs
+END
+StopReas_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL/StopReas_DAL.cs
+END
+OEE_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL/OEE_DAL.cs
+END
+QC_Table_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Quality_DAL/QC_Table_DAL.cs
+END

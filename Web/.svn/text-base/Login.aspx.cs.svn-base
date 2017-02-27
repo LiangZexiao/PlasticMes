@@ -1,0 +1,136 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Net;
+using Admin.Model.Adminis_MDL;
+using Admin.BLL.Adminis_BLL;
+
+public partial class MyLogin : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Session["UserID"] = Session["Name"] = null;
+
+        HttpCookie cookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+
+        if (cookie != null)
+        {
+            cookie.Expires = DateTime.Now.AddDays(-5);
+            Response.Cookies.Add(cookie);
+        }
+
+        //Session["UserID"] = Session["Name"] = null;
+        //FormsAuthentication.SignOut();
+        //Response.Cache.SetCacheability(System.Web.HttpCacheability.NoCache);
+
+        txtUserName.Focus();
+
+
+    }
+
+    protected void ImageButton_Click(object sender, ImageClickEventArgs e)
+    {
+        //lblMsg.Text = null;
+        isValidate();
+    }
+
+    private void isValidate()
+    {
+        string UserID = txtUserName.Value.Trim();
+        string Password = txtPassword.Value.Trim();
+        string EnPswdStr = FormsAuthentication.HashPasswordForStoringInConfigFile(Password, "MD5");
+        foreach (UserInfo_MDL userinfo in UserInfo_BLL.selectUserInfo(UserID, EnPswdStr))
+        {
+            if (userinfo.Islock == "否")
+            {
+                Session["UserID"] = UserID;
+                Session["LastIP"] = userinfo.LastIP;
+                Session["Update"] = userinfo.MDate;
+                Session["Name"] = userinfo.Employeename_cn;
+
+                
+                   // IPAddress[] IPAddressList = Dns.GetHostEntry(Dns.GetHostName()).AddressList;
+                    string LastIP = GetIP();// IPAddressList[0].ToString();
+                    UserInfo_BLL.updateUserInfo(userinfo.ID, LastIP, DateTime.Now);
+
+                    //*******************************************************************
+                    FormsAuthenticationTicket Tickect = new FormsAuthenticationTicket(1, UserID, DateTime.Now, DateTime.Now.AddMinutes(30), //登陆有效时间
+                       false, Password);
+                    string encryptedTickect = FormsAuthentication.Encrypt(Tickect);
+                    HttpCookie cookie = FormsAuthentication.GetAuthCookie(UserID, false);
+                    cookie.Value = encryptedTickect;
+                    //cookie.Domain = "KernelHacker.com"; //域名，自己定义
+                    Response.AppendCookie(cookie);
+                    string path = FormsAuthentication.GetRedirectUrl(UserID, false).ToLower();
+                    //Response.Redirect(path);
+
+                    if (path == @"/web/default.aspx")
+                    {
+                        FormsAuthentication.SetAuthCookie(UserID, false);
+                        Session["UserID"] = UserID;
+                        Response.Redirect(path);
+                    }
+                    else
+                    {
+                        FormsAuthentication.RedirectFromLoginPage(UserID, false);
+                        Response.Redirect(path);
+                    }
+
+              
+                //*******************************************************************
+
+
+                //FormsAuthentication.GetAuthCookie(UserID, false);
+                //string path = FormsAuthentication.GetRedirectUrl(UserID, false).ToLower();
+                       
+                //if (path == @"/web/default.aspx")
+                //{
+                //FormsAuthentication.SetAuthCookie(UserID, false);
+                //Session["UserID"] = UserID;
+                //Response.Redirect(path);
+                //}
+                ////else
+                ////{
+                //    //FormsAuthentication.SetAuthCookie(UserID, false);
+                //    //Session["UserID"] = UserID;
+                      
+                //    //FormsAuthentication.RedirectFromLoginPage(UserID, false);
+                //    //if (rblStyle.SelectedIndex == 1)
+                //    //{
+                //    //FormsAuthentication.RedirectFromLoginPage(UserID, false);
+                //    //Response.Redirect(path);
+                //    //}
+                //    //else
+                //    //    Response.Redirect("/web/default3.aspx");
+                ////}
+
+            }
+            else
+            {
+                //lblMsg.Text = "你的帐号被禁用,请与管理员联系!!";
+                break;
+            }
+        }
+        //lblMsg.Text = (isSign) ? lblMsg.Text.Trim() : "帐号或密码不对!!";
+    }
+    public string GetIP()
+    {
+        string uip = "";
+        if (HttpContext.Current.Request.ServerVariables["HTTP_VIA"] != null)
+        {
+            uip = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString();
+        }
+        else
+        {
+            uip = HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"].ToString();
+        }
+        return uip;
+    } 
+}

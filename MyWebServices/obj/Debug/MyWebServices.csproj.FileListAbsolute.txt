@@ -1,0 +1,85 @@
+F:\ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+F:\ChiefMes\MyWebServices\bin\MyWebServices.dll
+F:\ChiefMes\MyWebServices\bin\MyWebServices.pdb
+F:\ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+F:\ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+G:\源代码\公司\ChiefMes(theFirst)\MyWebServices\bin\MyWebServices.dll
+G:\源代码\公司\ChiefMes(theFirst)\MyWebServices\bin\MyWebServices.pdb
+G:\源代码\公司\ChiefMes(theFirst)\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes(theFirst)\MyWebServices\obj\Debug\MyWebServices.dll
+G:\源代码\公司\ChiefMes(theFirst)\MyWebServices\obj\Debug\MyWebServices.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\MyWebServices\bin\MyWebServices.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\MyWebServices\bin\MyWebServices.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\MyWebServices\obj\Debug\MyWebServices.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\MyWebServices\obj\Debug\MyWebServices.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\MyWebServices\bin\MyWebServices.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\MyWebServices\bin\MyWebServices.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1stMESClient\1.3ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\MyWebServices\bin\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\MyWebServices\bin\MyWebServices.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\bin\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\bin\MyWebServices.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\MyWebServices\bin\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\MyWebServices\bin\MyWebServices.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+F:\1.5ChiefMes\MyWebServices\bin\MyWebServices.dll
+F:\1.5ChiefMes\MyWebServices\bin\MyWebServices.pdb
+F:\1.5ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+F:\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+F:\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+G:\源代码\公司\1.5ChiefMes\MyWebServices\bin\MyWebServices.dll
+G:\源代码\公司\1.5ChiefMes\MyWebServices\bin\MyWebServices.pdb
+G:\源代码\公司\1.5ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+G:\源代码\公司\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+D:\Work\MES\1.5ChiefMes\MyWebServices\bin\MyWebServices.dll
+D:\Work\MES\1.5ChiefMes\MyWebServices\bin\MyWebServices.pdb
+D:\Work\MES\1.5ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+D:\Work\MES\1.5ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\MyWebServices\bin\MyWebServices.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\MyWebServices\bin\MyWebServices.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+G:\项目资料\MES\ChiefMes\ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+D:\Work\MES\ChiefMes\MyWebServices\bin\MyWebServices.dll
+D:\Work\MES\ChiefMes\MyWebServices\bin\MyWebServices.pdb
+D:\Work\MES\ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+D:\Work\MES\ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+E:\公司项目\MesTeam\ChiefMes\MyWebServices\bin\MyWebServices.dll
+E:\公司项目\MesTeam\ChiefMes\MyWebServices\bin\MyWebServices.pdb
+E:\公司项目\MesTeam\ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\MesTeam\ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+E:\公司项目\MesTeam\ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+E:\科易美\MES相关\ChiefMes\MyWebServices\bin\MyWebServices.dll
+E:\科易美\MES相关\ChiefMes\MyWebServices\bin\MyWebServices.pdb
+E:\科易美\MES相关\ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+E:\科易美\MES相关\ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+E:\科易美\MES相关\ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+E:\MES\ChiefMes\MyWebServices\bin\MyWebServices.dll
+E:\MES\ChiefMes\MyWebServices\bin\MyWebServices.pdb
+E:\MES\ChiefMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+E:\MES\ChiefMes\MyWebServices\obj\Debug\MyWebServices.dll
+E:\MES\ChiefMes\MyWebServices\obj\Debug\MyWebServices.pdb
+D:\GloryProg\Plastic_Song\MyWebServices\bin\MyWebServices.dll
+D:\GloryProg\Plastic_Song\MyWebServices\bin\MyWebServices.pdb
+D:\GloryProg\Plastic_Song\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\Plastic_Song\MyWebServices\obj\Debug\MyWebServices.dll
+D:\GloryProg\Plastic_Song\MyWebServices\obj\Debug\MyWebServices.pdb
+D:\GloryProg\PlasticMes\MyWebServices\bin\MyWebServices.dll
+D:\GloryProg\PlasticMes\MyWebServices\bin\MyWebServices.pdb
+D:\GloryProg\PlasticMes\MyWebServices\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\PlasticMes\MyWebServices\obj\Debug\MyWebServices.dll
+D:\GloryProg\PlasticMes\MyWebServices\obj\Debug\MyWebServices.pdb

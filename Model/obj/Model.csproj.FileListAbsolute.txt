@@ -1,0 +1,7 @@
+D:\项目开发\ChiefMes\Model\bin\Debug\Admin.Model.dll
+D:\项目开发\ChiefMes\Model\bin\Debug\Admin.Model.pdb
+D:\项目开发\ChiefMes\Model\bin\Debug\Admin.DBUtility.dll
+D:\项目开发\ChiefMes\Model\bin\Debug\Admin.DBUtility.pdb
+D:\项目开发\ChiefMes\Model\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\Model\obj\Debug\Admin.Model.dll
+D:\项目开发\ChiefMes\Model\obj\Debug\Admin.Model.pdb

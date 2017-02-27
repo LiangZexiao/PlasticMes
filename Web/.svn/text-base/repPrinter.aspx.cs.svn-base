@@ -1,0 +1,618 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Data.SqlClient;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.ReportSource;
+using CrystalDecisions.Shared;
+using CrystalDecisions.Web;
+using Admin.SQLServerDAL;
+using Admin.Model.Product_MDL;
+using Admin.BLL.Product_BLL;
+using Admin.DBUtility;
+using Admin.SQLServerDAL.Product_DAL;
+using Admin.App_Code;
+
+public partial class repPrinter : System.Web.UI.Page
+{
+    ReportDocument pReportDocument = new ReportDocument();
+    FormatSqlParas fsp = new FormatSqlParas();
+    SetCtrls dboSetCtrls = new SetCtrls();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string ReportType = Request.QueryString["ReportType"].ToString().Trim();
+        string ReportName = Request.QueryString["ReportName"].ToString().Trim();
+        if (ReportType == "1")
+            GetDataSet(ReportName);//直接查询资料表
+        else if (ReportType == "2")
+            GetDataXSD(ReportName);//数据集
+        else
+            GetDataOfSP(ReportName);//执行存储过程
+    }
+    protected void Page_Unload(object sender, EventArgs e)
+    {
+        pReportDocument.Dispose();
+    }
+
+    /// <summary>
+    /// 独立报表的数据源
+    /// update by fsq 2010-01-12
+    /// 解决内存溢出的问题。
+    /// </summary>
+    /// <param name="ReportName"></param>
+    private void GetDataSet(string ReportName)
+    {
+        string strSQL = string.Empty;
+        string StartDate = string.Empty;
+        string EndDate = string.Empty;
+        string ProductNo = string.Empty;
+        string MachineNo = string.Empty;
+        string MouldNo = string.Empty;
+
+        switch (ReportName)
+        {
+            case "staffprice"://员工记件工资
+                real_title.Text = "员工记件工资报表";
+                strSQL = "select * from staff_view where 1=1  and 产品编号 like '%" + Session["db_productNo"] + "%' ";
+                break;
+            case "CompleteRate"://生产计划达成率统计报表
+                real_title.Text = "生产计划达成率统计报表";
+                strSQL = "SELECT * FROM View_1 ";
+
+                StartDate    = Session["StartDate"].ToString().Trim();
+                EndDate      = Session["EndDate"].ToString().Trim();
+                strSQL += " WHERE 生产日期>='" + StartDate + "' AND 生产日期<='" + EndDate + "'";
+                break;
+            case "CompleteSchedule"://生产完成进度表
+                real_title.Text = "生产完成进度表";
+                strSQL = "SELECT DISTINCT * FROM View_2 WHERE 1=1 ";
+
+                string StartNO      = Session["StartNO"].ToString().Trim();
+                string EndNO        = Session["EndNO"].ToString().Trim();
+                string StartProdNO  = Session["StartProdNO"].ToString().Trim();
+                string EndProdNO    = Session["EndProdNO"].ToString().Trim();
+                if (!string.IsNullOrEmpty(StartNO) && string.IsNullOrEmpty(EndNO))
+                    strSQL += " AND 注塑单号>='" + StartNO + "'";
+                else if (string.IsNullOrEmpty(StartNO) && !string.IsNullOrEmpty(EndNO))
+                    strSQL += " AND 注塑单号<='" + EndNO + "'";
+                else
+                    strSQL += " AND 注塑单号>='" + StartNO + "' AND 注塑单号<='" + EndNO + "'";
+                if (!string.IsNullOrEmpty(StartProdNO) && string.IsNullOrEmpty(EndProdNO))
+                    strSQL += " AND 项目编号>='" + StartProdNO + "'";
+                else if (!string.IsNullOrEmpty(StartProdNO) && string.IsNullOrEmpty(EndProdNO))
+                    strSQL += " AND 项目编号<='" + EndProdNO + "'";
+                else
+                    strSQL += " AND 项目编号>='" + StartProdNO + "' AND 项目编号<='" + EndProdNO + "'";
+                break;
+            case "ProductPlan"://生产计划表
+                real_title.Text = "生产计划表";
+                strSQL = "SELECT DISTINCT * FROM View_rptProductPlan WHERE 1=1 ";
+
+                string FirstDate = Session["FirstDate"].ToString().Trim();
+                string LastDate = string.Empty;
+                string ReportKind = Session["ReportKind"].ToString().Trim();
+                if (ReportKind == "D") LastDate = FirstDate;
+                else if (ReportKind == "W") LastDate = "DATEADD(d,6," + FirstDate + ")";
+                else LastDate = "DATEADD(d,30," + FirstDate + ")";
+                strSQL += " AND 交货日期>='" + FirstDate + "' AND 交货日期<='" + LastDate + "'";
+                break;
+            case "MachineMstr"://机器信息表
+                real_title.Text = "机器信息表";
+                strSQL = "SELECT DISTINCT ID, Machine_Code, Machine_NameCH, Machine_NameEN, Machine_Type, "+
+                         "Machine_Manufacturer, Machine_Model, Machine_Brand, Machine_PurchaseDate, Machine_MadeDate, "+
+                         "Machine_Power, Machine_MouldCapacity, Machine_MinLockPower, Machine_MaxLockPower, Machine_ShotQty, "+
+                         "Machine_MaintainCycle, Machine_Price, Machine_RentCost, Machine_SeatCode, Machine_MaterialChgTime, "+
+                         "Machine_MaterialChgCost, Machine_MaterialChgAmt, Bearings, ScrewDiameter, InjectionPress, "+
+                         "MachineVolume, SerialNo, TackOut, Screw, Robort, Condition, Note FROM MachineMstr WHERE 1=1 ";
+                break;
+            case "MouldMstr"://模具信息表
+                real_title.Text = "模具信息表";
+                strSQL = "SELECT ID, Mould_Code, Mould_Name_CN, Mould_Name_EN, Mould_Type, "+
+                         "FitMachineTon, SocketNum, GoodSocketNum, Mould_Group, Mould_Manufacturer, "+
+                         "Mould_MadeDate, Mould_RackNo, Mould_Price, Mould_MaintenaneCycle, Mould_ChgTime, "+
+                         "Mould_ChgCost, Memo FROM MouldMstr WHERE 1=1 ";
+                break;
+            case "ProductMstr"://产品信息表
+                real_title.Text = "产品信息表";
+                strSQL = "SELECT ID, Item_Code, Item_NameCH, Item_NameEN, MouldNo, "+
+                        "Item_UOM, Item_PreTime, Item_Weight, Item_WaterGapScale, Item_WaterGapWeight, "+
+                        "Item_Ration, Item_PreBadness, Item_LossRate, Item_SetUpTime, Item_InjectCycle, "+
+                        "Item_MinInjectCycle, Item_MaxInjectCycle, VerNo, Remark FROM ItemMstr WHERE 1=1 ";
+                break;
+            default:
+                break;
+        }
+
+        //if (string.IsNullOrEmpty(strSQL)) return;
+        //SQLExecutant sqlExec = new SQLExecutant();
+        //DataTable dt = new DataTable();
+        //dt = sqlExec.ExecQueryCmd(strSQL);
+        //DataSet ds = new DataSet();
+        //ds.Merge(dt);
+        //Load_Report(ds, ReportName);
+        GetDataset(ReportName, strSQL);
+    }
+    /// <summary>
+    /// 基本信息报表
+    /// 数据源
+    /// update by fsq 2010-01-12
+    /// 解决内存溢出的问题。
+    /// </summary>
+    /// <param name="ReportName">报表名称</param>
+    private void GetDataXSD(string ReportName)
+    {
+        DataTable dt=null;
+        //DataSet ds = new DataSet();
+        string tablename=string.Empty;
+        switch (ReportName)
+        {
+            
+            case "ProductMaterial"://用料记录表
+                real_title.Text = "用料记录表";
+               // ProductMaterial_MDL mdlProductMaterial = new ProductMaterial_MDL(true, Session["ProductMaterial_ID"].ToString().Trim());
+               //// ProductMaterial_BLL bllProductMaterial = new ProductMaterial_BLL();
+               // ProductMaterial_XSD xsdProductMaterial = new ProductMaterial_XSD();
+
+               // dt = bllProductMaterial.getProductMaterialSglRow(mdlProductMaterial);
+               // dt.TableName = "ProductMaterial";
+               // xsdProductMaterial.Merge(dt);
+               // Load_Report(xsdProductMaterial, ReportName);
+                break;
+            case "WorkPaper"://作业指导书
+                real_title.Text = "作业指导书";
+                WorkPaper_BLL bllWorkPaper = new WorkPaper_BLL();
+                WorkPaper_XSD xsdWorkPaper = new WorkPaper_XSD();
+
+                dt = new WorkPaper_DAL().selectWorkPaper(int.Parse(Session["WorkPaper_ID"].ToString().Trim() == "" ? "-1" : Session["WorkPaper_ID"].ToString().Trim()), "", "", 0);
+                //dt.TableName = "WorkPaper";
+                tablename= "WorkPaper";
+
+                //ds.Merge(dt);
+                //Load_Report(ds, ReportName);
+                break;
+            case "PackageList"://包装单
+                real_title.Text = "包装单";
+                PackageList_MDL mdlPackageList = new PackageList_MDL(true, Session["PackageList_ID"].ToString().Trim());
+                PackageList_BLL bllPackageList = new PackageList_BLL();
+                PackageList_XSD xsdPackageList = new PackageList_XSD();
+
+                dt = new PackageList_DAL().selectPackageList(0, "id", Session["PackageList_ID"].ToString().Trim(), 0);
+                //dt = bllPackageList.getPackageListSglRow(mdlPackageList);
+                //dt.TableName = "PackageList";
+                tablename = "PackageList";
+               // ds.Merge(dt);
+               //// xsdPackageList.Merge(dt);
+               // Load_Report(ds, ReportName);
+                break;
+            default:
+                break;
+        }
+        GetDataset(ReportName, tablename, dt);
+    }
+
+    /// <summary>
+    ///update by fsq 2010-01-12
+    /// 解决内存溢出的问题。
+    /// </summary>
+    /// <param name="ReportName"></param>
+    private void GetDataOfSP(string ReportName)
+    {
+        FormatSqlParas fsp = new FormatSqlParas();
+        string cmdProcedureName = string.Empty;
+        SqlParameter[] cmdSqlParameter = null;
+        switch (ReportName)
+        {
+                //****************************************************
+                //Auther:Derek
+                //早期的报表所执行的代码
+                //Date:20080805
+                //****************************************************
+            case "MouldProductRate"://模具生产率报表
+                real_title.Text = "模具生产率报表";
+                cmdProcedureName = "rptMouldProductRate";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@InputStartDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMachine_Code", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMould_Code", SqlDbType.VarChar, Session[ReportName + "_MouldNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "MachineUseRate"://注塑机使用率报表
+                real_title.Text = "注塑机使用率报表";
+                cmdProcedureName = "rptMachineUseRate";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@InputStartDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMachine_Code", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMould_Code", SqlDbType.VarChar, Session[ReportName + "_MouldNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "ProductGoodRate"://产品合格率报表
+                real_title.Text = "产品合格率报表";
+                cmdProcedureName = "rptProductGoodRate";
+                cmdSqlParameter = new SqlParameter[4]{
+                    fsp.FormatInParam("@InputStartDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    //fsp.FormatInParam("@InputOrder_Code", SqlDbType.VarChar, Session[ReportName + "_OrderID"].ToString().Trim()),
+                    fsp.FormatInParam("@InputProduct_Code", SqlDbType.VarChar, Session[ReportName + "_ProductNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "MoldCycleDetail"://注塑周期明细表
+                real_title.Text = "注塑周期明细表";
+                cmdProcedureName = "rptMoldCycleDetail";
+                cmdSqlParameter = new SqlParameter[6]{
+                    fsp.FormatInParam("@InputBeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMachine_Code", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMould_Code", SqlDbType.VarChar, Session[ReportName + "_MouldNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputProduct_Code", SqlDbType.VarChar, Session[ReportName + "_ProductNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "ProductSchedule"://生产进度报表
+                real_title.Text = "生产进度报表";
+                cmdProcedureName = "rptProductSchedule";
+                cmdSqlParameter = new SqlParameter[8]{
+                    fsp.FormatInParam("@InputBeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputStatus", SqlDbType.VarChar, Session[ReportName + "_WO_Status"].ToString().Trim()),
+                    fsp.FormatInParam("@InputProdBillID", SqlDbType.VarChar, Session[ReportName + "_WO_No"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMachineNo", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMouldNo", SqlDbType.VarChar, Session[ReportName + "_MouldNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputProdNo", SqlDbType.VarChar, Session[ReportName + "_ProductNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())                   
+                };
+                break;
+            case "WorkTimeAnalyse"://工时分析报表
+                real_title.Text = "工时分析报表";
+                cmdProcedureName = "rptWorkTimeAnalyse";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@InputBeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMachineNo", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMachine_SeatCode", SqlDbType.VarChar, Session[ReportName + "_Position"].ToString().Trim()),  
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())                   
+                };
+                break;            
+            case "ProductReport"://生产报表
+                real_title.Text = "生产报表";
+                cmdProcedureName = "rptProductReport";
+                cmdSqlParameter = new SqlParameter[3]{
+                    fsp.FormatInParam("@InputDate", SqlDbType.VarChar, Session[ReportName + "_FirstDate"].ToString().Trim()),
+                    fsp.FormatInParam("@MachineNo", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                //fsp.FormatInParam("@ReportKind", SqlDbType.VarChar, Session[ReportName + "_ReportKind"].ToString().Trim())
+                };
+                break;
+            //****************************************************
+            //Auther:Derek
+            //现在所有
+            //的报表所要执行的代码
+            //Date:20080805
+            //****************************************************
+            case "OEEReport"://OEE报表
+                real_title.Text = "OEE报表";
+                cmdProcedureName = "SELECT_OEE";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@iWorkShopNo", SqlDbType.VarChar,Session[ReportName + "_WorkShopNo"].ToString().Trim()),
+                    fsp.FormatInParam("@iMachineNo", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@iProductNo", SqlDbType.VarChar, Session[ReportName + "_ProductNo"].ToString().Trim()),
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim())
+                };
+                break;
+            case "QualityReport"://质量跟踪报表
+                real_title.Text = "质量跟踪报表";
+                cmdProcedureName = "rptQualityReport";
+                cmdSqlParameter = new SqlParameter[6]{
+                    fsp.FormatInParam("@InputStartDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputProduct_Code", SqlDbType.VarChar, Session[ReportName + "_ProductNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMachine_Code", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputMould_Code", SqlDbType.VarChar, Session[ReportName + "_MouldNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "MaintainReport"://维修报告表
+                real_title.Text = "维修报告表";
+                cmdProcedureName = "rptMaintainReport";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@InputBeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputEndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@InputDeviceType", SqlDbType.VarChar, Session[ReportName + "_DeviceType"].ToString().Trim()),
+                    fsp.FormatInParam("@InputDeviceNo", SqlDbType.VarChar, Session[ReportName + "_DeviceNo"].ToString().Trim()),
+                    fsp.FormatInParam("@InputPrinter", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+
+
+            case "StopMachineReason"://停机原因统计表
+                real_title.Text = "停机原因统计表";
+                cmdProcedureName = "V1_rptStopMachineReason";
+                cmdSqlParameter = new SqlParameter[5]{                    
+                    fsp.FormatInParam("@DispatchOrder", SqlDbType.VarChar, Session[ReportName + "_DispatchNo"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@bDate", SqlDbType.VarChar, Session[ReportName + "_bDate"].ToString().Trim()),
+                    fsp.FormatInParam("@eDate", SqlDbType.VarChar, Session[ReportName + "_eDate"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+
+            case "QueryQCCard":// QC巡检签到表
+                real_title.Text = " QC巡检签到表";
+                cmdProcedureName = "QueryQC";
+                cmdSqlParameter = new SqlParameter[6]{                    
+                    fsp.FormatInParam("@DispatchOrder", SqlDbType.VarChar, Session[ReportName + "_DispatchNo"].ToString().Trim()),
+                    fsp.FormatInParam("@QCName", SqlDbType.VarChar, Session[ReportName + "_QCName"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_bDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_eDate"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "SMSDetail":// 短消息报警汇总
+                real_title.Text = "短消息报警汇总";
+                cmdProcedureName = "QuerySMSDetail";
+                cmdSqlParameter = new SqlParameter[3]{
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_bDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_eDate"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "CycleDetail"://注塑周期明细表
+                real_title.Text = "注塑周期明细表";
+                cmdProcedureName = "V1_rptMoldCycleDetail";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@DisparchOrder", SqlDbType.VarChar, Session[ReportName + "_DisparchOrder"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "WorkShopMaterial"://车间用料情况报表
+                real_title.Text = "车间用料情况报表";
+                cmdProcedureName = "V1_rptWorkShopMaterial";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@DispatchOrder", SqlDbType.VarChar, Session[ReportName + "_DispatchNo"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@BeginCycle", SqlDbType.VarChar, Session[ReportName + "_bDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndCycle", SqlDbType.VarChar, Session[ReportName + "_eDate"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "MouldProdNumTime"://模具分时段产量报表
+                real_title.Text = "模具模次统计报表";
+                cmdProcedureName = "V1_rptMouldNumForTime";
+                cmdSqlParameter = new SqlParameter[5]{
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@iMouldNo", SqlDbType.VarChar, Session[ReportName + "_MouldNo"].ToString().Trim()),
+                    fsp.FormatInParam("@iGoodsNo", SqlDbType.VarChar, Session[ReportName + "_GoodsNo"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "QuilityForDay"://
+                real_title.Text = "次品原因统计报表";
+                cmdProcedureName = "V1_rptQuilityForDay";
+                    try
+                {
+                    string a = Session[ReportName + "_DispatchOrder"].ToString().Trim();
+                    string b = Session[ReportName + "_WorkOrderNo"].ToString().Trim();
+                    string f = Session[ReportName + "_SeatCode"].ToString().Trim();
+                    string c = Session[ReportName + "_BeginDate"].ToString().Trim();
+                    string d = Session[ReportName + "_EndDate"].ToString().Trim();
+                    string e = Session[ReportName + "_UserID"].ToString().Trim();
+                    cmdSqlParameter = new SqlParameter[6]{
+                    fsp.FormatInParam("@WorkOrderNo", SqlDbType.VarChar, Session[ReportName + "_WorkOrderNo"].ToString().Trim()),
+                    fsp.FormatInParam("@DispatchNo", SqlDbType.VarChar, Session[ReportName + "_DispatchOrder"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                }
+                catch
+                {
+                }
+                break;
+            case "InjectCondition"://注塑成型条件报表
+                real_title.Text = "注塑成型参数报表";
+                cmdProcedureName = "V1_rptInjectCondition";
+                cmdSqlParameter = new SqlParameter[6]{
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@DispatchOrder", SqlDbType.VarChar, Session[ReportName + "_DispatchOrder"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@MachineNo", SqlDbType.VarChar, Session[ReportName + "_MachineNo"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                break;
+            case "WorkOrderComplete"://派工单完成进度报表
+                real_title.Text = "派工单达成率报表";
+                cmdProcedureName = "V1_rptDispatchOrderComplete";
+                cmdSqlParameter = new SqlParameter[6]{
+                    fsp.FormatInParam("@WorkOrderNo", SqlDbType.VarChar, Session[ReportName + "_WorkOrderNo"].ToString().Trim()),
+                    fsp.FormatInParam("@DispatchNo", SqlDbType.VarChar, Session[ReportName + "_DispatchNo"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim()),
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim())
+                };
+                break;
+            case "ProductForDay"://生产日报表
+                real_title.Text = "生产日报表";
+                cmdProcedureName = "V1_rptProductForDay";
+                try
+                {
+                    string a = Session[ReportName + "_DispatchOrder"].ToString().Trim();
+                    string b = Session[ReportName + "_WorkOrderNo"].ToString().Trim();
+                    string F = Session[ReportName + "_SeatCode"].ToString().Trim(); 
+                    string c = Session[ReportName + "_BeginDate"].ToString().Trim();
+                    string d = Session[ReportName + "_EndDate"].ToString().Trim();
+                    string e = Session[ReportName + "_UserID"].ToString().Trim();
+                    cmdSqlParameter = new SqlParameter[6]{
+                    fsp.FormatInParam("@DispatchOrder", SqlDbType.VarChar, Session[ReportName + "_DispatchOrder"].ToString().Trim()),
+                    fsp.FormatInParam("@WorkOrder", SqlDbType.VarChar, Session[ReportName + "_WorkOrderNo"].ToString().Trim()),
+                    fsp.FormatInParam("@SeatCode", SqlDbType.VarChar, Session[ReportName + "_SeatCode"].ToString().Trim()),
+                    fsp.FormatInParam("@BeginDate", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndDate", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim()),
+                    fsp.FormatInParam("@Printer", SqlDbType.VarChar, Session[ReportName + "_UserID"].ToString().Trim())
+                };
+                }
+                catch
+                {
+                }
+                break;
+            case "Performance"://生产日报表
+                real_title.Text = "机器效能报表";
+                cmdProcedureName = "rpt_Monitor_DispatchOrderMstr";
+                try
+                {
+                    string a = Session[ReportName + "_WorkShop"].ToString().Trim();
+                    string c = Session[ReportName + "_BeginDate"].ToString().Trim();
+                    string d = Session[ReportName + "_EndDate"].ToString().Trim();
+                    cmdSqlParameter = new SqlParameter[3]{
+                    fsp.FormatInParam("@WorkShop", SqlDbType.VarChar, Session[ReportName + "_WorkShop"].ToString().Trim()),
+                    fsp.FormatInParam("@BeginCycle", SqlDbType.VarChar, Session[ReportName + "_BeginDate"].ToString().Trim()),
+                    fsp.FormatInParam("@EndCycle", SqlDbType.VarChar, Session[ReportName + "_EndDate"].ToString().Trim())
+                };
+                }
+                catch
+                {
+                }
+                break;
+            default:
+                break;
+        }
+        GetDataset(ReportName, cmdProcedureName, cmdSqlParameter);
+    }
+
+    private void GetDataset(string ReportName, string cmdTableName,DataTable dt)
+    {
+        using (DataSet ds = new DataSet())
+        {
+            if (dt == null)
+            {
+                dboSetCtrls.SetExecMsg(this, "记录不存在!");
+                return;
+            }
+            else
+            {
+                try
+                {
+                    dt.TableName = cmdTableName.Trim();
+                    ds.Merge(dt);
+                }
+                catch (OutOfMemoryException ex)
+                {
+                    dboSetCtrls.SetExecMsg(this, ex.ToString());
+                }
+            }
+            Load_Report(ds, ReportName);
+        }
+    }
+
+    private void GetDataset(string ReportName, string strSQL)
+    {
+        using (DataSet ds = new DataSet())
+        {
+            if (string.IsNullOrEmpty(strSQL)) return;
+            SQLExecutant sqlExec = new SQLExecutant();
+            DataTable dt = new DataTable();
+            dt = sqlExec.ExecQueryCmd(strSQL);
+            if (dt == null)
+            {
+                dboSetCtrls.SetExecMsg(this, "记录不存在!");
+                return;
+            }
+            else
+            {
+                try
+                {
+                    ds.Merge(dt);
+                }
+                catch (OutOfMemoryException ex)
+                {
+                    dboSetCtrls.SetExecMsg(this, ex.ToString());
+                }
+            }
+            Load_Report(ds, ReportName);
+        }
+    }
+
+    private void GetDataset(string ReportName, string cmdProcedureName, SqlParameter[] cmdSqlParameter)
+    {
+        using (DataSet ds = new DataSet())
+        {
+            if (string.IsNullOrEmpty(cmdProcedureName)) return;
+            SQLExecutant sqlExec = new SQLExecutant();
+            DataTable dt = new DataTable();
+            dt = sqlExec.ExecQueryCmd(cmdProcedureName, cmdSqlParameter);
+            if (dt == null)
+            {
+                dboSetCtrls.SetExecMsg(this, "记录不存在!");
+                return;
+            }
+            else
+            {
+                try
+                {
+                    ds.Merge(dt);
+                }
+                catch (OutOfMemoryException ex)
+                {
+                    dboSetCtrls.SetExecMsg(this, ex.ToString());
+                }
+            }
+            Load_Report(ds, ReportName);
+        }
+    }
+    
+    protected void Load_Report(DataSet ds, string ReportName)
+    {
+        string rptPath  = ("ReportFile/") + string.Format("{0}.rpt", ReportName);
+        string server   = ConfigurationManager.ConnectionStrings["server"].ToString().Trim();
+        string database = ConfigurationManager.ConnectionStrings["database"].ToString().Trim();
+        string userid   = ConfigurationManager.ConnectionStrings["userid"].ToString().Trim();
+        string password = ConfigurationManager.ConnectionStrings["password"].ToString().Trim();
+
+        pReportDocument = ReportBindSource(rptPath, server, database, userid, password, ds);
+
+        CrystalReportViewer1.DisplayGroupTree = true;
+        CrystalReportViewer1.ReportSource = pReportDocument;
+    }
+
+    public ReportDocument ReportBindSource(string Report_url, string pserver, string pdatabase, string puid, string ppwd, DataSet ds)
+    {
+        ReportDocument tempDoc = new ReportDocument();
+        TableLogOnInfo tempTableLogOnInfo = new TableLogOnInfo();
+
+        tempTableLogOnInfo.ConnectionInfo.ServerName = pserver;
+        tempTableLogOnInfo.ConnectionInfo.DatabaseName = pdatabase;
+        tempTableLogOnInfo.ConnectionInfo.UserID = puid;
+        tempTableLogOnInfo.ConnectionInfo.Password = ppwd;
+        tempDoc.Load(Server.MapPath(Report_url));
+        tempDoc.Database.Tables[0].ApplyLogOnInfo(tempTableLogOnInfo);
+        //********************************************************************
+        ds.Tables[0].TableName = tempDoc.Database.Tables[0].Name;
+        tempDoc.SetDataSource(ds.Tables[0]);
+        //********************************************************************
+        return tempDoc;
+    }
+    protected void CrystalReportViewer1_Init(object sender, EventArgs e)
+    {
+
+    }
+}

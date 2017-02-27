@@ -1,0 +1,82 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using Admin.BLL.Product_BLL;
+using Admin.SQLServerDAL.RightCtrl;
+using Admin.App_Code;
+using Admin.Model.Product_MDL;
+using Admin.SQLServerDAL.Product_DAL;
+
+public partial class WebReport_WorkOrderComplete : System.Web.UI.Page
+{
+    bool[] o = new bool[7] { false, false, false, false, false, false, false };
+    SetCtrls dboSetCtrls = new SetCtrls();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Ajax.Utility.RegisterTypeForAjax(typeof(WebReport_WorkOrderComplete));
+        try
+        {
+            dboSetCtrls.GetIdentiryInfo(this);
+            if (IsPostBack)
+            {
+                o = (bool[])ViewState["authority"];
+                return;
+            }
+            o = RightCtrl.PageRightCtrl(this.Page.User.Identity.Name.Trim(), "WorkOrderComplete");
+            ViewState["authority"] = o;
+            if (o[4]) igbPrint.Visible = false;
+        }
+        catch (Exception ex)
+        {
+            dboSetCtrls.SetExecMsg(this, ex.ToString());
+        }
+        if (!IsPostBack)
+        {
+            //dboSetCtrls.SetDropDownList(ddlWorkOrderNo, DispatchOrder_BLL.QueryWorkOrder() as IList, false, "WorkOrderNo", "WorkOrderNo");
+            //dboSetCtrls.SetDropDownList(ddlDispatchNo, DispatchOrder_BLL.selectDispatchOrder("-0") as IList, false, "DO_No", "DO_No");
+            this.txtEndDate.Value = this.txtBeginDate.Value = System.DateTime.Now.ToString("yyyy-MM-dd");
+            dboSetCtrls.SetDropDownList(ddlMachine_SeatCode, new MachineSuit_DAL().selectMachineMstr() as IList, true, "Machine_MaterialChgAmt", "Remark");
+        }
+    }
+
+    protected void igbPrint_Click(object sender, ImageClickEventArgs e)
+    {
+
+        string ReportName = "WorkOrderComplete";
+        Session[ReportName + "_WorkOrderNo"] = "";// ddlWorkOrderNo.SelectedValue.Trim();
+        Session[ReportName + "_DispatchNo"] = search.Value.Trim();// ddlDispatchNo.SelectedValue.Trim();
+        string SeatCode = ddlMachine_SeatCode.SelectedValue.Trim();
+        Session[ReportName + "_SeatCode"] = SeatCode;
+        Session[ReportName + "_UserID"] = this.Page.User.Identity.Name.Trim();
+        Session[ReportName + "_BeginDate"] = this.txtBeginDate.Value.Trim() + " 07:20:00";
+        Session[ReportName + "_EndDate"] = this.txtEndDate.Value.Trim() + " 07:20:00";
+        this.ClientScript.RegisterClientScriptBlock(GetType(), "open",
+            @"<script> window.open('../repPrinter.aspx?ReportType=3&ReportName=" + ReportName + "') </script>");
+    }
+
+    #region //给工单号和派工单号赋值
+    [Ajax.AjaxMethod()]
+    public ArrayList GetSearhItmes(string str)
+    {
+        ArrayList itmes = new ArrayList();
+
+        IList<DispatchOrder_MDL> tempList = DispatchOrder_BLL.selectDispatchOrder(0, "", "DO_NO", str);
+        for (int t = 0; t < tempList.Count; t++)
+        {
+            itmes.Add(tempList[t].DO_No);
+        }
+
+
+        return itmes;
+    }
+    #endregion
+    
+}

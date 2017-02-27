@@ -1,0 +1,377 @@
+A {
+	FONT-SIZE: 9pt; 
+	COLOR: #464646
+}
+A:hover {
+	FONT-SIZE: 9pt; 
+	COLOR: #7e7e7e; 
+	TEXT-DECORATION: none
+}
+A.gray {
+	COLOR: #e6e6e6
+}
+A.gray:hover {
+	COLOR: #cccccc; 
+	TEXT-DECORATION: none
+}
+A:hover { color:#428EFF;text-decoration:underline; }
+A.link { color:#000000;text-decoration:underline; }
+A.link:hover { color:red;text-decoration:none; }
+
+A.highlight {
+
+	COLOR: red; 
+	TEXT-DECORATION: none
+}
+
+A.highlight:hover {
+
+	COLOR: red
+
+}
+
+
+A.thisclass {
+
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none
+}
+
+A.thisclass:hover {
+
+	FONT-WEIGHT: bold
+}
+
+A.navlink {
+
+	COLOR: #000000; 
+	TEXT-DECORATION: none 
+}
+
+A.navlink:hover {
+
+	COLOR: #003399; 
+	TEXT-DECORATION: none  
+}
+BODY {
+	FONT-SIZE: 12px; 
+	background-color:Transparent; 
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px
+}
+
+Top_BODY {
+	FONT-SIZE: 12px; 
+	background-color:Transparent; 
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px
+}
+
+FIELDSET {
+	FONT-SIZE: 12px; 
+	COLOR: #666666
+}
+LEGEND {
+	FONT-SIZE: 12px; 
+	COLOR: #666666
+}
+
+SELECT {
+	FONT-SIZE: 12px
+}
+
+.textbox 
+{
+	 Width:120px;
+	 FONT-SIZE: 9pt;
+
+	 PADDING-TOP: 1px;
+	 PADDING-BOTTOM: 1px;
+	 PADDING-LEFT: 1px;
+	 PADDING-RIGHT: 1px;
+
+	 BORDER-RIGHT: #b3b9c4 1px solid;
+	 BORDER-TOP: #b3b9c4 1px solid;
+	 BACKGROUND: #f6f6f6;
+	 BORDER-LEFT: #b3b9c4 1px solid;
+	 BORDER-BOTTOM: #b3b9c4 1px solid
+}
+.label
+{
+	 color:Blue;
+}
+.dropdownlist
+{
+	Width:124px
+}
+
+.button {
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-TOP-COLOR: #cccccc;
+	BORDER-BOTTOM-WIDTH: 0px;
+	BORDER-BOTTOM-COLOR: #cccccc;
+	BORDER-LEFT-WIDTH: 0px;
+	BORDER-LEFT-COLOR: #cccccc;
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-RIGHT-COLOR: #cccccc;
+	PADDING-TOP: 1px;
+	PADDING-BOTTOM: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	FONT-SIZE: 9pt;
+	WIDTH: 72px;
+	CURSOR:hand
+}
+
+.button_search {
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-TOP-COLOR: #cccccc;
+	BORDER-BOTTOM-WIDTH: 0px;
+	BORDER-BOTTOM-COLOR: #cccccc;
+	BORDER-LEFT-WIDTH: 0px;
+	BORDER-LEFT-COLOR: #cccccc;
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-RIGHT-COLOR: #cccccc;
+	PADDING-TOP: 1px;
+	PADDING-BOTTOM: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	FONT-SIZE: 9pt;
+	WIDTH: 45px;
+	CURSOR:hand
+}
+
+.textbox_search
+{
+	 Width:120px;
+	 FONT-SIZE: 9pt;
+
+	 PADDING-TOP: 1px;
+	 PADDING-BOTTOM: 1px;
+	 PADDING-LEFT: 1px;
+	 PADDING-RIGHT: 1px;
+
+	 BORDER-RIGHT: #b3b9c4 1px solid;
+	 BORDER-TOP: #b3b9c4 1px solid;
+	 BACKGROUND: #f6f6f6;
+	 BORDER-LEFT: #b3b9c4 1px solid;
+	 BORDER-BOTTOM: #b3b9c4 1px solid
+}
+.textbox Remark
+{
+	 Width:550px;
+	 FONT-SIZE: 9pt;
+
+	 PADDING-TOP: 1px;
+	 PADDING-BOTTOM: 1px;
+	 PADDING-LEFT: 1px;
+	 PADDING-RIGHT: 1px;
+
+	 BORDER-RIGHT: #b3b9c4 1px solid;
+	 BORDER-TOP: #b3b9c4 1px solid;
+	 BACKGROUND: #f6f6f6;
+	 BORDER-LEFT: #b3b9c4 1px solid;
+	 BORDER-BOTTOM: #b3b9c4 1px solid
+}
+.gridview
+{
+ 	 PADDING-TOP: 3px;
+	 PADDING-BOTTOM: 3px;
+	 PADDING-LEFT: 3px;
+	 PADDING-RIGHT: 3px; 
+}
+
+.gridview02
+{
+ 	 PADDING-TOP: 6px;
+	 PADDING-BOTTOM: 6px;
+	 PADDING-LEFT: 6px;
+	 PADDING-RIGHT: 6px; 
+}
+
+.hidden{display:none}
+
+
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px; 
+	BORDER-LEFT-WIDTH: 1px; 
+	FONT-SIZE: 12px; 
+	BORDER-BOTTOM-WIDTH: 1px; 
+	BORDER-RIGHT-WIDTH: 1px
+}
+
+SELECT {
+
+	BORDER-TOP-WIDTH: 1px; 
+	BORDER-LEFT-WIDTH: 1px; 
+	FONT-SIZE: 12px; 
+	BORDER-BOTTOM-WIDTH: 1px; 
+	BORDER-RIGHT-WIDTH: 1px
+}
+
+.tabPageFont
+{ 
+	FONT-SIZE:14px; COLOR: #330000
+}
+
+
+.twidth {
+
+	WIDTH: 760px
+
+}
+
+.content {
+
+	FONT-SIZE: 14px; 
+	MARGIN: 5px 20px; 
+	LINE-HEIGHT: 140%; 
+	FONT-FAMILY: Tahoma,ËÎÌו
+}
+
+.aTitle {
+
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 15px
+}
+
+.tableBorder {
+
+	BORDER-RIGHT: #183789 1px solid; 
+	BORDER-TOP: #183789 1px solid; 
+	BORDER-LEFT: #183789 1px solid; 
+	WIDTH: 100%; 
+	BORDER-BOTTOM: #183789 1px solid; 
+	BACKGROUND-COLOR: #ffffff
+}
+
+.tableBorder1 {WIDTH: 98%; }
+
+
+.topNewsTab {
+	WIDTH: 100%
+}
+.toptable {
+	BACKGROUND: #fff;WIDTH: 100%;
+}
+
+.row TD {
+	BORDER-RIGHT: 1px solid;
+	PADDING-RIGHT: 3px;
+	BORDER-TOP: 1px solid;
+	PADDING-TOP: 3px;
+	
+	BORDER-BOTTOM: 1px;
+	PADDING-BOTTOM: 3px;
+	BORDER-LEFT: 1px;
+	PADDING-LEFT: 3px
+}
+TD.forumHeaderBackgroundAlternate {
+
+	BACKGROUND-IMAGE: url(images/admin_bg_1.gif); 
+	COLOR: #000000; 
+	BACKGROUND-COLOR: #799ae1
+	
+}
+TD.forumRow {
+
+	PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 3px; 
+	BACKGROUND: #F1F3F5; 
+	PADDING-BOTTOM: 3px; 
+	PADDING-TOP: 3px
+}
+
+TH {
+
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 11px; 
+	BACKGROUND-IMAGE: url(admin_bg_1.gif); 
+	COLOR : White; 
+	BACKGROUND-COLOR : #507CD1
+}
+
+TD.bodytitle {
+
+	BACKGROUND-IMAGE: url(admin_bg_21.gif)
+}
+
+TD.bodytitle1 {
+
+	BACKGROUND-IMAGE: url(images/admin_bg_31.gif)
+
+}
+
+TD.tablebody1 {
+
+	PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 3px; 
+	BACKGROUND: #bebbdb; 
+	PADDING-BOTTOM: 3px; 
+	PADDING-TOP: 3px
+}
+
+TD.forumRowHighlight {
+
+	PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 3px; 
+	BACKGROUND: #E4EDF9; 
+	PADDING-BOTTOM: 3px; 
+	PADDING-TOP: 3px
+}
+TD {
+	FONT-SIZE: 11px; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+DIV {
+	FONT-SIZE: 11px; FONT-FAMILY:  "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+LI {
+	FONT-SIZE: 12px; FONT-FAMILY:  "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+
+A {
+	FONT-SIZE: 11px; FONT-FAMILY:  "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+
+#topNewsClip {
+	 WIDTH: 100%;  TEXT-ALIGN: center
+}
+#topNewsClip .lnks A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #27930d; TEXT-DECORATION: none
+}
+#topNewsClip A:hover {
+	 COLOR: #27930d; TEXT-DECORATION: none
+}
+#topNewsBlk {
+	BORDER-RIGHT: #E4E4E4 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000000 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; BORDER-LEFT: #E4E4E4 1px solid; PADDING-TOP: 0px ; BORDER-BOTTOM: #E4E4E4 1px solid; POSITION: relative; TEXT-ALIGN: left
+}
+#topNews_1 {
+	DISPLAY: none;
+	WIDTH: 337px
+}
+#topNews_2 {
+	DISPLAY: none
+}
+#topNews_3 {
+	DISPLAY: none
+}
+#topNews_4 {
+	DISPLAY: none
+}
+#topNews_5 {
+	DISPLAY: none
+}
+#topNews_6 {
+	DISPLAY: none
+}
+#topNews_7 {
+	DISPLAY: none
+}
+/********************
+Author:derek
+aDate:20070524
+***************************/

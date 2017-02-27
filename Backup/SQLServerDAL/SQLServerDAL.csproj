@@ -1,0 +1,195 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C27ECDCB-818B-46C8-B65F-E91FF7919A41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Admin.SQLServerDAL</RootNamespace>
+    <AssemblyName>Admin.SQLServerDAL</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="App_Code, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\App_Code\bin\Debug\App_Code.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseInfo_DAL\AuxiliaryToolInfo_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\BadReason_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\ColorManage_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\Employee_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\MouldMstr_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\RawMaterial_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\SalaryConfig_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\SalaryManage_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\StopReason_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\WorkRate_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\SalaryManageAdjust_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\SalaryManageTotal_DAL.cs" />
+    <Compile Include="Call_DAL\CallConfig_DAL.cs" />
+    <Compile Include="Call_DAL\CallMachineVacation_DAL.cs" />
+    <Compile Include="Collect_DAL\CardDetail_DAL.cs" />
+    <Compile Include="Collect_DAL\CommunicationInfo_DAL.cs" />
+    <Compile Include="Collect_DAL\DataHistory_DAL.cs" />
+    <Compile Include="Collect_DAL\ErrDataInfo_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\CustomerInfo_DAL.cs" />
+    <Compile Include="Collect_DAL\ICCard_DAL.cs" />
+    <Compile Include="Collect_DAL\StandDataHistory_DAL.cs" />
+    <Compile Include="CrystalReports_DAL\CrystalReports.cs" />
+    <Compile Include="ERPSQLExecutant.cs" />
+    <Compile Include="FormatSqlCmd.cs" />
+    <Compile Include="FormatSqlParas.cs" />
+    <Compile Include="BaseInfo_DAL\MachineMstr_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\MouldDetail_DAL.cs" />
+    <Compile Include="GetErp\GetErpItm.cs" />
+    <Compile Include="Maintain_DAL\MaintainInfo_DAL.cs" />
+    <Compile Include="Monitor_DAL\AlarmInfo_DAL.cs" />
+    <Compile Include="Monitor_DAL\CollectRealProductDataInfo_DAL.cs" />
+    <Compile Include="Monitor_DAL\MonitorDispatchMstr_DAL.cs" />
+    <Compile Include="Monitor_DAL\MonitorMachine_DAL.cs" />
+    <Compile Include="Monitor_DAL\MonitorMaterial_DAL.cs" />
+    <Compile Include="Monitor_DAL\UseMaterial_DAL.cs" />
+    <Compile Include="BaseInfo_DAL\ItemMstr_DAL.cs" />
+    <Compile Include="Product_DAL\AdjustMachine_DAL.cs" />
+    <Compile Include="Product_DAL\ClampManage_DAL.cs" />
+    <Compile Include="Product_DAL\MachineSuit_DAL.cs" />
+    <Compile Include="Product_DAL\ManMachineMap_DAL.cs" />
+    <Compile Include="Product_DAL\MPSResult_DAL.cs" />
+    <Compile Include="Product_DAL\SuitManage_DAL.cs" />
+    <Compile Include="Product_DAL\UpdateCycle_DAL.cs" />
+    <Compile Include="Product_DAL\UpdateMacCycle_DAL.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Quality_DAL\OEE_DAL.cs" />
+    <Compile Include="Quality_DAL\QC_ThroughDefect_DAL.cs" />
+    <Compile Include="Quality_DAL\QualityTrack_DAL.cs" />
+    <Compile Include="Quality_DAL\StandTechnicsParams_DAL.cs" />
+    <Compile Include="Quality_DAL\StandTemp_DAL.cs" />
+    <Compile Include="Adminis_DAL\Department_DAL.cs" />
+    <Compile Include="Adminis_DAL\GroupInfo_DAL.cs" />
+    <Compile Include="Adminis_DAL\GroupProgramMap_DAL.cs" />
+    <Compile Include="Adminis_DAL\SysProgramInfo_DAL.cs" />
+    <Compile Include="Adminis_DAL\SysClassInfo_DAL.cs" />
+    <Compile Include="Adminis_DAL\UserInfo_DAL.cs" />
+    <Compile Include="Adminis_DAL\UserProgramMap_DAL.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Quality_DAL\StopReas_DAL.cs" />
+    <Compile Include="RightCtrl\RightCtrl.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SQLPreparer.cs" />
+    <Compile Include="DataOperator.cs" />
+    <Compile Include="DataControl.cs" />
+    <Compile Include="SQLExecutant.cs" />
+    <Compile Include="Machine\MachineCollectMap_DAL.cs" />
+    <Compile Include="Machine\MachineMouldMap_DAL.cs" />
+    <Compile Include="Machine\MachineStatus_DAL.cs" />
+    <Compile Include="Machine\MachineStatusConfig_DAL.cs" />
+    <Compile Include="Product_DAL\DispatchOrder_DAL.cs" />
+    <Compile Include="Product_DAL\OrderMstr_DAL.cs" />
+    <Compile Include="Product_DAL\PackageList_DAL.cs" />
+    <Compile Include="Product_DAL\WorkPaper_DAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quality_DAL\QC_Table_DAL.cs" />
+    <Compile Include="Web References\ERPWebSer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{276A3464-BB3E-47E8-BCCA-9D148E4892FA}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{D9DB0854-A21E-4A15-B667-CC069FEF39E4}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{C11FB025-CB8B-43B9-BC34-13FFD10560C1}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ERPWebSer\Service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.253:9000/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ERPWebSer\</RelPath>
+      <UpdateFromURL>http://192.168.1.253:9000/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Admin_SQLServerDAL_ERPWebSer_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Web References\ERPWebSer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ERPWebSer\Service.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

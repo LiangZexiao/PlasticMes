@@ -1,0 +1,12 @@
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\obj\Release\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\bin\Release\Admin.DALFactory.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\bin\Release\Admin.DALFactory.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\bin\Release\Admin.IDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\bin\Release\CryptLby.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\bin\Release\Admin.Model.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\bin\Release\Admin.Model.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\bin\Release\Admin.IDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\obj\Release\Admin.DALFactory.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\DALFactory\obj\Release\Admin.DALFactory.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\DALFactory\obj\Release\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\DALFactory\obj\Release\Admin.DALFactory.pdb

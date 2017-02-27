@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data;
+using System.Text;
+using Admin.Model.Monitor_MDL;
+
+namespace Admin.IDAL.Monitor_IDAL
+{
+    public interface IMonitorMaterial
+    {
+        IList<MonitorMaterial_MDL> selectMonitorMaterial(string colname, string coltext);
+        IList<MonitorMaterial_MDL> selectMonitorMaterial(string colname, string coltext,string DispatchStatus, int PageSize, int PageIndex, out int RowCount);
+        DataTable selectMaterial(string colname, string coltext, string beginCycle, string endCycle);
+    }
+}

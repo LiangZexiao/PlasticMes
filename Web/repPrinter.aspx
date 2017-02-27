@@ -1,0 +1,35 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="repPrinter.aspx.cs" Inherits="repPrinter" %>
+
+<%@ Register assembly="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" namespace="CrystalDecisions.Web" tagprefix="CR" %>
+
+<%--<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+    Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>--%>
+<%--<%@ Register Assembly="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
+    Namespace="CrystalDecisions.Web" TagPrefix="CR" %>--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title runat="server" id="real_title"></title>
+    <link href="Css/Style.css" type="text/css" rel="stylesheet" />
+    <link href="/aspnet_client/System_Web/2_0_50727/CrystalReportWebFormViewer1css/default.css"
+        rel="stylesheet" type="text/css" />
+    <link href="/aspnet_client/System_Web/2_0_50727/CrystalReportWebFormViewer1/css/default.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <table style="width: 120%">
+            <tr>
+                <td align="left">
+                    <CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" 
+                        AutoDataBind="true" />
+                </td>
+            </tr>
+           
+        </table>
+    </div>
+    </form>
+</body>
+</html>

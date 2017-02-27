@@ -1,0 +1,353 @@
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.Model.dll
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+D:\项目开发\ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+D:\项目开发\ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+D:\项目开发\ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+F:\ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+F:\ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+F:\ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+F:\ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+F:\ChiefMes\BLL\bin\Debug\Admin.Model.dll
+F:\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+F:\ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+F:\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+F:\ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+F:\ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+F:\ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+F:\ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+F:\ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+F:\ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+F:\ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.BLL.dll
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.BLL.pdb
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.DALFactory.dll
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.SQLServerDAL.dll
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.DALFactory.pdb
+G:\源代码\公司\ChiefMes2009.12.30\BLL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\ChiefMes2009.12.30\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes2009.12.30\BLL\obj\Debug\Admin.BLL.dll
+G:\源代码\公司\ChiefMes2009.12.30\BLL\obj\Debug\Admin.BLL.pdb
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.BLL.dll
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.BLL.pdb
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.DALFactory.dll
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.SQLServerDAL.dll
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.DALFactory.pdb
+G:\源代码\公司\ChiefMes(theFirst)\BLL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\ChiefMes(theFirst)\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes(theFirst)\BLL\obj\Debug\Admin.BLL.dll
+G:\源代码\公司\ChiefMes(theFirst)\BLL\obj\Debug\Admin.BLL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.BLL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.BLL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.DALFactory.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.IDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.Model.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.SQLServerDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.DBUtility.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.IDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.DBUtility.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.DALFactory.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\bin\Debug\Admin.Model.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\obj\Debug\Admin.BLL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\BLL\obj\Debug\Admin.BLL.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.Model.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.Model.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.Model.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.Model.dll
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+F:\1.5ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+F:\1.5ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+F:\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+F:\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+G:\源代码\公司\1.5ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\1.5ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+G:\源代码\公司\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.Model.dll
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+D:\Work\MES\1.5ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+D:\Work\MES\1.5ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+D:\Work\MES\1.5ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.Model.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.Model.dll
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+D:\Work\MES\ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+D:\Work\MES\ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+D:\Work\MES\ChiefMes\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.Model.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+E:\公司项目\MesTeam\ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+E:\公司项目\MesTeam\ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\MesTeam\ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+E:\公司项目\MesTeam\ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.Model.dll
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+E:\科易美\MES相关\ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+E:\科易美\MES相关\ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\科易美\MES相关\ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+E:\科易美\MES相关\ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.BLL.dll
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.BLL.pdb
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.DALFactory.dll
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.IDAL.dll
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.Model.dll
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+E:\MES\ChiefMes\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.DBUtility.dll
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.IDAL.pdb
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.DBUtility.pdb
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.DALFactory.pdb
+E:\MES\ChiefMes\BLL\bin\Debug\Admin.Model.pdb
+E:\MES\ChiefMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\MES\ChiefMes\BLL\obj\Debug\Admin.BLL.dll
+E:\MES\ChiefMes\BLL\obj\Debug\Admin.BLL.pdb
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.BLL.dll
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.BLL.pdb
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.DALFactory.dll
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.IDAL.dll
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.Model.dll
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.SQLServerDAL.dll
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.DBUtility.dll
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.IDAL.pdb
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.DBUtility.pdb
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.DALFactory.pdb
+D:\GloryProg\Plastic_Song\BLL\bin\Debug\Admin.Model.pdb
+D:\GloryProg\Plastic_Song\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\Plastic_Song\BLL\obj\Debug\Admin.BLL.dll
+D:\GloryProg\Plastic_Song\BLL\obj\Debug\Admin.BLL.pdb
+D:\GloryProg\PlasticMes\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.BLL.dll
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.BLL.pdb
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.DALFactory.dll
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.IDAL.dll
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.Model.dll
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.DBUtility.dll
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.IDAL.pdb
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.DBUtility.pdb
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.DALFactory.pdb
+D:\GloryProg\PlasticMes\BLL\bin\Debug\Admin.Model.pdb
+D:\GloryProg\PlasticMes\BLL\obj\Debug\Admin.BLL.dll
+D:\GloryProg\PlasticMes\BLL\obj\Debug\Admin.BLL.pdb
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.BLL.dll
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.BLL.pdb
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.DALFactory.dll
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.IDAL.dll
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.Model.dll
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.DBUtility.dll
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.DALFactory.pdb
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.IDAL.pdb
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.Model.pdb
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+D:\BorchProg\PlasticMes\BLL\bin\Debug\Admin.DBUtility.pdb
+D:\BorchProg\PlasticMes\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\BorchProg\PlasticMes\BLL\obj\Debug\Admin.BLL.dll
+D:\BorchProg\PlasticMes\BLL\obj\Debug\Admin.BLL.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.BLL.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.BLL.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.DALFactory.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.IDAL.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.Model.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.SQLServerDAL.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.DBUtility.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Interop.EMPPCOMLib.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.DALFactory.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.IDAL.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.Model.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.SQLServerDAL.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\bin\Debug\Admin.DBUtility.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\obj\Debug\Admin.BLL.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\BLL\obj\Debug\Admin.BLL.pdb

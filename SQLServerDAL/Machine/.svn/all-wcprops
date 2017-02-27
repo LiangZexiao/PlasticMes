@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Machine
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Machine/vssver2.scc
+END
+MachineStatusConfig_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Machine/MachineStatusConfig_DAL.cs
+END
+MachineMouldMap_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Machine/MachineMouldMap_DAL.cs
+END
+MachineCollectMap_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Machine/MachineCollectMap_DAL.cs
+END
+MachineStatus_DAL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/YinShanProject/!svn/ver/427/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/SQLServerDAL/Machine/MachineStatus_DAL.cs
+END

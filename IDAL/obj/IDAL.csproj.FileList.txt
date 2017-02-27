@@ -1,0 +1,14 @@
+bin\Release\Admin.IDAL.dll
+bin\Release\Admin.IDAL.pdb
+bin\Release\Admin.Model.dll
+bin\Release\Admin.Model.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Admin.IDAL.dll
+obj\Release\Admin.IDAL.pdb
+bin\Debug\Admin.IDAL.dll
+bin\Debug\Admin.IDAL.pdb
+bin\Debug\Admin.Model.dll
+bin\Debug\Admin.Model.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Admin.IDAL.dll
+obj\Debug\Admin.IDAL.pdb

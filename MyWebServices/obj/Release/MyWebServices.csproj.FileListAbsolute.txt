@@ -1,0 +1,5 @@
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\bin\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\bin\MyWebServices.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\obj\Release\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\obj\Release\MyWebServices.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\MyWebServices\obj\Release\MyWebServices.pdb

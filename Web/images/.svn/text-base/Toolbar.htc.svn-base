@@ -1,0 +1,28 @@
+<PUBLIC:COMPONENT>
+<PUBLIC:PROPERTY NAME="ObjID" />
+<PUBLIC:ATTACH EVENT="onmouseover" ONEVENT="HiglLight('over')" />
+<PUBLIC:ATTACH EVENT="onmouseout" ONEVENT="HiglLight('out')" />
+
+<script language="javascript">
+var SelectTr = -1;
+var SelectColor = '#FDF9C3';
+var SelectCurTr;
+function HiglLight(oper)
+{
+	switch(oper)
+	{
+		case "over":
+			this.style.padding='1px';
+			this.style.border='1px solid #cccccc';
+			this.style.backgroundColor='#3399FF';
+			break;
+		case "out":
+			this.style.border='';
+			this.style.backgroundColor='';
+			this.style.padding='1px';
+			break;
+			
+		default: break;			
+	}
+}
+</script>

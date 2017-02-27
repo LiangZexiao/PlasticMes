@@ -1,0 +1,287 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ShowData.aspx.cs" EnableEventValidation="false" Inherits="Collect_ShowData" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+<title>历史数据(DataShow)</title>
+    <link href="../images/css.css" type="text/css" rel="stylesheet" />
+    <link href="../WebControls/DatePicker/skin/WdatePicker.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript" src="../JS/calendar.js"></script>
+    <script type="text/javascript" language="javascript" src="../WebControls/DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" language="javascript" src="../JS/CheckBox.js"></script>  
+</head>
+<body>
+    <form id="form1" runat="server">
+         <table border="0" cellpadding="0" cellspacing="0" class="section-content">
+          <tr>
+          <td valign="top">
+          
+         <table class="tablefoot" cellspacing="0" cellpadding="0" border="0" style="height: 24px">
+          <tr>
+            <td style="height: 24px">当前位置:数据采集 -> 历史数据</td>
+          </tr>
+          </table>
+
+          <br />
+                <asp:MultiView ID="MultiView1" runat="server">
+                <asp:View ID="View1" runat="server">
+
+                <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                  <tr>
+                    <td height="22" style="background-image: url(../images/bg_title.gif)">　　操作</td>
+                  </tr>
+                  <tr>
+                    <td>
+    <asp:DropDownList ID="ddlQuery" runat="server">
+    <asp:ListItem Value="DispatchOrder">派工单号</asp:ListItem>
+    <asp:ListItem Value="MachineNo">机器编号</asp:ListItem>
+    <asp:ListItem Value="TotalNum">啤数序号</asp:ListItem>
+    <%--<asp:ListItem Value="UpLoadTime">上传时间</asp:ListItem>--%>
+    <asp:ListItem Value="ClientIp">IP</asp:ListItem>
+    </asp:DropDownList>
+    <asp:TextBox ID="txtQuery" runat="server" CssClass="textbox"></asp:TextBox>
+                        &nbsp;生产时间:<input runat="server" type="text" id="txtBeginDate" name="txtBeginDate"  
+                                   onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm'})" class="Wdate"
+                                 style="width: 130px" /> 至
+                                 <input runat="server" type="text" id="txtEndDate" name="txtEndDate"  
+                                   onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm'})" class="Wdate"
+                                 style="width: 130px" /> 
+    <asp:ImageButton ID="igbQuery" runat="server" ImageUrl="~/images/btn_search.gif"  OnClick="btnVisible_Click" ImageAlign="Top" />
+    <asp:ImageButton ID="igbNewadd" runat="server" ImageUrl="~/images/btn_newadd.gif" OnClick="btnVisible_Click" ImageAlign="Top" Visible="False" />
+    <asp:ImageButton ID="igbCancel" runat="server" ImageUrl="~/images/btn_delete.gif" ImageAlign="Top" Visible="False" />
+                    </td>
+                  </tr>
+              </table>
+              <br />
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                    <td>
+                    <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                      <tr>
+                        <td height="22" style="background-image: url(../images/bg_title.gif)">　　浏览</td>
+                      </tr>
+                    </table>
+                        <asp:GridView ID="GridView1" runat="server" CellPadding="2" Width="100%" AutoGenerateColumns="False" AllowPaging="True" PageSize="15" OnRowDataBound="GridView1_RowDataBound" CssClass="itemtable" BorderWidth="0px" CellSpacing="1" ToolTip="1" >
+                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <EditRowStyle BackColor="#2461BF" />
+                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="False" ForeColor="#333333" />
+                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                        <HeaderStyle Font-Bold="True" ForeColor="#055BAE" />
+                        <AlternatingRowStyle BackColor="White" />
+                      <Columns>
+                          <asp:TemplateField Visible="False">
+                             <ItemTemplate>
+                             <asp:CheckBox ID="chkItemInner" runat="server" />
+                             </ItemTemplate>
+                             <HeaderTemplate>
+                             <input id="chkAll" type="checkbox" onclick="selectAll(this);"/>
+                             </HeaderTemplate>
+                             <ItemStyle HorizontalAlign="Center" Width="26px" />
+                             <HeaderStyle HorizontalAlign="Center" />
+                         </asp:TemplateField>
+                        <asp:ButtonField DataTextField="ID" CommandName="select" HeaderText="序号" >
+                            <ItemStyle HorizontalAlign="Center" CssClass="hidden" />
+                            <HeaderStyle CssClass="hidden" />
+                            <FooterStyle CssClass="hidden" />
+                        </asp:ButtonField>
+                         <asp:BoundField DataField="DispatchOrder"  HeaderText="派工单号"/>
+                         <asp:BoundField DataField="DispatchOrder"  HeaderText="生产单号" Visible="False"/>
+                        <asp:BoundField DataField="MachineNo"  HeaderText="机器编号" >
+                        </asp:BoundField>
+                         <asp:BoundField DataField="MouldNo" HeaderText="模具编号" Visible="False" />
+                         <asp:BoundField DataField="ProductNo" HeaderText="产品编号" />
+                         <asp:BoundField DataField="TotalNum" HeaderText="啤数序号" >
+                             <ItemStyle HorizontalAlign="Right" />
+                         </asp:BoundField>
+                         <asp:BoundField DataField="Cycletime" HeaderText="人工周期" >
+                             <ItemStyle HorizontalAlign="Right" />
+                         </asp:BoundField>
+                         <asp:BoundField DataField="IntervalInfo" HeaderText="机器周期" >
+                             <ItemStyle HorizontalAlign="Right" />
+                         </asp:BoundField>
+                         <asp:BoundField DataField="FillTime" HeaderText="填充时间" >
+                             <ItemStyle HorizontalAlign="Right" />
+                         </asp:BoundField>
+                         <asp:BoundField DataField="ShotTemp1" HeaderText="温度1" >
+                             <ItemStyle HorizontalAlign="Right" />
+                         </asp:BoundField>
+                         <asp:BoundField DataField="ShotTemp2" HeaderText="温度2" >
+                             <ItemStyle HorizontalAlign="Right" />
+                         </asp:BoundField>
+                         <asp:BoundField DataField="KeepPress_Max" HeaderText="最大压力" >
+                             <ItemStyle HorizontalAlign="Right" />
+                         </asp:BoundField>
+                         <asp:BoundField DataField="Begintime" HeaderText="开始时间" />
+                         <asp:BoundField DataField="ClientIp" HeaderText="IP"  Visible="False" />
+                         <asp:BoundField DataField="UpLoadTime" DataFormatString="{0:d}" HtmlEncode="False" HeaderText="上传时间" />
+                     </Columns>
+                        <PagerSettings Visible="False" /> 
+                    </asp:GridView>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" valign="top">
+                        <table>
+                            <tr>
+                                <td style="height: 28px">
+                                    <asp:Label ID="lblDataCount" runat="server" Text=""></asp:Label>
+                                </td>
+                                <td style="height: 28px">
+<asp:ImageButton ID="igbFirst" runat="server" CommandArgument="First" ImageUrl="~/images/page_first.gif" OnClick="CtrlPageInfo_Click" />
+<asp:ImageButton ID="igbPrior" runat="server" CommandArgument="Prior" ImageUrl="~/images/page_prior.gif" OnClick="CtrlPageInfo_Click" />
+                                </td>
+                                <td style="height: 28px">
+                                    <asp:Label ID="lblPageIndex" runat="server" Text=""></asp:Label>
+                                </td>
+                                <td style="height: 28px">
+<asp:ImageButton ID="igbNext" runat="server" CommandArgument="Next" ImageUrl="~/images/page_next.gif" OnClick="CtrlPageInfo_Click" />
+<asp:ImageButton ID="igbLast" runat="server" CommandArgument="Last" ImageUrl="~/images/page_last.gif" OnClick="CtrlPageInfo_Click" />
+                                </td>
+                                <td style="height: 28px">
+                                    <asp:TextBox ID="txtPageIndex" runat="server" CssClass="textbox_search" Width="45px"></asp:TextBox>
+                                </td>
+                                <td style="height: 28px">
+<asp:ImageButton ID="igbSearch" runat="server" CommandArgument="Last" ImageUrl="~/images/mirror.gif" OnClick="CtrlPageInfo_Click" />
+                                </td>
+                                <td style="height: 28px">
+                                    <asp:RegularExpressionValidator ID="revPageIndex" runat="server" ControlToValidate="txtPageIndex"
+                                        ErrorMessage="请输入数字" ValidationExpression="^[0-9]*[1-9][0-9]*$"></asp:RegularExpressionValidator>
+                                    <asp:Label ID="Label1" runat="server" Visible="False"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+                        &nbsp; &nbsp;
+         </td>
+    </tr>
+   </table> 
+            </asp:View>
+                            <asp:View ID="View2" runat="server">
+          <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                      <tr>
+                        <td height="22" style="background-image: url(../images/bg_title.gif)">　　操作</td>
+                      </tr>
+                      <tr>
+                      <td>
+                        <asp:ImageButton ID="igbInsert" runat="server" ImageUrl="~/images/btn_save.gif" Visible="False" />
+                        <asp:ImageButton ID="igbUpdate" runat="server" ImageUrl="~/images/btn_save.gif" Visible="False" />
+                        <asp:ImageButton ID="igbDelete" runat="server" ImageUrl="~/images/btn_delete.gif" CausesValidation="false" Visible="False" />
+                        <asp:ImageButton ID="igbBacked" runat="server" ImageUrl="~/images/btn_back.gif" CausesValidation="false" OnClick="btnVisible_Click"  />
+                        <input id="hdnID" type="hidden" runat="server" style="width: 20px" class="textbox" />&nbsp;
+                        <asp:TextBox ID="txtID" runat="server" Visible="False" CssClass="textbox" Width="20px"></asp:TextBox>
+                      </td>
+                      </tr>
+          </table>
+<br />
+                 <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                      <tr>
+                        <td height="22" style="background-image: url(../images/bg_title.gif)">　　编辑</td>
+                      </tr>
+                    </table>
+<table border="0" style="border-collapse: collapse;" width="100%" cellpadding="1" cellspacing="1" class="texttable">
+                                            <tr>
+                                                <th align="right">
+                                                    机器编号:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtMachineNo" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>
+                                                </td>
+                                                <th align="right">
+                                                    模具编号:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtMouldNo" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox></td>
+                                                <th align="right">
+                                                    生产单号:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtWorkOrderNo" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>
+                                                    </td>
+                                            </tr>
+
+                                          <tr>
+                                                <th align="right">
+                                                    派工单号:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtDispatchOrder" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox></td>
+                                                <th align="right">
+                                                    产品编号:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtProductNo" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>
+                                                    </td>
+                                                <th align="right">
+                                                    啤数序号:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtTotalNum" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox></td>
+                                            </tr>
+                                            <tr>
+                                                <th align="right">
+                                                    开始时间:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtBeginCycle" runat="server" CssClass="textbox" ReadOnly="true" Width="124px"></asp:TextBox></td>
+                                                <th align="right">
+                                                    人工周期:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtCycletime" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>S</td>
+                                                <th align="right">
+                                                    机器周期:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtIntervalInfo" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox></td>
+                                            </tr>
+                                            <tr>
+                                                <th align="right">
+                                                    最大压力:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtKeepPress_Max" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>Mpa</td>
+                                                <th align="right">
+                                                    </th>
+                                                <td>
+                                                    </td>
+                                                <th align="right">
+                                                    </th>
+                                                <td>
+                                                    </td>
+                                            </tr>
+    <tr>
+        <th align="center" colspan="6">
+            温度</th>
+    </tr>
+                                            <tr>
+                                                <th align="right">
+                                                    温度一:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtShotTemp1" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>'C</td>
+                                                <th align="right">
+                                                    温度二:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtShotTemp2" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>'C</td>
+                                                <th align="right">
+                                                    </th>
+                                                <td>
+                                                    </td>
+                                            </tr>
+    <tr>
+        <th align="center" colspan="6">
+            其他</th>
+        </tr>
+                                            <tr>
+                                                <th align="right">
+                                                    填充时间:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtFillTime" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox>S</td>
+                                                <th align="right">
+                                                    <asp:Label ID="Label2" runat="server" Text="射胶量:"></asp:Label></th>
+                                                <td>
+                                                    <asp:TextBox ID="txtInjectNum" runat="server" CssClass="textbox" ReadOnly="true"></asp:TextBox><asp:Label
+                                                        ID="Label3" runat="server" Text="mm3"></asp:Label></td>
+                                                <th align="right">
+                                                    上载时间:</th>
+                                                <td>
+                                                    <asp:TextBox ID="txtUpLoadTime" runat="server" CssClass="textbox" ReadOnly="true" Width="124px"></asp:TextBox></td>
+                                            </tr>
+                                        </table>
+                            </asp:View>
+                 </asp:MultiView>
+                 </td>
+          </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\bin\Release\App_Code.dll.config
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\bin\Release\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\bin\Release\App_Code.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\obj\Release\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\obj\Release\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\obj\Release\App_Code.pdb

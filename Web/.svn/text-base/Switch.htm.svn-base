@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2900.2180" name="GENERATOR">
+<META content="VisualStudio.HTML" name="ProgId">
+<META content="Microsoft Visual Studio .NET 7.1" name="Originator">
+<SCRIPT language="javascript">
+			function changeWin()
+			{
+				if(top.framework.cols == "16.1%,10,*")
+				{
+					top.framework.cols = "1,10,*";
+				}
+				else
+				{
+					top.framework.cols = "16.1%,10,*";
+				}
+			} 
+		</SCRIPT>
+</HEAD>
+<body bottommargin="0" topmargin="0">
+<table id="Table1" height="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr align="center">
+    <td style="CURSOR: hand; background-color: lavender;" onclick="changeWin()" valign="middle">
+        <img src="images/draw_left.gif" alt="点击隐藏左边菜单" /></td>
+    </tr>    
+    </table>
+   </body>
+</HTML>

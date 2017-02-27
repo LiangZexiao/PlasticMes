@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL
+END
+IMouldDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/IMouldDetail.cs
+END
+IItemMstr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/IItemMstr.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/vssver2.scc
+END
+IMouldMstr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/IMouldMstr.cs
+END
+IMachineMstr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/IMachineMstr.cs
+END
+IEmployeeInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/IEmployeeInfo.cs
+END
+ICustomerInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/ICustomerInfo.cs
+END
+IStopReason.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/IStopReason.cs
+END
+IBadReason.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/BaseInfo_IDAL/IBadReason.cs
+END

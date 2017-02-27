@@ -1,0 +1,42 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="QualityTrack_Press.aspx.cs" Inherits="Quality_QualityTrack_Press" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+     <title>质量跟踪压力(QualityTrack_Press)</title>
+     <link href="../Css/Style.css" type="text/css" rel="stylesheet" />
+     <script type="text/javascript" language="javascript" src="../JS/calendar.js"></script>
+     <script type="text/javascript" language="javascript" src="../JS/checkbox.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <asp:Image ID="Image1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table style="width: 100%">
+                    <tr>
+                        <td align="right" style="width: 50%">
+                            &nbsp;<asp:RadioButtonList ID="rblPictureType" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow" AutoPostBack="True" OnSelectedIndexChanged="rblPictureType_SelectedIndexChanged">
+                                <asp:ListItem Selected="True" Value="5">5啤1图</asp:ListItem>
+                                <asp:ListItem Value="1">1啤1图</asp:ListItem>
+                            </asp:RadioButtonList></td>
+                        <td align="left" valign="top">
+                            <asp:LinkButton ID="lkbShangPage" runat="server" OnClick="LinkButton_Click">上一页</asp:LinkButton>&nbsp;
+                            <asp:LinkButton ID="lkbXiaPage" runat="server" OnClick="LinkButton_Click" CommandName="Next">下一页</asp:LinkButton>&nbsp;
+                            第&nbsp;
+                            <asp:DropDownList ID="ddlImageIndex" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlImageIndex_SelectedIndexChanged" />&nbsp;
+                            啤
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

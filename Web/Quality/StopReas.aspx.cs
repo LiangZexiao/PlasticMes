@@ -1,0 +1,71 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using Admin.BLL.BaseInfo_BLL;
+using Admin.SQLServerDAL.RightCtrl;
+using Admin.BLL.Product_BLL;
+using Admin.App_Code;
+
+public partial class Quality_StopReas : System.Web.UI.Page
+{
+    bool[] o = new bool[7] { false, false, false, false, false, false, false };
+    SetCtrls dboSetCtrls = new SetCtrls();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        try
+        {
+            dboSetCtrls.GetIdentiryInfo(this);
+            if (IsPostBack)
+            {
+                o = (bool[])ViewState["authority"];
+                return;
+            }
+            o = RightCtrl.PageRightCtrl(this.Page.User.Identity.Name.Trim(), "StopReas");
+            ViewState["authority"] = o;
+            if (o[4]) igbPrint.Visible = false;
+        }
+        catch (Exception ex)
+        {
+            dboSetCtrls.SetExecMsg(this, ex.ToString());
+        }
+        if (!IsPostBack)
+        {
+            txtbDate.Value = System.DateTime.Now.ToString("yyyy-MM-dd");
+            txteDate.Value = System.DateTime.Now.ToString("yyyy-MM-dd");
+            dboSetCtrls.SetDropDownList(ddlMachineNo, new Admin.SQLServerDAL.Product_DAL.SuitManage_DAL().selectSuitManage(0) as IList, true, "PlantBristlesCode", "PlantBristlesCode");
+          
+        }
+    }
+    protected void igbPrint_Click(object sender, ImageClickEventArgs e)
+    {
+        string BeginDate = txtbDate.Value.Trim();
+        if (string.IsNullOrEmpty(BeginDate))
+        {
+            dboSetCtrls.SetExecMsg(this, "startdate", true);
+            return;
+        }
+        string EndDate = (txteDate.Value.Trim() == string.Empty) ? System.DateTime.Now.ToString("yyyy-MM-dd") : txteDate.Value.Trim();
+        if (dboSetCtrls.CheckDateTime("string", BeginDate, EndDate))
+        {
+            dboSetCtrls.SetExecMsg(this, "起始日期不能大于终止日期!!");
+            return;
+        }
+
+        string ReportName = "StopReas";
+        Session[ReportName + "_MachineNo"] = ddlMachineNo.SelectedValue.Trim();
+        Session[ReportName + "_bDate"] = txtbDate.Value.Trim() + " " + txtbTime.Value.Trim();
+        Session[ReportName + "_eDate"] = txteDate.Value.Trim() + " " + txteTime.Value.Trim();
+        Session[ReportName + "_UserID"] = this.Page.User.Identity.Name.Trim();
+
+        this.ClientScript.RegisterClientScriptBlock(GetType(), "open",
+            @"<script> window.open('../LogInSys.aspx?ReportName=" + ReportName + "') </script>");
+    }
+    
+}

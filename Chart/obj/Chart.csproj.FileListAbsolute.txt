@@ -1,0 +1,5 @@
+D:\项目开发\ChiefMes\Chart\bin\Debug\Chart.dll
+D:\项目开发\ChiefMes\Chart\bin\Debug\Chart.pdb
+D:\项目开发\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\Chart\obj\Debug\Chart.dll
+D:\项目开发\ChiefMes\Chart\obj\Debug\Chart.pdb

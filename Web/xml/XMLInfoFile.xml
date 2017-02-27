@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UserProgramMap>
+  <message id="1">
+    <names>生产监视</names>
+    <mlocation>01</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr> </mulr>
+  </message>
+  <message id="2">
+    <names>机器监视</names>
+    <mlocation>011</mlocation>
+    <mlevel>01</mlevel>
+    <clsimage></clsimage>
+    <mulr>Monitor/MonitorMachineMstr.aspx</mulr>
+  </message>
+  <message id="3">
+    <names>物料监视</names>
+    <mlocation>012</mlocation>
+    <mlevel>01</mlevel>
+    <clsimage></clsimage>
+    <mulr>Monitor/MonitorMaterial.aspx</mulr>
+  </message>
+  <message id="4">
+    <names>派工单监视</names>
+    <mlocation>013</mlocation>
+    <mlevel>01</mlevel>
+    <clsimage></clsimage>
+    <mulr>Monitor/MonitorDispatchMstr.aspx</mulr>
+  </message>
+  <message id="5">
+    <names>报警监视</names>
+    <mlocation>014</mlocation>
+    <mlevel>01</mlevel>
+    <clsimage></clsimage>
+    <mulr>Monitor/MonitorAlert.aspx</mulr>
+  </message>
+  
+  <message id="6">
+    <names>工艺管理</names>
+    <mlocation>02</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr> </mulr>
+  </message>
+  <message id="7">
+    <names>实际工艺图</names>
+    <mlocation>021</mlocation>
+    <mlevel>02</mlevel>
+    <clsimage></clsimage>
+    <mulr>Quality/QualityTrack.aspx</mulr>
+  </message>
+  <message id="8">
+    <names>BOM清单</names>
+    <mlocation>022</mlocation>
+    <mlevel>02</mlevel>
+    <clsimage></clsimage>
+    <mulr>Quality/chief_bom.aspx</mulr>
+  </message>
+  
+  <message id="9">
+    <names>品质管理</names>
+    <mlocation>03</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="10">
+    <names>QC检查</names>
+    <mlocation>031</mlocation>
+    <mlevel>03</mlevel>
+    <clsimage></clsimage>
+    <mulr>Quality/QC_Table.aspx</mulr>
+  </message>
+  <message id="11">
+    <names>设备可动率</names>
+    <mlocation>032</mlocation>
+    <mlevel>03</mlevel>
+    <clsimage></clsimage>
+    <mulr>Quality/OEE.aspx</mulr>
+  </message>
+
+  <message id="12">
+    <names>生产排程</names>
+    <mlocation>04</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="13">
+    <names>派工管理</names>
+    <mlocation>041</mlocation>
+    <mlevel>04</mlevel>
+    <clsimage></clsimage>
+    <mulr>Product/DispatchOrder.aspx</mulr>
+  </message>
+  <message id="15">
+    <names>派工周期修改</names>
+    <mlocation>042</mlocation>
+    <mlevel>04</mlevel>
+    <clsimage></clsimage>
+    <mulr>Product/UpdateCycle.aspx</mulr>
+  </message>
+  <message id="16">
+    <names>机器周期修改</names>
+    <mlocation>043</mlocation>
+    <mlevel>04</mlevel>
+    <clsimage></clsimage>
+    <mulr>Product/UpdateMacCycle.aspx</mulr>
+  </message>
+  <message id="17">
+    <names>调机管理</names>
+    <mlocation>044</mlocation>
+    <mlevel>04</mlevel>
+    <clsimage></clsimage>
+    <mulr>Product/AdjustMachine.aspx</mulr>
+  </message>
+
+  <message id="18">
+    <names>报表管理</names>
+    <mlocation>05</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="19">
+    <names>生产进度报表</names>
+    <mlocation>051</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/ProductSchedule.aspx</mulr>
+  </message>
+  <message id="20">
+    <names>生产日报</names>
+    <mlocation>052</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/ProductForDay.aspx</mulr>
+  </message>
+  <message id="21">
+    <names>注塑周期明细</names>
+    <mlocation>053</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/MoldCycleDetail.aspx</mulr>
+  </message>
+  <message id="22">
+    <names>模具模次统计</names>
+    <mlocation>054</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/MouldProdNumTime.aspx</mulr>
+  </message>
+  <message id="23">
+    <names>派工单达成率</names>
+    <mlocation>055</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/WorkOrderComplete.aspx</mulr>
+  </message>
+  <message id="24">
+    <names>成型参数</names>
+    <mlocation>056</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/InjectCondition.aspx</mulr>
+  </message>
+  <message id="25">
+    <names>停机原因统计</names>
+    <mlocation>057</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/StopMachineReason.aspx</mulr>
+  </message>
+  <message id="26">
+    <names>车间用料统计</names>
+    <mlocation>058</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/WorkShopMaterial.aspx</mulr>
+  </message>
+  <message id="27">
+    <names>QC巡检签到</names>
+    <mlocation>059</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/QueryQCCard.aspx</mulr>
+  </message>
+  <message id="28">
+    <names>设备可动率报表</names>
+    <mlocation>0511</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/OEEReport.aspx</mulr>
+  </message>
+  <message id="29">
+    <names>短消息报警汇总</names>
+    <mlocation>0512</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/SMSDetail.aspx</mulr>
+  </message>
+  <message id="30">
+    <names>次品原因统计</names>
+    <mlocation>0513</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/QualityForDay.aspx</mulr>
+  </message>
+  <message id="31">
+    <names>机器效能报表</names>
+    <mlocation>0514</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/Performance.aspx</mulr>
+  </message>
+  <message id="32">
+    <names>完工派工单查询</names>
+    <mlocation>0515</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/RptDispatchHistory.aspx</mulr>
+  </message>
+  <message id="33">
+    <names>工艺单跟踪报表</names>
+    <mlocation>0516</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>WebReport/RptCardDisHistory.aspx</mulr>
+  </message>
+  <message id="34">
+    <names>自定义报表</names>
+    <mlocation>0517</mlocation>
+    <mlevel>05</mlevel>
+    <clsimage></clsimage>
+    <mulr>CrystalReports/Choose_CrystalReport.aspx</mulr>
+  </message>
+  
+  <message id="35">
+    <names>工资管理</names>
+    <mlocation>06</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="36">
+    <names>计件计时工资</names>
+    <mlocation>061</mlocation>
+    <mlevel>06</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/SalaryManage.aspx</mulr>
+  </message>
+  <message id="37">
+    <names>调整工资</names>
+    <mlocation>062</mlocation>
+    <mlevel>06</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/SalaryManageAdjust.aspx</mulr>
+  </message>
+  <message id="38">
+    <names>工资统计</names>
+    <mlocation>063</mlocation>
+    <mlevel>06</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/SalaryManageTotal.aspx</mulr>
+  </message>
+
+  <message id="39">
+    <names>库存管理</names>
+    <mlocation>07</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="40">
+    <names>历史数据</names>
+    <mlocation>071</mlocation>
+    <mlevel>07</mlevel>
+    <clsimage></clsimage>
+    <mulr>Collect/ShowData.aspx</mulr>
+  </message>
+  <message id="41">
+    <names>异常记录</names>
+    <mlocation>072</mlocation>
+    <mlevel>07</mlevel>
+    <clsimage></clsimage>
+    <mulr>Collect/ErrDataInfo.aspx</mulr>
+  </message>
+  <message id="42">
+    <names>异常记录</names>
+    <mlocation>073</mlocation>
+    <mlevel>07</mlevel>
+    <clsimage></clsimage>
+    <mulr>ICcard.aspx</mulr>
+  </message>
+  <message id="43">
+    <names>刷卡记录</names>
+    <mlocation>074</mlocation>
+    <mlevel>07</mlevel>
+    <clsimage></clsimage>
+    <mulr>Collect/CardDetail.aspx</mulr>
+  </message>
+
+  <message id="44">
+    <names>维护管理</names>
+    <mlocation>08</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="45">
+    <names>维护计划</names>
+    <mlocation>081</mlocation>
+    <mlevel>08</mlevel>
+    <clsimage></clsimage>
+    <mulr>Maintain/MaintainPlan.aspx</mulr>
+  </message>
+  <message id="46">
+    <names>设备维修</names>
+    <mlocation>082</mlocation>
+    <mlevel>08</mlevel>
+    <clsimage></clsimage>
+    <mulr>Maintain/MaintainInfo.aspx</mulr>
+  </message>
+  <message id="47">
+    <names>维修报告</names>
+    <mlocation>083</mlocation>
+    <mlevel>08</mlevel>
+    <clsimage></clsimage>
+    <mulr>Maintain/MaintainReport.aspx</mulr>
+  </message>
+
+  <message id="48">
+    <names>基础资料</names>
+    <mlocation>09</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="49">
+    <names>注塑产品管理</names>
+    <mlocation>091</mlocation>
+    <mlevel>09</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/ItemMstr.aspx</mulr>
+  </message>
+  <message id="50">
+    <names>注塑模具管理</names>
+    <mlocation>092</mlocation>
+    <mlevel>09</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/MouldMstr.aspx</mulr>
+  </message>
+  <message id="51">
+    <names>注塑机器管理</names>
+    <mlocation>093</mlocation>
+    <mlevel>09</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/MachineMstr.aspx</mulr>
+  </message>
+  <message id="52">
+    <names>辅助设备管理</names>
+    <mlocation>095</mlocation>
+    <mlevel>09</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/AuxiliaryToolInfo.aspx</mulr>
+  </message>
+  <message id="53">
+    <names>员工管理</names>
+    <mlocation>096</mlocation>
+    <mlevel>09</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/Employee.aspx</mulr>
+  </message>
+  <message id="54">
+    <names>原料管理</names>
+    <mlocation>097</mlocation>
+    <mlevel>09</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/RawMaterial.aspx</mulr>
+  </message>
+  <message id="55">
+    <names>产品颜色管理</names>
+    <mlocation>098</mlocation>
+    <mlevel>09</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/ColorManage.aspx</mulr>
+  </message>
+
+  <message id="56">
+    <names>配置管理</names>
+    <mlocation>11</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="57">
+    <names>通讯配置</names>
+    <mlocation>111</mlocation>
+    <mlevel>11</mlevel>
+    <clsimage></clsimage>
+    <mulr>Collect/CommunicationInfo.aspx</mulr>
+  </message>
+  <message id="58">
+    <names>报警配置</names>
+    <mlocation>112</mlocation>
+    <mlevel>11</mlevel>
+    <clsimage></clsimage>
+    <mulr>Call/CallConfig.aspx</mulr>
+  </message>
+  <message id="59">
+    <names>工资结构配置</names>
+    <mlocation>113</mlocation>
+    <mlevel>11</mlevel>
+    <clsimage></clsimage>
+    <mulr>BaseInfo/SalaryConfig.aspx</mulr>
+  </message>
+  <message id="60">
+    <names>机台假期配置</names>
+    <mlocation>114</mlocation>
+    <mlevel>11</mlevel>
+    <clsimage></clsimage>
+    <mulr>Call/CallMachineVacation.aspx</mulr>
+  </message>
+
+  <message id="61">
+    <names>系统管理</names>
+    <mlocation>12</mlocation>
+    <mlevel>0</mlevel>
+    <clsimage></clsimage>
+    <mulr></mulr>
+  </message>
+  <message id="62">
+    <names>帐号管理</names>
+    <mlocation>121</mlocation>
+    <mlevel>12</mlevel>
+    <clsimage></clsimage>
+    <mulr>Administrator/UserInfo.aspx</mulr>
+  </message>
+  <message id="63">
+    <names>群组管理</names>
+    <mlocation>122</mlocation>
+    <mlevel>12</mlevel>
+    <clsimage></clsimage>
+    <mulr>Administrator/GroupInfo.aspx</mulr>
+  </message>
+  <message id="64">
+    <names>个人权限控制</names>
+    <mlocation>123</mlocation>
+    <mlevel>12</mlevel>
+    <clsimage></clsimage>
+    <mulr>Administrator/UserProgramMap.aspx</mulr>
+  </message>
+  <message id="65">
+    <names>组别权限控制</names>
+    <mlocation>124</mlocation>
+    <mlevel>12</mlevel>
+    <clsimage></clsimage>
+    <mulr>Administrator/GroupProgramMap.aspx</mulr>
+  </message>
+  <message id="66">
+    <names>用户密码修改</names>
+    <mlocation>125</mlocation>
+    <mlevel>12</mlevel>
+    <clsimage></clsimage>
+    <mulr>Administrator/MdyPassword.aspx</mulr>
+  </message>
+</UserProgramMap>

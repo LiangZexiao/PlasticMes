@@ -1,0 +1,37 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="QualityTrack_MaxPress.aspx.cs" Inherits="Quality_QualityTrack_MaxPress" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+     <title>质量跟踪最大压力(QualityTrack_MaxPress)</title>
+     <link href="../Css/Style.css" type="text/css" rel="stylesheet" />
+     <script type="text/javascript" language="javascript" src="../JS/calendar.js"></script>
+     <script type="text/javascript" language="javascript" src="../JS/checkbox.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+    <td align="center">
+		<asp:Image ID="Image1" runat="server" />
+    </td>
+    </tr>
+    <tr>
+                <td>
+                <table style="width: 100%" runat="server" id="tblChgPage">
+                    <tr>
+                        <td align="right" style="width: 50%;">
+                            <asp:CheckBox ID="chkPictureType" runat="server" Text="100啤1图" AutoPostBack="True" Visible="False" /></td>
+                        <td align="left" id="tdPictureType" runat="server" style="width: 50%; height: 23px;">
+                            &nbsp;<asp:LinkButton ID="lkbShangPage" runat="server" OnClick="LinkButton_Click">上一页</asp:LinkButton>&nbsp;
+                            <asp:LinkButton ID="lkbXiaPage" runat="server" OnClick="LinkButton_Click" CommandName="Next">下一页</asp:LinkButton>
+                            <asp:DropDownList ID="ddlImageIndex" runat="server" Enabled="false" /></td>
+                    </tr>
+                </table>
+                </td>
+                </tr>
+    </table>
+    </form>
+</body>
+</html>

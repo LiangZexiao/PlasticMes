@@ -1,0 +1,5 @@
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\bin\Release\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\bin\Release\Chart.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\obj\Release\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\obj\Release\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\obj\Release\Chart.pdb

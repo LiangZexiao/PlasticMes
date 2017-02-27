@@ -1,0 +1,436 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MouldMstr.aspx.cs" Inherits="BaseInfo_MouldDetail" %>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>注塑模具管理</title>    
+    <link href="../images/css.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript" src="../JS/calendar.js"></script>
+    <script type="text/javascript" language="javascript" src="../JS/CheckBox.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <table border="0" cellpadding="0" cellspacing="0" class="section-content">
+              <tr>
+              <td valign="top">
+              <table class="tablefoot" cellspacing="0" cellpadding="0" border="0" style="height: 24px">
+              <tr>
+                <td style="height: 24px">当前位置:基础资料 -> 注塑模具管理</td>
+              </tr>
+          </table>
+          <br />
+             <asp:MultiView ID="MultiView1" runat="server">
+                <asp:View ID="View1" runat="server">
+            
+                <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                  <tr>
+                    <td height="22" style="background-image: url(../images/bg_title.gif)">　　操作</td>
+                  </tr>
+                  <tr>
+                    <td>
+<asp:DropDownList ID="ddlQuery" runat="server">
+<asp:ListItem Value="Mould_Code">模具编号</asp:ListItem>
+<asp:ListItem Value="GoodsNo">模具货号</asp:ListItem>
+    <asp:ListItem Value="WarehouseLocation">模具库位</asp:ListItem>
+</asp:DropDownList>
+<asp:TextBox ID="txtQuery" runat="server" CssClass="textbox"></asp:TextBox>
+<asp:ImageButton ID="igbQuery" runat="server" ImageUrl="~/images/btn_search.gif" OnClick="btnVisible_Click"  ImageAlign="top"/>
+<asp:ImageButton ID="igbNewadd" runat="server" ImageUrl="~/images/btn_newadd.gif" OnClick="btnVisible_Click" ImageAlign="top"/>
+<asp:ImageButton ID="igbCancel" runat="server" ImageUrl="~/images/btn_delete.gif" OnClick="btnDelete_Click" ImageAlign="top"/>
+
+                    </td>
+                  </tr>
+              </table>
+              <br />
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                    <td>
+                    <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                      <tr>
+                        <td height="22" style="background-image: url(../images/bg_title.gif)">　　浏览</td>
+                      </tr>
+                    </table>              
+                        <asp:GridView ID="GridView1" runat="server" CellPadding="2" Width="100%" AutoGenerateColumns="False" OnSelectedIndexChanging="GridView1_SelectedIndexChanging" AllowPaging="True" PageSize="12" OnRowDataBound="GridView1_RowDataBound" CssClass="itemtable" BorderWidth="0px" CellSpacing="1" >
+                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                        <EditRowStyle BackColor="#2461BF" />
+                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="False" ForeColor="#333333" />
+                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                        <HeaderStyle Font-Bold="True" ForeColor="#055BAE" />
+                        <AlternatingRowStyle BackColor="White" />
+                        <Columns>
+                         <asp:TemplateField>
+                             <ItemTemplate>
+                             <asp:CheckBox ID="chkItemInner" runat="server" />
+                             </ItemTemplate>
+                             <HeaderTemplate>
+                                 <input id="chkAll" type="checkbox" onclick="selectAll(this);"/>
+                             </HeaderTemplate>
+                             <ItemStyle HorizontalAlign="Center"  Width="26px"/>
+                             <HeaderStyle HorizontalAlign="Center" />
+                         </asp:TemplateField>
+                            <asp:ButtonField DataTextField="ID" HeaderText="序号" >
+                                <ItemStyle CssClass="hidden" />
+                                <HeaderStyle CssClass="hidden" />
+                                <FooterStyle CssClass="hidden" />
+                            </asp:ButtonField>
+                            <asp:ButtonField CommandName="select" DataTextField="GoodsNo" HeaderText="模具货号" />
+                         <asp:ButtonField DataTextField="MouldCode" CommandName="select" HeaderText="模具编号" />
+                            <asp:BoundField DataField="WarehouseLocation" HeaderText="模具库位" />
+                         <asp:BoundField DataField="MouldSpecialFittingsNo" HeaderText="镶件" Visible="False" />
+                         <asp:BoundField DataField="SocketNum" HeaderText="模穴个数" />
+                         <asp:BoundField DataField="GoodSocketNum" HeaderText="可用模穴个数" />
+                         <asp:BoundField DataField="FitMachineG" HeaderText="适用机型(g)" />
+                         <asp:BoundField DataField="MouldMadeDate" HeaderText="制造日期" Visible="False"/>      
+                         <asp:BoundField DataField="MouldCopyRight" HeaderText="模具所有权" Visible="False"/>                         
+                         <asp:BoundField DataField="MouldWeight" HeaderText="模具重量" Visible="False" />
+                         <asp:BoundField DataField="PositioningHoleDiameter" HeaderText="定位圈直径" Visible="False"/>                         
+                         <asp:BoundField DataField="RefBadRate" HeaderText="参考不良率" Visible="False" />
+                            <asp:BoundField DataField="MouldManufacturer" HeaderText="生产厂商" Visible="False" />
+                         <asp:BoundField DataField="MouldPushDistance" HeaderText="顶出行程" Visible="False" />
+                         <asp:BoundField DataField="ProtectCycle" HeaderText="保养周期" Visible="False" />
+                         <asp:BoundField DataField="MouldStatus" HeaderText="模具状态" Visible="False" />                         
+                         <asp:BoundField DataField="ClipCode" HeaderText="夹具编号" />                         
+                         <asp:BoundField DataField="Remark" HeaderText="备注"  />
+                     </Columns>
+                        <PagerSettings Visible="False" /> 
+                    </asp:GridView>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" valign="top" style="height: 42px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lblDataCount" runat="server" Text=""></asp:Label></td>
+                                <td>
+<asp:ImageButton ID="igbFirst" runat="server" CommandArgument="First" ImageUrl="~/images/page_first.gif"  OnClick="CtrlPageInfo_Click" ImageAlign="top" /></td>
+                                <td>
+<asp:ImageButton ID="igbPrior" runat="server" CommandArgument="Prior" ImageUrl="~/images/page_prior.gif"  OnClick="CtrlPageInfo_Click" ImageAlign="top" /></td>
+                                <td>
+                                    <asp:Label ID="lblPageIndex" runat="server" Text=""></asp:Label></td>
+                                <td>
+<asp:ImageButton ID="igbNext" runat="server" CommandArgument="Next" ImageUrl="~/images/page_next.gif" OnClick="CtrlPageInfo_Click"  ImageAlign="top" /></td>
+                                <td>
+<asp:ImageButton ID="igbLast" runat="server" CommandArgument="Last" ImageUrl="~/images/page_last.gif" OnClick="CtrlPageInfo_Click" ImageAlign="top" /></td>
+                                <td>
+                                    <asp:TextBox ID="txtPageIndex" runat="server" CssClass="textbox_search" Width="45px"></asp:TextBox></td>
+                                <td>
+<asp:ImageButton ID="igbSearch" runat="server" CommandArgument="Last" ImageUrl="~/images/mirror.gif" OnClick="CtrlPageInfo_Click" ImageAlign="top" /></td>
+                                <td>
+                                    <asp:RegularExpressionValidator ID="revPageIndex" runat="server" ControlToValidate="txtPageIndex"
+                                        ErrorMessage="请输入数字" ValidationExpression="^[0-9]*[1-9][0-9]*$"></asp:RegularExpressionValidator></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+         </td>
+    </tr>
+   </table> 
+            </asp:View>
+                        <asp:View ID="View2" runat="server">
+                    <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                      <tr>
+                        <td height="22" style="background-image: url(../images/bg_title.gif)">　　操作</td>
+                      </tr>
+                      <tr>
+                      <td>
+                        <asp:ImageButton ID="igbInsert" runat="server" ImageUrl="~/images/btn_save.gif" OnClick="btnUpdate_Click" />
+                        <asp:ImageButton ID="igbUpdate" runat="server" ImageUrl="~/images/btn_save.gif" OnClick="btnUpdate_Click" />
+                        <asp:ImageButton ID="igbDelete" runat="server" ImageUrl="~/images/btn_delete.gif" OnClick="btnDelete_Click" CausesValidation="false" />
+                        <asp:ImageButton ID="igbBacked" runat="server" ImageUrl="~/images/btn_back.gif" OnClick="btnVisible_Click" CausesValidation="false"  />
+                        <input id="hdnID" type="hidden" runat="server" style="width: 20px" class="textbox" />&nbsp;
+                        <asp:TextBox ID="txtID" runat="server" Visible="False" CssClass="textbox" Width="20px"></asp:TextBox>
+                      </td>
+                      </tr>
+                    </table>
+                <br>
+                 <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                      <tr>
+                        <td style="background-image: url(../images/bg_title.gif); height: 22px;">　　编辑</td>
+                      </tr>
+                    </table>
+<table border="0" style="border-collapse: collapse;" width="100%" cellpadding="1" cellspacing="1" class="texttable">
+        <tr>
+        <th align="right" style="width: 9%">
+                <asp:Label ID="Label1" runat="server" Text="模具编号:" CssClass="txtlab"></asp:Label></th>
+        <td style="width: 24%">
+                <asp:TextBox ID="txtMould_Code" runat="server" CssClass="textboxodl" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="rfvMould_Code" runat="server" ErrorMessage="必填" ControlToValidate="txtMould_Code"></asp:RequiredFieldValidator></td>
+        <th align="right" style="width: 10%">
+                模具货号:</th>
+        <td style="width: 22%">
+            <asp:TextBox ID="txtGoodsNo" runat="server" CssClass="textbox"></asp:TextBox></td>
+        <th align="right" style="width: 9%">
+            模具库位:</th>
+        <td style="width: 22%">
+            <asp:TextBox ID="txtWarehouseLocation" runat="server" CssClass="textbox"></asp:TextBox></td>
+    </tr>
+    <tr>
+        <th align="right" style="width: 9%">
+                                 <asp:Label ID="Label2" runat="server" Text="模穴个数:" CssClass="txtlab"></asp:Label></th>
+        <td style="width: 24%">
+                <asp:TextBox ID="txtSocketNum" runat="server" CssClass="textboxodl"></asp:TextBox>
+                                 PCS<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtSocketNum"
+                                     ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtSocketNum"
+                                     ErrorMessage="有误" ValidationExpression="^[0-9]*[0-9][0-9]*$"></asp:RegularExpressionValidator></td>
+        <th align="right" style="width: 10%">
+            <asp:Label ID="Label7" runat="server" CssClass="txtlab" Text="可用模穴数:"></asp:Label></th>
+        <td style="width: 22%">
+                                 <asp:TextBox ID="txtGoodSocketNum" runat="server" CssClass="textboxodl"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtGoodSocketNum"
+                                     ErrorMessage="必填" Height="4px"></asp:RequiredFieldValidator><asp:RegularExpressionValidator
+                                         ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtGoodSocketNum"
+                                         ErrorMessage="有误" ValidationExpression="^[0-9]*[0-9][0-9]*$"></asp:RegularExpressionValidator></td>
+        <th align="right" style="width: 9%">
+            <asp:Label ID="Label8" runat="server" CssClass="txtlab" Text="适用机型:"></asp:Label></th>
+        <td style="width: 22%">
+            <asp:TextBox ID="txtFitMachineG1" runat="server" CssClass="textboxodl"></asp:TextBox>
+            g<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtFitMachineG1"
+                ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator2"
+                    runat="server" ControlToValidate="txtFitMachineG1" ErrorMessage="有误" ValidationExpression="^[0-9]*[0-9][0-9]*$"></asp:RegularExpressionValidator></td>
+    </tr>
+    <tr>
+        <th align="right" style="width: 9%">
+            模具尺寸:</th>
+        <td style="width: 24%">
+            <asp:TextBox ID="txtMould_Width" runat="server" CssClass="textbox"></asp:TextBox>
+            mm(宽)</td>
+        <th align="right" style="width: 10%">
+        </th>
+        <td style="width: 22%">
+            <asp:TextBox ID="txtMould_Thickth" runat="server" CssClass="textbox"></asp:TextBox>
+            mm(厚)</td>
+        <th align="right" style="width: 9%">
+        </th>
+        <td style="width: 22%">
+            <asp:TextBox ID="txtMould_Lenght" runat="server" CssClass="textbox"></asp:TextBox>
+            mm(高)</td>
+    </tr>
+    <tr>
+        <th align="right" style="width: 9%">
+            镶件:</th>
+        <td style="width: 24%">
+            <asp:RadioButtonList ID="rblMould_SpecialFittingsNo" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                <asp:ListItem Selected="True" Value="0">否</asp:ListItem>
+                <asp:ListItem Value="1">是</asp:ListItem>
+            </asp:RadioButtonList></td>
+        <th align="right" style="width: 10%">
+                                 模具所有权:</th>
+        <td style="width: 22%">
+            <asp:RadioButtonList ID="rblMould_CopyRight" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                                 <asp:ListItem Selected="True" Value="0">客户</asp:ListItem>
+                                 <asp:ListItem Selected="True" Value="1">自有</asp:ListItem>
+                             </asp:RadioButtonList></td>
+        <th align="right" style="width: 9%">
+                                 抽芯功能:</th>
+        <td style="width: 22%">
+                                 <asp:RadioButtonList ID="rblTackOutFunction" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                                     <asp:ListItem Selected="True" Value="0">否</asp:ListItem>
+                                     <asp:ListItem Value="1">是</asp:ListItem>
+                                 </asp:RadioButtonList></td>
+    </tr>
+    <tr>
+        <th align="right" style="width: 9%">
+            <asp:Label ID="Label5" runat="server" CssClass="txtlab" Text="保养周期:"></asp:Label></th>
+        <td style="width: 24%">
+                                 <asp:TextBox ID="txtProtectCycle" runat="server" CssClass="textboxodl"></asp:TextBox>
+            模次<asp:RegularExpressionValidator ID="RegularExpressionValidator14" runat="server"
+                                     ControlToValidate="txtProtectCycle" Display="Static" ErrorMessage="有误"
+                                     ValidationExpression="^[0-9]*[0-9][0-9]*$"></asp:RegularExpressionValidator><asp:RequiredFieldValidator
+                                         ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtProtectCycle"
+                                         ErrorMessage="必填" Height="4px"></asp:RequiredFieldValidator></td>
+        <th align="right" style="width: 10%">
+                                 模具状态:</th>
+        <td style="width: 22%">
+                             <asp:DropDownList ID="ddlMouldStatus" runat="server" CssClass="dropdownlist">
+                                 <asp:ListItem Value="0">正常</asp:ListItem>
+                                 <asp:ListItem Value="1">坏模</asp:ListItem>
+                                 <asp:ListItem Value="2">故障</asp:ListItem>
+                             </asp:DropDownList></td>
+        <th align="right" style="width: 9%">
+                                 生产厂商:</th>
+        <td style="width: 22%">
+                <asp:TextBox ID="txtMould_Manufacturer" runat="server" CssClass="textbox" ></asp:TextBox></td>
+    </tr>
+    <tr>
+        <th align="right" style="width: 9%">
+            版本:</th>
+        <td style="width: 24%">
+            <asp:TextBox ID="txtVer" runat="server" CssClass="textbox">1</asp:TextBox></td>
+        <th align="right" style="width: 10%">
+                模具描述:</th>
+        <td colspan="3">
+                <asp:TextBox ID="txtMould_Desc" runat="server" TextMode="MultiLine" Width="99%"></asp:TextBox></td>
+    </tr>
+        <tr>
+            <th align="right" class="label" style="width: 9%">
+                <asp:Label ID="Label3" runat="server" CssClass="txtlab" Text="夹具编号:"></asp:Label></th>
+            <td style="width: 24%">
+            <asp:TextBox ID="txtClip_Code" runat="server" CssClass="textbox"></asp:TextBox></td>
+            <th align="right" style="width: 10%">
+                夹具描述:</th>
+            <td colspan="3" style="width: 22%">
+                <asp:TextBox ID="txtClip_Desc" runat="server" TextMode="MultiLine" Width="99%"></asp:TextBox></td>
+        </tr>
+    
+    <tr>
+        <th align="right" style="width: 9%">
+            夹具用量:</th>
+        <td style="width: 24%">
+            <asp:TextBox ID="txtClip_UsedNum" runat="server" CssClass="textbox"></asp:TextBox>
+            PCS</td>
+        <th align="right" style="width: 10%">
+                                 机械手:</th>
+        <td style="width: 22%">
+            <asp:RadioButtonList ID="rblRobort" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                                 <asp:ListItem Selected="True" Value="0">否</asp:ListItem>
+                                 <asp:ListItem Value="1">是</asp:ListItem>
+                             </asp:RadioButtonList></td>
+        <th align="right" style="width: 9%">
+            机械手程序:</th>
+        <td style="width: 22%">
+            <asp:TextBox ID="txtRobortProgram" runat="server" CssClass="textbox"></asp:TextBox></td>
+    </tr>
+                         <tr>
+                             <th align="right" style="width: 9%">
+                                 定位圈直径:</th>
+                             <td style="width: 24%">
+                                 <asp:TextBox ID="txtPositioningHoleDiameter" runat="server" CssClass="textbox"></asp:TextBox>
+                                 mm<asp:RegularExpressionValidator ID="RegularExpressionValidator15" runat="server"
+                                     ControlToValidate="txtPositioningHoleDiameter" Display="Static" ErrorMessage="有误"
+                                     ValidationExpression="\d+(\.\d+)?$"></asp:RegularExpressionValidator></td>
+                             <th align="right" style="width: 10%">
+                                 注孔直径:</th>
+                             <td style="width: 22%">
+            <asp:TextBox ID="txtMould_ShotHoleDiameter" runat="server" CssClass="textbox"></asp:TextBox>
+                                 mm<asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtMould_ShotHoleDiameter"
+                                     Display="Static" ErrorMessage="有误" ValidationExpression="\d+(\.\d+)?$"></asp:RegularExpressionValidator></td>
+                             <th align="right" style="width: 9%">
+                                 制造日期:</th>
+                             <td style="width: 22%">
+                                 <input id="txtMould_MadeDate" runat="server" class="textbox" onfocus="setday(this)" onkeypress="return false"
+                                     onselectstart="return false;" /></td>
+                         </tr>
+                         <tr>
+                             <th align="right" style="width: 9%">
+                                 参考不良率:</th>
+                             <td style="width: 24%">
+                <asp:TextBox ID="txtRefBadRate" runat="server" CssClass="textbox"></asp:TextBox>
+                                 %</td>
+                             <th align="right" style="width: 10%">
+                                 原料损耗率:</th>
+                             <td style="width: 22%">
+                <asp:TextBox ID="txtLostMaterialRate" runat="server" CssClass="textbox"></asp:TextBox>
+                                 %</td>
+                             <th align="right" style="width: 9%; height: 26px">
+                                 模具重量:</th>
+                             <td style="width: 22%">
+                <asp:TextBox ID="txtMould_Weight" runat="server" CssClass="textbox"></asp:TextBox>
+                T<asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="txtMould_Weight"
+                                     Display="Static" ErrorMessage="有误" ValidationExpression="^[0-9]*[0-9][0-9]*$"></asp:RegularExpressionValidator></td>
+                         </tr>
+                          <tr>
+            <th align="right" style="width: 9%">
+                <asp:Label ID="Label4" runat="server" Text="标准周期:" CssClass="txtlab"></asp:Label></th>
+            <td style="width: 24%">
+                <asp:TextBox ID="txtInjectionCycle" runat="server" CssClass="textboxodl"></asp:TextBox>
+                s<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtInjectionCycle"
+                    ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator8"
+                        runat="server" ControlToValidate="txtInjectionCycle" Display="Static" ErrorMessage="有误"
+                        ValidationExpression="^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$"></asp:RegularExpressionValidator></td>
+            <th align="right" style="width: 10%">
+                <asp:Label ID="Label6" runat="server" Text="最小周期:" CssClass="txtlab"></asp:Label>&nbsp;
+            </th>
+            <td style="width: 22%">
+                <asp:TextBox ID="txtMinInjectionCycle" runat="server" CssClass="textboxodl"></asp:TextBox>
+                s<asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtMinInjectionCycle"
+                    ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator17" runat="server"
+                    ControlToValidate="txtMinInjectionCycle" Display="Static" ErrorMessage="有误"
+                    ValidationExpression="^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$"></asp:RegularExpressionValidator></td>
+            <th align="right" style="width: 9%">
+                <asp:Label ID="Label15" runat="server" Text="最大周期:" CssClass="txtlab"></asp:Label></th>
+            <td style="width: 22%">
+                <asp:TextBox ID="txtMaxInjectionCycle" runat="server" CssClass="textboxodl"></asp:TextBox>
+                s<asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtMaxInjectionCycle"
+                    ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator27" runat="server"
+                    ControlToValidate="txtMaxInjectionCycle" Display="Static" ErrorMessage="有误"
+                    ValidationExpression="^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$"></asp:RegularExpressionValidator></td>
+        </tr>
+         <tr>
+            <th align="right" id="TH1" visible="true" style="width: 9%">
+                <asp:Label ID="Label16" runat="server" Text="注塑压力:" CssClass="txtlab"></asp:Label></th>
+            <td id="TD1" visible="true" style="width: 24%">
+                <asp:TextBox ID="txtMould_InjectPress" runat="server" CssClass="textboxodl"></asp:TextBox>
+                Mpa<asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txtMould_InjectPress"
+                    ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator28"
+                        runat="server" ControlToValidate="txtMould_InjectPress" Display="Static" ErrorMessage="有误"
+                        ValidationExpression="^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$"></asp:RegularExpressionValidator>
+                </td>
+            <th align="right" id="TH2" visible="true" style="width: 10%">
+                <asp:Label ID="Label19" runat="server" Text="注塑温度:" CssClass="txtlab"></asp:Label></th>
+            <td id="TD2" visible="true" style="width: 22%">
+                <asp:TextBox ID="txtMould_ShotTemp" runat="server" CssClass="textboxodl"></asp:TextBox>
+                'C<asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtMould_ShotTemp"
+                    ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator ID="RegularExpressionValidator31"
+                        runat="server" ControlToValidate="TextBox7" Display="Static" ErrorMessage="有误"
+                        ValidationExpression="^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$" Visible="False"></asp:RegularExpressionValidator></td>
+            <th align="right" id="TH3" visible="true" style="width: 9%">
+                <asp:Label ID="Label9" runat="server" CssClass="txtlab" Text="机器周期:"></asp:Label></th>
+            <td id="TD3" visible="true" style="width: 22%">
+                <asp:TextBox ID="txtMachineCycle" runat="server" CssClass="textboxodl"></asp:TextBox>
+                s<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtMachineCycle" ErrorMessage="必填"></asp:RequiredFieldValidator><asp:RegularExpressionValidator
+                        ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtMachineCycle"
+                        Display="Static" ErrorMessage="有误" ValidationExpression="^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$"></asp:RegularExpressionValidator></td>
+        </tr>
+    <tr>
+        <th align="right" style="width: 9%">
+                                 顶出行程:</th>
+        <td style="width: 24%">
+                <asp:TextBox ID="txtMould_PushDistance" runat="server" CssClass="textbox"></asp:TextBox>
+                                 mm<asp:RegularExpressionValidator ID="RegularExpressionValidator12" runat="server"
+                                     ControlToValidate="txtMould_PushDistance" Display="Static" ErrorMessage="有误"
+                                     ValidationExpression="\d+(\.\d+)?$"></asp:RegularExpressionValidator></td>
+        <th align="right" style="width: 10%">
+            开模间距:</th>
+        <td style="width: 22%">
+                                 <asp:TextBox ID="txtTemplateDistance" runat="server" CssClass="textbox"></asp:TextBox>
+                                 mm<asp:RegularExpressionValidator ID="RegularExpressionValidator11" runat="server"
+                                     ControlToValidate="txtTemplateDistance" Display="Static" ErrorMessage="有误"
+                                     ValidationExpression="\d+(\.\d+)?$"></asp:RegularExpressionValidator></td>
+        <th align="right" style="width: 9%">
+                                 加长射嘴:</th>
+        <td style="width: 22%">
+                                 <asp:RadioButtonList ID="rblShotLenghten" runat="server" RepeatDirection="Horizontal"
+                                     RepeatLayout="Flow">
+                                     <asp:ListItem Selected="True" Value="0">否</asp:ListItem>
+                                     <asp:ListItem Value="1">是</asp:ListItem>
+                                 </asp:RadioButtonList></td>
+    </tr>
+    <tr>
+        <th align="right" style="width: 9%" rowspan="2">
+            履历表:</th>
+        <td style="width: 24%" rowspan="2">
+            <asp:TextBox ID="txtLu_law_Table" runat="server" CssClass="textbox" Height="100px"
+                TextMode="MultiLine" Width="99%"></asp:TextBox></td>
+        <th align="right" style="width: 10%">
+                                 备注:</th>
+        <td colspan="3" style="width: 22%">
+                <asp:TextBox ID="txtRemark" runat="server" CssClass="textbox" Width="99%" TextMode="MultiLine" Height="40px" ></asp:TextBox></td>
+    </tr>
+    <tr>
+        <th align="right" style="width: 10%">
+            修改记录:</th>
+        <td colspan="3" style="width: 22%">
+            <asp:TextBox ID="txtModiRecord" runat="server" CssClass="textbox"
+                Height="60px" TextMode="MultiLine" Width="99%" ReadOnly="True"></asp:TextBox></td>
+    </tr>
+            </table>
+            </asp:View>
+        </asp:MultiView>
+                </td>
+          </tr>
+        </table>
+    </form>
+</body>
+</html>

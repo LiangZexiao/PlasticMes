@@ -1,0 +1,116 @@
+D:\项目开发\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+D:\项目开发\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+D:\项目开发\ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+D:\项目开发\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+F:\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+F:\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+F:\ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+F:\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\ChiefMes2009.12.30\DBUtility\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\ChiefMes2009.12.30\DBUtility\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\ChiefMes2009.12.30\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes2009.12.30\DBUtility\obj\Debug\Admin.DBUtility.dll
+G:\源代码\公司\ChiefMes2009.12.30\DBUtility\obj\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\ChiefMes(theFirst)\DBUtility\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\ChiefMes(theFirst)\DBUtility\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\ChiefMes(theFirst)\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes(theFirst)\DBUtility\obj\Debug\Admin.DBUtility.dll
+G:\源代码\公司\ChiefMes(theFirst)\DBUtility\obj\Debug\Admin.DBUtility.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\DBUtility\bin\Debug\Admin.DBUtility.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\DBUtility\bin\Debug\Admin.DBUtility.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\DBUtility\obj\Debug\Admin.DBUtility.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\DBUtility\obj\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1stMESClient\1.3ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+F:\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+F:\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+F:\1.5ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+F:\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+G:\源代码\公司\1.5ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+G:\源代码\公司\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+D:\Work\MES\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+D:\Work\MES\1.5ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+D:\Work\MES\1.5ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+D:\Work\MES\1.5ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+G:\项目资料\MES\ChiefMes\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+D:\Work\MES\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+D:\Work\MES\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+D:\Work\MES\ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+D:\Work\MES\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+D:\Work\MES\ChiefMes\DBUtility\bin\Debug\Interop.EMPPCOMLib.dll
+D:\Work\MES\ChiefMes\DBUtility\obj\Debug\Interop.EMPPCOMLib.dll
+D:\Work\MES\ChiefMes\DBUtility\obj\Debug\DBUtility.csproj.ResolveComReference.cache
+E:\公司项目\MesTeam\ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\MesTeam\ChiefMes\DBUtility\obj\Debug\DBUtility.csproj.ResolveComReference.cache
+E:\公司项目\MesTeam\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+E:\公司项目\MesTeam\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+E:\公司项目\MesTeam\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+E:\公司项目\MesTeam\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+E:\科易美\MES相关\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+E:\科易美\MES相关\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+E:\科易美\MES相关\ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\科易美\MES相关\ChiefMes\DBUtility\obj\Debug\DBUtility.csproj.ResolveComReference.cache
+E:\科易美\MES相关\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+E:\科易美\MES相关\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+E:\MES\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+E:\MES\ChiefMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+E:\MES\ChiefMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\MES\ChiefMes\DBUtility\obj\Debug\DBUtility.csproj.ResolveComReference.cache
+E:\MES\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+E:\MES\ChiefMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+D:\GloryProg\Plastic_Song\DBUtility\bin\Debug\Admin.DBUtility.dll
+D:\GloryProg\Plastic_Song\DBUtility\bin\Debug\Admin.DBUtility.pdb
+D:\GloryProg\Plastic_Song\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\Plastic_Song\DBUtility\obj\Debug\Admin.DBUtility.dll
+D:\GloryProg\Plastic_Song\DBUtility\obj\Debug\Admin.DBUtility.pdb
+D:\GloryProg\PlasticMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+D:\GloryProg\PlasticMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+D:\GloryProg\PlasticMes\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\PlasticMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+D:\GloryProg\PlasticMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+D:\BorchProg\PlasticMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+D:\BorchProg\PlasticMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+D:\BorchProg\PlasticMes\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\BorchProg\PlasticMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+D:\BorchProg\PlasticMes\DBUtility\obj\Debug\Admin.DBUtility.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\DBUtility\bin\Debug\Admin.DBUtility.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\DBUtility\bin\Debug\Admin.DBUtility.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+H:\博创\博创任务\Mes_Install\PlasticMes\DBUtility\obj\Debug\Admin.DBUtility.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\DBUtility\obj\Debug\Admin.DBUtility.pdb

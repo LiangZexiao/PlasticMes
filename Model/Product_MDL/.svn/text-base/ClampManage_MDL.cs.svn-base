@@ -1,0 +1,190 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Admin.Model.Product_MDL
+{
+    public  class ClampManage_MDL
+    {
+        private string _iD;
+
+        private string _fixtureCode;
+
+        private string _fixtureDesc;
+
+        private string _warehouseLocation;
+
+        private string _plantBristlesMachine;
+
+        private string _program;
+
+        private string _modiContent;
+
+        private string _lastModifier;
+
+        private string _lastModiDate;
+
+        private string _ver;
+
+        private string _remark;
+
+
+        public ClampManage_MDL() { }
+        public ClampManage_MDL(string vID, string vFixtureCode, string vFixtureDesc, string vWarehouseLocation, string vPlantBristlesMachine,
+            string vProgram, string vModiContent, string vLastModifier, string vLastModiDate,string vVer ,string vRemark)
+        {
+            this._iD = vID;
+            this._fixtureCode = vFixtureCode;
+
+            this._fixtureDesc = vFixtureDesc;
+
+            this._warehouseLocation = vWarehouseLocation;
+
+            this._plantBristlesMachine = vPlantBristlesMachine;
+
+            this._program = vProgram;
+
+            this._modiContent = vModiContent;
+
+            this._lastModifier = vLastModifier;
+
+            this._lastModiDate = vLastModiDate;
+
+            this._ver=vVer;
+
+            this._remark = vRemark;
+        }
+
+        public string ID
+        {
+            get
+            {
+                return this._iD;
+            }
+            set
+            {
+                this._iD = value;
+            }
+        }
+
+        public string FixtureCode
+        {
+            get
+            {
+                return this._fixtureCode;
+            }
+            set
+            {
+                this._fixtureCode = value;
+            }
+        }
+
+        
+        public string FixtureDesc
+        {
+            get
+            {
+                return this._fixtureDesc;
+            }
+            set
+            {
+                this._fixtureDesc = value;
+            }
+        }
+
+        
+        public string WarehouseLocation
+        {
+            get
+            {
+                return this._warehouseLocation;
+            }
+            set
+            {
+                this._warehouseLocation = value;
+            }
+        }
+
+        
+        public string PlantBristlesMachine
+        {
+            get
+            {
+                return this._plantBristlesMachine;
+            }
+            set
+            {
+                this._plantBristlesMachine = value;
+            }
+        }
+
+        
+        public string Program
+        {
+            get
+            {
+                return this._program;
+            }
+            set
+            {
+                this._program = value;
+            }
+        }
+
+        
+        public string ModiContent
+        {
+            get
+            {
+                return this._modiContent;
+            }
+            set
+            {
+                this._modiContent = value;
+            }
+        }
+
+        
+        public string LastModifier
+        {
+            get
+            {
+                return this._lastModifier;
+            }
+            set
+            {
+                this._lastModifier = value;
+            }
+        }
+
+        
+        public string LastModiDate
+        {
+            get
+            {
+                return this._lastModiDate;
+            }
+            set
+            {
+                this._lastModiDate = value;
+            }
+        }
+
+        public string Ver
+        {
+            get { return _ver; }
+            set { _ver = value; }
+        }
+        public string Remark
+        {
+            get
+            {
+                return this._remark;
+            }
+            set
+            {
+                this._remark = value;
+            }
+        }
+    }
+}

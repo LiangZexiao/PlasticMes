@@ -1,0 +1,75 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using Admin.BLL.Product_BLL;
+using Admin.SQLServerDAL.RightCtrl;
+using Admin.App_Code;
+using Admin.SQLServerDAL.Product_DAL;
+
+public partial class WebReport_QualityForDay : System.Web.UI.Page
+{
+    bool[] o = new bool[7] { false, false, false, false, false, false, false };
+    SetCtrls dboSetCtrls = new SetCtrls();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        try
+        {
+            dboSetCtrls.GetIdentiryInfo(this);
+            if (IsPostBack)
+            {
+                o = (bool[])ViewState["authority"];
+                return;
+            }
+            o = RightCtrl.PageRightCtrl(this.Page.User.Identity.Name.Trim(), "QualityForDay");
+            ViewState["authority"] = o;
+            if (o[4]) igbPrint.Visible = false;
+        }
+        catch (Exception ex)
+        {
+            dboSetCtrls.SetExecMsg(this, ex.ToString());
+        }
+        if (!IsPostBack)
+        {
+            txtEndDate.Value=txtBeginDate.Value = System.DateTime.Now.ToString("yyyy-MM-dd");
+            dboSetCtrls.SetDropDownList(ddlWorkOrderNo, DispatchOrder_BLL.QueryWorkOrder() as IList, false, "WorkOrderNo", "WorkOrderNo");
+            dboSetCtrls.SetDropDownList(ddlDispatchOrder, DispatchOrder_BLL.selectDispatchOrder(0, "", "") as IList, false, "DO_No", "DO_No");
+            dboSetCtrls.SetDropDownList(ddlMachine_SeatCode, new MachineSuit_DAL().selectMachineMstrAll() as IList, true, "Machine_MaterialChgAmt", "Remark");
+        }
+    }
+
+    protected void igbPrint_Click(object sender, ImageClickEventArgs e)
+    {
+        string BeginDate = txtBeginDate.Value.Trim() + " " + Text3.Value.Trim();
+        string EndDate = txtEndDate.Value.Trim() + " " + Text4.Value.Trim();
+
+        string workorderno=ddlWorkOrderNo.SelectedValue;
+        string dispatchorder=ddlDispatchOrder.SelectedValue;
+
+        //if (workorderno != "" && dispatchorder == "")
+        //{
+        //    string prode= DispatchOrder_BLL.selectDispatchOrder(0, "WorkOrderNo", workorderno)[0]
+        //}
+        string ReportName = "QuilityForDay";
+        Session[ReportName + "_WorkOrderNo"] = ddlWorkOrderNo.SelectedValue;
+        Session[ReportName + "_DispatchOrder"] = ddlDispatchOrder.SelectedValue;
+        string SeatCode = ddlMachine_SeatCode.SelectedValue.Trim();
+        Session[ReportName + "_SeatCode"] = SeatCode;
+        Session[ReportName + "_BeginDate"] = BeginDate;
+        Session[ReportName + "_EndDate"] = EndDate;
+        Session[ReportName + "_UserID"] = this.Page.User.Identity.Name.Trim();
+
+        this.ClientScript.RegisterClientScriptBlock(GetType(), "open",
+            @"<script> window.open('../repPrinter.aspx?ReportType=3&ReportName=" + ReportName + "') </script>");
+    }
+    protected void ddlWorkOrderNo_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        dboSetCtrls.SetDropDownList(ddlDispatchOrder, DispatchOrder_BLL.selectDispatchOrder(0, "WorkOrderNo", ddlWorkOrderNo.SelectedValue) as IList, false, "DO_No", "DO_No");
+    }
+}

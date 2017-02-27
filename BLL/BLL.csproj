@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B246D103-C08C-4387-A27A-3ED1A875CCDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Admin.BLL</RootNamespace>
+    <AssemblyName>Admin.BLL</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseInfo_BLL\BadReason_BLL.cs" />
+    <Compile Include="BaseInfo_BLL\Employee_BLL.cs" />
+    <Compile Include="BaseInfo_BLL\MouldMstr_BLL.cs" />
+    <Compile Include="BaseInfo_BLL\StopReason_BLL.cs" />
+    <Compile Include="Collect_BLL\CommunicationInfo_BLL.cs" />
+    <Compile Include="Collect_BLL\DataHistory_BLL.cs" />
+    <Compile Include="Collect_BLL\ErrDataInfo_BLL.cs" />
+    <Compile Include="BaseInfo_BLL\CustomerInfo_BLL.cs" />
+    <Compile Include="Collect_BLL\StandDataHistory_BLL.cs" />
+    <Compile Include="BaseInfo_BLL\MachineMstr_BLL.cs" />
+    <Compile Include="BaseInfo_BLL\MouldDetail_BLL.cs" />
+    <Compile Include="Maintain_BLL\MaintainInfo_BLL.cs" />
+    <Compile Include="Monitor_BLL\AlarmInfo_BLL.cs" />
+    <Compile Include="Monitor_BLL\CollectRealProductDataInfo_BLL.cs" />
+    <Compile Include="Monitor_BLL\MonitorDispatchMstr_BLL.cs" />
+    <Compile Include="Monitor_BLL\MonitorMachine_BLL.cs" />
+    <Compile Include="Monitor_BLL\MonitorMaterial_BLL.cs" />
+    <Compile Include="Monitor_BLL\UseMaterial_BLL.cs" />
+    <Compile Include="BaseInfo_BLL\ItemMstr_BLL.cs" />
+    <Compile Include="Product_BLL\AdjustMachine_BLL.cs" />
+    <Compile Include="Product_BLL\ManMachineMap_BLL.cs" />
+    <Compile Include="Product_BLL\MPSResult_BLL.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Quality_BLL\OEE_BLL.cs" />
+    <Compile Include="Quality_BLL\QC_ThroughDefect_BLL.cs" />
+    <Compile Include="Quality_BLL\QualityTrack_BLL.cs" />
+    <Compile Include="Quality_BLL\StandTechnicsParams_BLL.cs" />
+    <Compile Include="Adminis_BLL\Department_BLL.cs" />
+    <Compile Include="Adminis_BLL\GroupInfo_BLL.cs" />
+    <Compile Include="Adminis_BLL\GroupProgramMap_BLL.cs" />
+    <Compile Include="Adminis_BLL\SysProgramInfo_BLL.cs" />
+    <Compile Include="Adminis_BLL\SysClassInfo_BLL.cs" />
+    <Compile Include="Adminis_BLL\UserInfo_BLL.cs" />
+    <Compile Include="Adminis_BLL\UserProgramMap_BLL.cs" />
+    <Compile Include="Machine_BLL\MachineCollectMap_BLL.cs" />
+    <Compile Include="Machine_BLL\MachineMouldMap_BLL.cs" />
+    <Compile Include="Machine_BLL\MachineMstr0_BLL.cs" />
+    <Compile Include="Machine_BLL\MachineStatus_BLL.cs" />
+    <Compile Include="Machine_BLL\MachineStatusConfig_BLL.cs" />
+    <Compile Include="Machine_BLL\MouldMstr0_BLL.cs" />
+    <Compile Include="Product_BLL\DispatchOrder_BLL.cs" />
+    <Compile Include="Product_BLL\PackageList_BLL.cs" />
+    <Compile Include="Product_BLL\WorkPaper_BLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quality_BLL\QC_Table_BLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{4A829082-03D9-4653-82B6-DDEEBC51787E}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{D9DB0854-A21E-4A15-B667-CC069FEF39E4}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{C11FB025-CB8B-43B9-BC34-13FFD10560C1}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLServerDAL\SQLServerDAL.csproj">
+      <Project>{C27ECDCB-818B-46C8-B65F-E91FF7919A41}</Project>
+      <Name>SQLServerDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

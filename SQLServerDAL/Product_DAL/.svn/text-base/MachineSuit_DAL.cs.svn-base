@@ -1,0 +1,284 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Text;
+using Admin.DBUtility;
+using Admin.Model.Product_MDL;
+using Admin.Model;
+using Admin.Model.Machine_MDL;
+using Admin.SQLServerDAL.BaseInfo_DAL;
+
+namespace Admin.SQLServerDAL.Product_DAL
+{
+    public class MachineSuit_DAL
+    {
+        FormatSqlParas fsp = new FormatSqlParas();
+        Common cmm = new Common();
+        FormatSqlCmd fsc = new FormatSqlCmd();
+
+        string TableName = "PlantBristlesMachineInfo";
+        string[] FieldName1 = { "ID" };
+        string[] FieldName2 = { "MachineCode", " MachineType", "MachineAxisNum", "Manufacturers", " CONVERT(CHAR(10),MakeDate,121) MakeDate", " MachineSpace", "SuitBrush", " MachineNumber", " MachineUpNo", " Power", " MaintainDate", "MachinePhoto", " Remark"};
+        string[] FieldName3 = { "MachineCode", " MachineType", "MachineAxisNum", "Manufacturers", "MakeDate", " MachineSpace", " SuitBrush", " MachineNumber", " MachineUpNo", " Power", " MaintainDate", "MachinePhoto", " Remark" };
+        string[] FieldName4 = { "MachineCode", " MachineType", "MachineAxisNum", "Manufacturers", "MakeDate", " MachineSpace", " SuitBrush", " MachineNumber", " MachineUpNo", " Power", " MaintainDate",  " Remark" };
+        
+        /// <summary>
+        /// 查询所有
+        /// </summary>
+        /// <param name="id">id</param>
+        /// <param name="colname">列名</param>
+        /// <param name="coltext">值</param>
+        /// <returns></returns>
+        public IList<MachineSuit_MDL> selectMachineSuit(int id, string colname, string coltext)
+        {
+            StringBuilder sqlWhere = new StringBuilder();
+            SqlParameter[] sqlParas = null;
+
+            if (id != 0)
+            {
+                sqlWhere.Append(string.Format("AND ID=@ID"));
+                sqlParas = new SqlParameter[1] { fsp.FormatInParam("@ID", SqlDbType.Int, id) };
+            }
+            if (colname != "" && coltext != "")
+            {
+                sqlWhere.Append(string.Format("AND {0} LIKE '%" + coltext + "%'", colname));
+            }
+            return getDataListOfWorkPaper(sqlWhere, sqlParas);
+        }
+       
+        public IList<MachineSuit_MDL> ExistsMachineSuit(int id, string colname, string coltext)
+        {
+            StringBuilder sqlWhere = new StringBuilder();
+            SqlParameter[] sqlParas = null;
+
+            if (id != 0)
+            {
+                sqlWhere.Append(string.Format("AND ID=@ID"));
+                sqlParas = new SqlParameter[1] { fsp.FormatInParam("@ID", SqlDbType.Int, id) };
+            }
+            if (colname != "" && coltext != "")
+            {
+                sqlWhere.Append(string.Format("AND {0} = '" + coltext + "'", colname));
+            }
+            return getDataListOfWorkPaper(sqlWhere, sqlParas);
+        }
+
+        private IList<MachineSuit_MDL> getDataListOfWorkPaper(StringBuilder sqlWhere, SqlParameter[] sqlParas)
+        {
+            string[] SELECT = new string[FieldName1.Length + FieldName2.Length];
+            System.Array.Copy(FieldName1, 0, SELECT, 0, FieldName1.Length);
+            System.Array.Copy(FieldName2, 0, SELECT, FieldName1.Length, FieldName2.Length);
+            StringBuilder sqlCmd = new StringBuilder(fsc.GetSelectCmd(TableName, SELECT));
+
+            sqlCmd.Append(sqlWhere);
+            sqlCmd.Append(" ORDER BY ID");
+
+            IList<MachineSuit_MDL> WorkPaperList = new List<MachineSuit_MDL>();
+            try
+            {
+                using (SqlDataReader sdr = SqlHelper.ExecuteReader(CommandType.Text, sqlCmd.ToString(), sqlParas))
+                {
+                    while (sdr.Read())
+                    {
+                        MachineSuit_MDL WorkPaper = new MachineSuit_MDL(
+                            (sdr["ID"] == DBNull.Value) ? "0" : sdr["ID"].ToString(),
+                            (sdr["MachineCode"] == DBNull.Value) ? "" : sdr["MachineCode"].ToString(),
+                            (sdr["MachineType"] == DBNull.Value) ? "" : sdr["MachineType"].ToString(),
+                            (sdr["MachineAxisNum"] == DBNull.Value) ? "0" : sdr["MachineAxisNum"].ToString().Trim(),
+                            (sdr["Manufacturers"] == DBNull.Value) ? "" : sdr["Manufacturers"].ToString(),
+                            (sdr["MakeDate"] == DBNull.Value) ? "" : sdr["MakeDate"].ToString(),
+                            (sdr["MachineSpace"] == DBNull.Value) ? "0" : sdr["MachineSpace"].ToString(),
+                            (sdr["SuitBrush"] == DBNull.Value) ? "" : sdr["SuitBrush"].ToString(),
+                            (sdr["MachineNumber"] == DBNull.Value) ? "" : sdr["MachineNumber"].ToString(),
+                            (sdr["MachineUpNo"] == DBNull.Value) ? "" : sdr["MachineUpNo"].ToString(),
+                            (sdr["Power"] == DBNull.Value) ? "0" : sdr["Power"].ToString(),
+                            (sdr["MaintainDate"] == DBNull.Value) ? "" : sdr["MaintainDate"].ToString(),
+                            (sdr["MachinePhoto"] == DBNull.Value) ? null : (byte[])sdr["MachinePhoto"],
+                            (sdr["Remark"] == DBNull.Value) ? "" : sdr["Remark"].ToString()
+                        );
+                        WorkPaperList.Add(WorkPaper);
+                    }
+                }
+                return WorkPaperList;
+            }
+            catch (Exception ex)
+            {
+                return new List<MachineSuit_MDL>();
+            }
+
+        }
+        
+        public IList<MachineSuit_MDL> getDataListOfWorkPaper()
+        {
+            StringBuilder sqlCmd = new StringBuilder("select  distinct CONVERT(varchar(10),CONVERT(int,substring(MachineCode,3,2)))+'线' as MachineCode,CONVERT(varchar(10),substring(MachineCode,3,2)) as MachineType from PlantBristlesMachineInfo order by MachineType asc ");
+            IList<MachineSuit_MDL> WorkPaperList = new List<MachineSuit_MDL>();
+            using (SqlDataReader sdr = SqlHelper.ExecuteReader(CommandType.Text, sqlCmd.ToString(), null))
+            {
+                while (sdr.Read())
+                {
+                    MachineSuit_MDL WorkPaper = new MachineSuit_MDL(
+                        "0",
+                        (sdr["MachineCode"] == DBNull.Value) ? "" : sdr["MachineCode"].ToString(),
+                        (sdr["MachineType"] == DBNull.Value) ? "" : sdr["MachineType"].ToString(),
+                        "0","","","","","","","","",null,""
+                    );
+                    WorkPaperList.Add(WorkPaper);
+                }
+            }
+            return WorkPaperList;
+        }
+
+        public IList<MachineSuit_MDL> getMachineNo()
+        {
+            StringBuilder sqlCmd = new StringBuilder("select  distinct CONVERT(varchar(10),CONVERT(int,substring(MachineCode,3,2)))+'线' as MachineCode,CONVERT(varchar(10),substring(MachineCode,1,4)) as MachineType from PlantBristlesMachineInfo order by MachineType asc ");
+            IList<MachineSuit_MDL> WorkPaperList = new List<MachineSuit_MDL>();
+            using (SqlDataReader sdr = SqlHelper.ExecuteReader(CommandType.Text, sqlCmd.ToString(), null))
+            {
+                while (sdr.Read())
+                {
+                    MachineSuit_MDL WorkPaper = new MachineSuit_MDL(
+                        "0",
+                        (sdr["MachineCode"] == DBNull.Value) ? "" : sdr["MachineCode"].ToString(),
+                        (sdr["MachineType"] == DBNull.Value) ? "" : sdr["MachineType"].ToString(),
+                        "0", "", "", "", "", "", "", "", "", null, ""
+                    );
+                    WorkPaperList.Add(WorkPaper);
+                }
+            }
+            return WorkPaperList;
+        }
+        /// <summary>
+        /// 查询停机/不停机刷卡项
+        /// </summary>
+        /// <param name="IsMacStop">是否停机</param>
+        /// <returns></returns>
+        public IList<StopReason> SelectReasonAll(bool IsMacStop)
+        {
+            string SqlStr = "Select ReasonID,ReasonName From StopReason";
+            if (IsMacStop) 
+            {
+                SqlStr += " Where ReasonID Not In ('0','10','14','15','16')";
+            }
+            SqlStr += " Order By ReasonID";
+            StringBuilder sqlCmd = new StringBuilder(SqlStr);
+            IList<StopReason> ReasonList = new List<StopReason>();
+            using (SqlDataReader sdr = SqlHelper.ExecuteReader(CommandType.Text, sqlCmd.ToString(), null))
+            {
+                while (sdr.Read())
+                {
+                    StopReason tempSR = new StopReason(
+                        (sdr["ReasonID"] == DBNull.Value) ? "" : sdr["ReasonID"].ToString(),
+                        (sdr["ReasonName"] == DBNull.Value) ? "" : sdr["ReasonName"].ToString()
+                        );
+                    ReasonList.Add(tempSR);
+                }
+            }
+            return ReasonList;
+        }
+
+        public IList<MachineMstr_MDL> selectMachineMstr()
+        {
+            StringBuilder sqlCmd = new StringBuilder("SELECT DISTINCT Substring(Machine_Code,1,4) as setcode,case Substring(Machine_Code,3,2) when '01' then '一车间' " +
+" when '02' then '二车间' when '03' then '三车间' else  '植毛车间' end Machine_SeatCode FROM MachineMstr  " +
+" union select DISTINCT Substring(Machine_Code,1,6) as setcodes,case Substring(Machine_Code,3,2) when '02' then case Substring(Machine_Code,3,4) when '0221' then '二车间A区' " +
+" when '0222' then '二车间B区' when '0223' then '二车间C区' when '0224' then  '二车间D区' end end Machine_SeatCodes FROM MachineMstr");
+            IList<MachineMstr_MDL> MachineMstrList = new List<MachineMstr_MDL>();
+            using (SqlDataReader sdr = SqlHelper.ExecuteReader(CommandType.Text, sqlCmd.ToString(), null))
+            {
+                while (sdr.Read())
+                {
+                    if (sdr["Machine_SeatCode"] != DBNull.Value)
+                    {
+                        MachineMstr_MDL MachineMstr = new MachineMstr_MDL(
+                             0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", (sdr["setcode"] == DBNull.Value) ? "" : sdr["setcode"].ToString(), null, (sdr["Machine_SeatCode"] == DBNull.Value) ? "" : sdr["Machine_SeatCode"].ToString());
+                        MachineMstrList.Add(MachineMstr);
+                    }
+                }
+            }
+            return MachineMstrList;
+        }
+
+        public IList<MachineMstr_MDL> selectMachineMstrAll()
+        {
+            StringBuilder sqlCmd = new StringBuilder("SELECT DISTINCT Substring(Machine_Code,1,4) as setcode,case Substring(Machine_Code,3,2) when '01' then '一车间' " +
+" when '02' then '二车间' when '03' then '三车间' else  '植毛车间注塑机' end Machine_SeatCode FROM MachineMstr  " +
+" union select DISTINCT Substring(Machine_Code,1,6) as setcodes,case Substring(Machine_Code,3,2) when '02' then case Substring(Machine_Code,3,4) when '0221' then '二车间A区' " +
+" when '0222' then '二车间B区' when '0223' then '二车间C区' when '0224' then  '二车间D区' end end Machine_SeatCodes FROM MachineMstr union select 'PM','植毛车间植毛机' ");
+            IList<MachineMstr_MDL> MachineMstrList = new List<MachineMstr_MDL>();
+            using (SqlDataReader sdr = SqlHelper.ExecuteReader(CommandType.Text, sqlCmd.ToString(), null))
+            {
+                while (sdr.Read())
+                {
+                    if (sdr["Machine_SeatCode"] != DBNull.Value)
+                    {
+                        MachineMstr_MDL MachineMstr = new MachineMstr_MDL(
+                             0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", (sdr["setcode"] == DBNull.Value) ? "" : sdr["setcode"].ToString(), null, (sdr["Machine_SeatCode"] == DBNull.Value) ? "" : sdr["Machine_SeatCode"].ToString());
+                        MachineMstrList.Add(MachineMstr);
+                    }
+                }
+            }
+            return MachineMstrList;
+        }
+
+
+        public int InsertMachineSuit(MachineSuit_MDL dboCall, string UI)
+        {
+            SqlParameter[] sqlParas ={
+                        fsp.FormatInParam("@MachineCode", SqlDbType.VarChar,dboCall.MachineCode),
+                        fsp.FormatInParam("@MachineType", SqlDbType.VarChar,dboCall.MachineType),
+                        fsp.FormatInParam("@MachineAxisNum", SqlDbType.VarChar,dboCall.MachineAxisNum),
+                        fsp.FormatInParam("@Manufacturers", SqlDbType.VarChar,dboCall.Manufacturers),
+                        fsp.FormatInParam("@MakeDate", SqlDbType.VarChar,dboCall.MakeDate),
+                        fsp.FormatInParam("@MachineSpace", SqlDbType.VarChar,dboCall.MachineSpace),
+                        fsp.FormatInParam("@SuitBrush", SqlDbType.VarChar,dboCall.SuitBrush),
+                        fsp.FormatInParam("@MachineNumber", SqlDbType.VarChar,dboCall.MachineNumber),
+                        fsp.FormatInParam("@MachineUpNo", SqlDbType.VarChar,dboCall.MachineUpNo),
+                        fsp.FormatInParam("@Power", SqlDbType.VarChar,dboCall.Power),
+                        fsp.FormatInParam("@MaintainDate", SqlDbType.VarChar,dboCall.MaintainDate),
+                        fsp.FormatInParam("@MachinePhoto", SqlDbType.Image,dboCall.MachinePhoto),
+                        fsp.FormatInParam("@Remark", SqlDbType.VarChar,dboCall.Remark),
+                        fsp.FormatInParam("@ID", SqlDbType.VarChar,dboCall.ID)
+             };
+            try
+            {
+                byte[] temp_Photo = dboCall.MachinePhoto;
+                if (UI == "INSERT")
+                {
+                    return SqlHelper.ExecuteNonQuery(CommandType.Text, fsc.GetInsertCmd(TableName, FieldName3), sqlParas);
+                }
+                else
+                {
+                    if (temp_Photo.Length > 4)
+                    {
+                        return SqlHelper.ExecuteNonQuery(CommandType.Text, fsc.GetUpdateCmd(TableName, FieldName3), sqlParas);
+                    }
+                    else
+                    {
+                        return SqlHelper.ExecuteNonQuery(CommandType.Text, fsc.GetUpdateCmd(TableName, FieldName4), sqlParas);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+            finally
+            {
+                dboCall = null;
+            }
+        }
+
+        public int DeleteMachineSuit(ArrayList _IDList)
+        {
+            string ExecBatch = "BEGIN TRANSACTION ";
+            foreach (string s in _IDList)
+                ExecBatch += string.Format("DELETE PlantBristlesMachineInfo WHERE ID={0} IF(@@ROWCOUNT=0 OR @@ERROR<>0) GOTO StopDot ", s);
+            ExecBatch += " COMMIT TRANSACTION RETURN StopDot: ROLLBACK TRANSACTION RETURN ";
+            return SqlHelper.ExecuteNonQuery(CommandType.Text, ExecBatch, null);
+        }
+    }
+
+    }
+

@@ -1,0 +1,12 @@
+bin\Release\App_Code.dll.config
+bin\Release\App_Code.dll
+bin\Release\App_Code.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\App_Code.dll
+obj\Release\App_Code.pdb
+bin\Debug\App_Code.dll.config
+bin\Debug\App_Code.dll
+bin\Debug\App_Code.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\App_Code.dll
+obj\Debug\App_Code.pdb

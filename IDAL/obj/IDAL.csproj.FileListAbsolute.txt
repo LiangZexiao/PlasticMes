@@ -1,0 +1,7 @@
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+D:\项目开发\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+D:\项目开发\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb

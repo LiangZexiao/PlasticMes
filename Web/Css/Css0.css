@@ -1,0 +1,238 @@
+
+BODY {
+	SCROLLBAR-FACE-COLOR: #E0E0E0;
+	SCROLLBAR-HIGHLIGHT-COLOR: #EBEBEB;
+	SCROLLBAR-SHADOW-COLOR: ##E1E1E1;
+	SCROLLBAR-3DLIGHT-COLOR: #EBEBEB;
+	SCROLLBAR-ARROW-COLOR: #EBEBEB;
+	SCROLLBAR-TRACK-COLOR: #D5D5D5;
+	SCROLLBAR-DARKSHADOW-COLOR: #E0E0E0;
+	SCROLLBAR-BASE-COLOR: #EBEBEB;
+}
+
+.doc
+{
+	margin-top:0px;
+	margin-bottom:0;
+	margin-left:0px;
+	margin-right:0px
+}
+
+table
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+.table
+{
+	border: 0px;
+}
+
+.table_abcd
+{
+	border: 1px solid #333333;
+}
+
+.table_bcd
+{
+	border-top: 0px ;
+	border-right: 0px ;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+.table_ac
+{
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-left-color: #333333;
+}
+.table_c
+{
+	border-top: 0px solid;
+	border-right: 0px solid;
+	border-bottom: 0px solid;
+	border-left: 1px solid #333333;
+}
+.table_acd
+{
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-left-color: #333333;	
+}
+.button
+{
+	background-image: url(../img/button_bg.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 20px;
+	width: 54px;
+	color: #FFFFFF;
+	border: 1px none #CCCCCC;
+}
+
+.button_search
+{
+	background-image: url(../img/button_bg.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 20px;
+	width: 54px;
+	color: #FFFFFF;
+	border: 1px none #CCCCCC;
+}
+
+
+.text_default
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #999999;
+	background-image: url(../img/text_bg.jpg);
+	height: 20px;
+}
+.text_area
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #999999;
+	background-color: WhiteSmoke;
+}
+.text
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #996600;
+	background-image: url(../img/login_input_bg.gif);
+}
+.table_b {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}
+.table_d {
+	border-right-width: 1px;
+	border-right-color: #333333;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-right-style: solid;
+}
+.table_bcd {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.select {
+	margin: -1px -1px -1px -1px;
+	padding: -1px -1px -1px -1px;
+	clear: none;
+	float: none;
+	clip:   rect(1px 1px 1px 1px);
+	background-color: #F5F5F5;
+}
+.dataGrid
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #996600;
+	background-image: url(../img/datagird_Hbg.jpg);
+}
+.table_abd {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+}
+
+.table_list
+{
+	 width:100%;
+	 height:25px
+}
+.table_list_Left_td
+{
+	border-width : inherit;
+	width:32%;
+	height:25px;
+	border-left-width: 0px;
+	border-left-style: solid;
+}
+.table_cd{
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #333333;
+	border-left-color: #333333;
+}
+.table_b_bl {
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-bottom-color: #333333;
+}
+A:link
+{
+	color: #000099;
+	text-decoration: none;
+}
+A:visited
+{
+	COLOR: #003399; 
+	TEXT-DECORATION: none
+}
+
+A:hover
+{
+	COLOR: #003399; 
+	TEXT-DECORATION: none
+}
+A:active
+{
+	COLOR: #003399; 
+	TEXT-DECORATION: none
+}
+.imageButton_default
+{
+	font-size: 12pt;
+	background-image: url(Img/11.jpg);
+	font-family: ËÎÌו;
+}

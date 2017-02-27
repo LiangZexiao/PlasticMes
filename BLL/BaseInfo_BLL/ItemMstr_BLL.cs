@@ -1,0 +1,58 @@
+﻿using System;
+using System.Data;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+using Admin.Model.Product_MDL;
+using Admin.IDAL.BaseInfo_IDAL;
+
+namespace Admin.BLL.BaseInfo_BLL
+{
+    public class ItemMstr_BLL
+    {
+        private static readonly IItemMstr factory = Admin.DALFactory.DataAccess.selectItemMstr();
+
+        public static IList<ItemMstr_MDL> selectItemMstr(int _ID, string colname, string coltext)
+        {
+            return factory.selectItemMstr(_ID, colname, coltext);
+        }
+        public static IList<ItemMstr_MDL> selectItemMstrDetail(int _ID, string colname, string coltext, string colname2, string coltxt2)
+        {
+            return factory.selectItemMstrDetail(_ID, colname, coltext, colname2, coltxt2);
+        }
+        public static IList<ItemMstr_MDL> existsItemMstr(string vItem_Code)
+        {
+            return factory.existsItemMstr(vItem_Code);
+        }
+
+        public static int ChangeItemMstr(int vID, string vItem_Code, string vProductRemark, string vMouldCode, string vModeDesc, string vMould_SpecialFittingsNo,
+                            string vInsertsDesc, string vPackageNum, string vItem_Weight, string vItem_ActualGrossWgt, string vItem_WaterGapScale,
+                            string vItem_Color, string vCustomerName, string vMaterialCode, string vMaterialDesc, string vPowderCode, string vAuxiliaryMaterialName,
+                            string vAuxiliaryMaterialNum, string vOutsideAssociation, string vMachineAssembly, byte[] vProdPhoto, string vStandEmployee, string vProcesses, string vVerNo, string vCreater, string vCreateDate,
+                            string vModiHistoryContent, string vRemark, string IU)
+        {
+            ItemMstr_MDL obj = new ItemMstr_MDL(vID,vItem_Code,vProductRemark,vMouldCode,vModeDesc,vMould_SpecialFittingsNo,
+                            vInsertsDesc,vPackageNum,vItem_Weight,vItem_ActualGrossWgt,vItem_WaterGapScale,
+                            vItem_Color,vCustomerName,vMaterialCode,vMaterialDesc,vPowderCode,vAuxiliaryMaterialName,
+                            vAuxiliaryMaterialNum, vOutsideAssociation, vMachineAssembly, vProdPhoto,vStandEmployee ,vProcesses,vVerNo, vCreater, vCreateDate,
+                            vModiHistoryContent,vRemark);
+
+          return  factory.ChangeItemMstr(obj, IU);
+        }
+        public static int ChangeItemMstrDetail(int vID, string vItem_Code,string vMouldCode, string vModeDesc, string vMaterialCode, string vMaterialDesc,string vCreateDate, string IU,int vPercentage)
+        {
+            ItemMstr_MDL obj = new ItemMstr_MDL(vID, vItem_Code, vMouldCode, vModeDesc, vMaterialCode, vMaterialDesc, vCreateDate, vPercentage);
+
+            return factory.ChangeItemMstrDetail(obj, IU);
+        }
+        public static int cancelItemMstrDetail(string itemcode)
+        {
+            return factory.cancelItemMstrDetail(itemcode);
+        }
+
+        public static int cancelItemMstr(ArrayList _idlist)
+        {
+           return factory.cancelItemMstr(_idlist);
+        }
+    }
+}

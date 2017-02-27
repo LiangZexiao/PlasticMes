@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WorkPaper_XSD" targetNamespace="http://tempuri.org/WorkPaper_XSD.xsd" xmlns:mstns="http://tempuri.org/WorkPaper_XSD.xsd" xmlns="http://tempuri.org/WorkPaper_XSD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="chiefMesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="chiefMesConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Admin.Model.Properties.Settings.GlobalReference.Default.chiefMesConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WorkPaper_XSD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="WorkPaper_XSD" msprop:Generator_DataSetName="WorkPaper_XSD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Workpaper" msprop:Generator_UserTableName="Workpaper" msprop:Generator_RowDeletedName="WorkpaperRowDeleted" msprop:Generator_TableClassName="WorkpaperDataTable" msprop:Generator_RowChangedName="WorkpaperRowChanged" msprop:Generator_RowClassName="WorkpaperRow" msprop:Generator_RowChangingName="WorkpaperRowChanging" msprop:Generator_RowEvArgName="WorkpaperRowChangeEvent" msprop:Generator_RowEvHandlerName="WorkpaperRowChangeEventHandler" msprop:Generator_TablePropName="Workpaper" msprop:Generator_TableVarName="tableWorkpaper" msprop:Generator_RowDeletingName="WorkpaperRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProdCode" msprop:Generator_UserColumnName="ProdCode" msprop:Generator_ColumnPropNameInRow="ProdCode" msprop:Generator_ColumnVarNameInTable="columnProdCode" msprop:Generator_ColumnPropNameInTable="ProdCodeColumn" type="xs:string" />
+              <xs:element name="WorkGuidanceImg" msprop:Generator_UserColumnName="WorkGuidanceImg" msprop:Generator_ColumnPropNameInRow="WorkGuidanceImg" msprop:Generator_ColumnVarNameInTable="columnWorkGuidanceImg" msprop:Generator_ColumnPropNameInTable="WorkGuidanceImgColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DataTable1Key1">
+      <xs:selector xpath=".//mstns:Workpaper" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

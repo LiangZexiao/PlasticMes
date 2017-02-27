@@ -1,0 +1,162 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="OEE.aspx.cs" Inherits="Quality_OEE" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>设备可动率</title>
+    <link href="../images/css.css" type="text/css" rel="stylesheet" />
+    <link href="../WebControls/DatePicker/skin/WdatePicker.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript" src="../JS/calendar.js"></script>
+    <script type="text/javascript" language="javascript" src="../JS/CheckBox.js"></script>
+    <script type="text/javascript" language="javascript" src="../WebControls/DatePicker/WdatePicker.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table border="0" cellpadding="0" cellspacing="0" class="section-content">
+        <tr>
+            <td valign="top">
+                <table class="tablefoot" cellspacing="0" cellpadding="0" border="0" style="height: 24px">
+                    <tr>
+                        <td style="height: 24px">
+                            当前位置:品质管理 -> 设备可动率
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <asp:MultiView ID="MultiView1" runat="server">
+                    <asp:View ID="View1" runat="server">
+                        <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                            <tr>
+                                <td height="22" style="background-image: url(../images/bg_title.gif)">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操作
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>日期:<input runat="server" type="text" id="txtBeginDate" name="txtBeginDate"  
+                                   onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm'})" class="Wdate"
+                                 style="width: 130px" /> 至
+                                 <input runat="server" type="text" id="txtEndDate" name="txtEndDate"  
+                                   onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm'})" class="Wdate"
+                                 style="width: 130px" />&nbsp; 车间:<asp:DropDownList ID="ddlWorkShop" runat="server" Width="127" 
+                                        AutoPostBack="True" onselectedindexchanged="ddlWorkShop_SelectedIndexChanged">
+                                    </asp:DropDownList>
+                                    &nbsp;&nbsp; 机器:<asp:DropDownList ID="ddlMachineNo" runat="server" Width="127">
+                                    </asp:DropDownList>&nbsp;<asp:DropDownList ID="ddlProductNo" runat="server" Visible="False">
+                                    </asp:DropDownList>
+                                    <asp:ImageButton ID="igbQuery" runat="server" ImageUrl="~/images/btn_search.gif"
+                                        OnClick="btnQuery_Click" ImageAlign="Top" />
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table class="itemtable" cellspacing="1" cellpadding="2" border="0">
+                                        <tr>
+                                            <td height="22" style="background-image: url(../images/bg_title.gif)">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浏览
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <asp:GridView ID="GridView1" runat="server" CellPadding="2" Width="100%" AutoGenerateColumns="False"
+                                        AllowPaging="True" PageSize="12" CssClass="itemtable" OnRowDataBound="GridView1_RowDataBound"
+                                        BorderWidth="0px" CellSpacing="1">
+                                        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                        <EditRowStyle BackColor="#2461BF" />
+                                        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="False" ForeColor="#333333" />
+                                        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                                        <HeaderStyle Font-Bold="True" ForeColor="#055BAE" />
+                                        <AlternatingRowStyle BackColor="White" />
+                                        <Columns>
+                                            <asp:TemplateField>
+                                                <ItemTemplate>
+                                                    <asp:CheckBox ID="chkItemInner" runat="server" />
+                                                </ItemTemplate>
+                                                <HeaderTemplate>
+                                                    <input id="chkAll" type="checkbox" onclick="selectAll(this);" />
+                                                </HeaderTemplate>
+                                                <ItemStyle HorizontalAlign="Center" Width="26px" />
+                                                <HeaderStyle HorizontalAlign="Center" />
+                                            </asp:TemplateField>
+                                            <asp:BoundField DataField="MachineNo" HeaderText="机器编号" />
+                                            <asp:BoundField DataField="ProductNo" HeaderText="产品编号" Visible="False" />
+                                            <asp:BoundField DataField="PlanRunTime" HeaderText="计划运转时间">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="FactRunTime" HeaderText="实际运转时间">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="EfficientRate" HeaderText="有效率">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="StandCycle" HeaderText="注塑周期">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="ProductNum" HeaderText="生产总数">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="ShowParaRate" HeaderText="表现性" Visible="False" />
+                                            <asp:BoundField DataField="QualityParaRate" HeaderText="质量指数">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="BadNum" HeaderText="次品数">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                            <asp:BoundField DataField="OEE" HeaderText="设备可动率">
+                                                <ItemStyle HorizontalAlign="Right" />
+                                            </asp:BoundField>
+                                        </Columns>
+                                        <PagerSettings Visible="False" />
+                                    </asp:GridView>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <asp:Label ID="lblDataCount" runat="server" Text=""></asp:Label>
+                                                        </td>
+                                                        <td>
+                                                            <asp:ImageButton ID="igbFirst" runat="server" CommandArgument="First" ImageUrl="~/images/page_first.gif"
+                                                                OnClick="CtrlPageInfo_Click" />
+                                                            <asp:ImageButton ID="igbPrior" runat="server" CommandArgument="Prior" ImageUrl="~/images/page_prior.gif"
+                                                                OnClick="CtrlPageInfo_Click" />
+                                                        </td>
+                                                        <td>
+                                                            <asp:Label ID="lblPageIndex" runat="server" Text=""></asp:Label>
+                                                        </td>
+                                                        <td>
+                                                            <asp:ImageButton ID="igbNext" runat="server" CommandArgument="Next" ImageUrl="~/images/page_next.gif"
+                                                                OnClick="CtrlPageInfo_Click" />
+                                                            <asp:ImageButton ID="igbLast" runat="server" CommandArgument="Last" ImageUrl="~/images/page_last.gif"
+                                                                OnClick="CtrlPageInfo_Click" />
+                                                        </td>
+                                                        <td>
+                                                            <asp:TextBox ID="txtPageIndex" runat="server" CssClass="textbox_search" Width="45px"></asp:TextBox>
+                                                        </td>
+                                                        <td>
+                                                            <asp:ImageButton ID="igbSearch" runat="server" CommandArgument="Last" ImageUrl="~/images/mirror.gif"
+                                                                OnClick="CtrlPageInfo_Click" />
+                                                        </td>
+                                                        <td>
+                                                            <asp:RegularExpressionValidator ID="revPageIndex" runat="server" ControlToValidate="txtPageIndex"
+                                                                ErrorMessage="请输入数字" ValidationExpression="^[0-9]*[1-9][0-9]*$"></asp:RegularExpressionValidator>
+                                                            <input id="hdnFlag" type="hidden" runat="server" style="width: 13px" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </asp:View>
+                </asp:MultiView>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

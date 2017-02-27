@@ -1,0 +1,15 @@
+bin\Release\Admin.Model.dll.config
+bin\Release\Admin.Model.dll
+bin\Release\Admin.Model.pdb
+bin\Release\Admin.DBUtility.dll
+bin\Release\Admin.DBUtility.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Admin.Model.dll
+obj\Release\Admin.Model.pdb
+bin\Debug\Admin.Model.dll
+bin\Debug\Admin.Model.pdb
+bin\Debug\Admin.DBUtility.dll
+bin\Debug\Admin.DBUtility.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Admin.Model.dll
+obj\Debug\Admin.Model.pdb

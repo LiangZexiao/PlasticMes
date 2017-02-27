@@ -1,0 +1,120 @@
+D:\项目开发\ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+D:\项目开发\ChiefMes\App_Code\bin\Debug\App_Code.dll
+D:\项目开发\ChiefMes\App_Code\bin\Debug\App_Code.pdb
+D:\项目开发\ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\App_Code\obj\Debug\App_Code.dll
+D:\项目开发\ChiefMes\App_Code\obj\Debug\App_Code.pdb
+F:\ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+F:\ChiefMes\App_Code\bin\Debug\App_Code.dll
+F:\ChiefMes\App_Code\bin\Debug\App_Code.pdb
+F:\ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+F:\ChiefMes\App_Code\obj\Debug\App_Code.dll
+F:\ChiefMes\App_Code\obj\Debug\App_Code.pdb
+G:\源代码\公司\ChiefMes2009.12.30\App_Code\bin\Debug\App_Code.dll.config
+G:\源代码\公司\ChiefMes2009.12.30\App_Code\bin\Debug\App_Code.dll
+G:\源代码\公司\ChiefMes2009.12.30\App_Code\bin\Debug\App_Code.pdb
+G:\源代码\公司\ChiefMes2009.12.30\App_Code\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes2009.12.30\App_Code\obj\Debug\App_Code.dll
+G:\源代码\公司\ChiefMes2009.12.30\App_Code\obj\Debug\App_Code.pdb
+G:\源代码\公司\ChiefMes(theFirst)\App_Code\bin\Debug\App_Code.dll.config
+G:\源代码\公司\ChiefMes(theFirst)\App_Code\bin\Debug\App_Code.dll
+G:\源代码\公司\ChiefMes(theFirst)\App_Code\bin\Debug\App_Code.pdb
+G:\源代码\公司\ChiefMes(theFirst)\App_Code\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes(theFirst)\App_Code\obj\Debug\App_Code.dll
+G:\源代码\公司\ChiefMes(theFirst)\App_Code\obj\Debug\App_Code.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\App_Code\bin\Debug\App_Code.dll.config
+E:\YinShanProject\0002-MESClient\Tags\1.3\App_Code\bin\Debug\App_Code.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\App_Code\bin\Debug\App_Code.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\App_Code\obj\Debug\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\App_Code\obj\Debug\App_Code.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\App_Code\obj\Debug\App_Code.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+G:\源代码\公司\1stMESClient\1.3ChiefMes\App_Code\bin\Debug\App_Code.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\App_Code\bin\Debug\App_Code.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1stMESClient\1.3ChiefMes\App_Code\obj\Debug\App_Code.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\App_Code\obj\Debug\App_Code.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\App_Code\bin\Debug\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\App_Code\bin\Debug\App_Code.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\App_Code\obj\Debug\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\App_Code\obj\Debug\App_Code.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\App_Code\bin\Debug\App_Code.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\App_Code\bin\Debug\App_Code.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\App_Code\obj\Debug\App_Code.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\App_Code\obj\Debug\App_Code.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\bin\Debug\App_Code.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\obj\Debug\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\App_Code\obj\Debug\App_Code.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\App_Code\bin\Debug\App_Code.pdb
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\App_Code\obj\Debug\App_Code.dll
+G:\源代码\公司\1.5ChiefMes\1.5ChiefMes\App_Code\obj\Debug\App_Code.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\App_Code\bin\Debug\App_Code.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\App_Code\obj\Debug\App_Code.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\App_Code\obj\Debug\App_Code.pdb
+F:\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+F:\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll
+F:\1.5ChiefMes\App_Code\bin\Debug\App_Code.pdb
+F:\1.5ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+F:\1.5ChiefMes\App_Code\obj\Debug\App_Code.dll
+F:\1.5ChiefMes\App_Code\obj\Debug\App_Code.pdb
+G:\源代码\公司\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+G:\源代码\公司\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll
+G:\源代码\公司\1.5ChiefMes\App_Code\bin\Debug\App_Code.pdb
+G:\源代码\公司\1.5ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\App_Code\obj\Debug\App_Code.dll
+G:\源代码\公司\1.5ChiefMes\App_Code\obj\Debug\App_Code.pdb
+D:\Work\MES\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+D:\Work\MES\1.5ChiefMes\App_Code\bin\Debug\App_Code.dll
+D:\Work\MES\1.5ChiefMes\App_Code\bin\Debug\App_Code.pdb
+D:\Work\MES\1.5ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\1.5ChiefMes\App_Code\obj\Debug\App_Code.dll
+D:\Work\MES\1.5ChiefMes\App_Code\obj\Debug\App_Code.pdb
+D:\Work\MES\ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+D:\Work\MES\ChiefMes\App_Code\bin\Debug\App_Code.dll
+D:\Work\MES\ChiefMes\App_Code\bin\Debug\App_Code.pdb
+D:\Work\MES\ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\ChiefMes\App_Code\obj\Debug\App_Code.dll
+D:\Work\MES\ChiefMes\App_Code\obj\Debug\App_Code.pdb
+E:\公司项目\MesTeam\ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+E:\公司项目\MesTeam\ChiefMes\App_Code\bin\Debug\App_Code.dll
+E:\公司项目\MesTeam\ChiefMes\App_Code\bin\Debug\App_Code.pdb
+E:\公司项目\MesTeam\ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\MesTeam\ChiefMes\App_Code\obj\Debug\App_Code.dll
+E:\公司项目\MesTeam\ChiefMes\App_Code\obj\Debug\App_Code.pdb
+E:\科易美\MES相关\ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+E:\科易美\MES相关\ChiefMes\App_Code\bin\Debug\App_Code.dll
+E:\科易美\MES相关\ChiefMes\App_Code\bin\Debug\App_Code.pdb
+E:\科易美\MES相关\ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+E:\科易美\MES相关\ChiefMes\App_Code\obj\Debug\App_Code.dll
+E:\科易美\MES相关\ChiefMes\App_Code\obj\Debug\App_Code.pdb
+E:\MES\ChiefMes\App_Code\bin\Debug\App_Code.dll.config
+E:\MES\ChiefMes\App_Code\bin\Debug\App_Code.dll
+E:\MES\ChiefMes\App_Code\bin\Debug\App_Code.pdb
+E:\MES\ChiefMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+E:\MES\ChiefMes\App_Code\obj\Debug\App_Code.dll
+E:\MES\ChiefMes\App_Code\obj\Debug\App_Code.pdb
+D:\GloryProg\Plastic_Song\App_Code\bin\Debug\App_Code.dll.config
+D:\GloryProg\Plastic_Song\App_Code\bin\Debug\App_Code.dll
+D:\GloryProg\Plastic_Song\App_Code\bin\Debug\App_Code.pdb
+D:\GloryProg\Plastic_Song\App_Code\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\Plastic_Song\App_Code\obj\Debug\App_Code.dll
+D:\GloryProg\Plastic_Song\App_Code\obj\Debug\App_Code.pdb
+D:\GloryProg\PlasticMes\App_Code\bin\Debug\App_Code.dll.config
+D:\GloryProg\PlasticMes\App_Code\bin\Debug\App_Code.dll
+D:\GloryProg\PlasticMes\App_Code\bin\Debug\App_Code.pdb
+D:\GloryProg\PlasticMes\App_Code\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\PlasticMes\App_Code\obj\Debug\App_Code.dll
+D:\GloryProg\PlasticMes\App_Code\obj\Debug\App_Code.pdb

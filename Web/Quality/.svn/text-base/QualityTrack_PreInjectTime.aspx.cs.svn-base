@@ -1,0 +1,181 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Net;
+using System.IO;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using Chart;
+using Admin.BLL.Collect_BLL;
+using Admin.BLL.Quality_BLL;
+using Admin.SQLServerDAL.RightCtrl;
+using Admin.App_Code;
+
+public partial class Quality_QualityTrack_PreInjectTime : System.Web.UI.Page
+{
+    bool[] o = new bool[7] { false, false, false, false, false, false, false };
+    SetCtrls dboSetCtrls = new SetCtrls();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        try
+        {
+            dboSetCtrls.GetIdentiryInfo(this);
+            if (IsPostBack)
+            {
+                o = (bool[])ViewState["authority"];
+                return;
+            }
+            o = RightCtrl.PageRightCtrl(this.Page.User.Identity.Name.Trim(), "QualityTrack");
+            ViewState["authority"] = o;
+        }
+        catch (Exception ex)
+        {
+            dboSetCtrls.SetExecMsg(this, ex.ToString());
+        }
+        if (!IsPostBack)
+        {
+            BindData(0);
+        }
+    }
+
+    private void BindData(int Flag)
+    {
+        string URLID = Request.QueryString["URLID"].ToString().Trim();
+        int IMG_WIDTH = int.Parse(Request.QueryString["IMG_WIDTH"].ToString().Trim());
+        int IMG_HEIGHT = int.Parse(Request.QueryString["IMG_HEIGHT"].ToString().Trim());
+
+        string bDate = Request.QueryString["StartDate"].ToString().Trim();
+        string eDate = Request.QueryString["EndDate"].ToString().Trim();
+        string MachineNo = Request.QueryString["MachineNo"].ToString().Trim();
+        string MouldNo = Request.QueryString["MouldNo"].ToString().Trim();
+        string ProductNo = Request.QueryString["ProductNo"].ToString().Trim();
+        string ActionNum = Request.QueryString["ActionNum"].ToString().Trim();
+        string DispatchOrder = Request.QueryString["Dispatchorder"].ToString().Trim();
+
+        if (Flag == 0)
+        {
+            DataTable dt = new DataHistory_BLL().selectActionNumFromDataHistory(DispatchOrder,MachineNo, MouldNo, ProductNo, bDate, eDate);
+            dboSetCtrls.SetDropDownList(ddlImageIndex, dt, false, "RowID", "TotalNum");
+            if (ddlImageIndex.SelectedValue.Trim() == "") ddlImageIndex.Items.RemoveAt(0);
+            if (ddlImageIndex.Items.Count == 0) ddlImageIndex.Items.Insert(0, new ListItem("0", "0"));
+        }
+        dboSetCtrls.SetLinkButtonOfPageIndex(lkbXiaPage, lkbShangPage, ddlImageIndex, 100);
+
+        string[] Stand_FieldName = new string[] { "PreInjectTime" };
+        string[] Lived_FieldName = new string[] { "PreInjectTime" };
+
+        DataTable stand_dt = new DataTable();
+        DataTable lived_dt = new DataTable();
+
+        if (URLID == "QualityTrack")
+        {
+            string[] TotalNum = dboSetCtrls.GetTotalNumOfDrawPicture(ddlImageIndex);
+
+           // stand_dt = new StandDataHistory_BLL().selectGeneralField("PreInjectTime", MachineNo, MouldNo, ProductNo, bDate, eDate, "-100");
+            lived_dt = new QualityTrack_BLL().selectUnifyField(DispatchOrder,MachineNo, MouldNo, ProductNo, bDate, eDate, TotalNum);
+        }
+        else
+        {
+            if (ActionNum == "-9")
+                lived_dt = new StandDataHistory_BLL().selectGeneralField("PreInjectTime", MachineNo, MouldNo, ProductNo, bDate, eDate, "-9");
+            else
+                stand_dt = new StandDataHistory_BLL().selectGeneralField("PreInjectTime", MachineNo, MouldNo, ProductNo, bDate, eDate, ActionNum);
+        }
+        bDate = (lived_dt.Rows.Count == 0) ? eDate : lived_dt.Rows[0]["BeginCycle"].ToString().Trim();
+        eDate = (lived_dt.Rows.Count == 0) ? bDate : lived_dt.Rows[lived_dt.Rows.Count - 1]["BeginCycle"].ToString().Trim();
+
+        int X_MAX_LENGHT = 0;
+        int Y_MAX_LENGHT = 9;
+        float XSlice = 0;
+        string XAxisText = "";
+        string XAxisFlag = "beernum";
+        if (XAxisFlag == "minute")
+        {
+            X_MAX_LENGHT = 61;
+            XSlice = 12.5f;
+            XAxisText = "生产分钟";
+        }
+
+        if (XAxisFlag == "beernum")
+        {
+            X_MAX_LENGHT = 101;
+            XSlice = 9.0f;
+            XAxisText = "啤数";
+        }
+
+        New_Curve objCurve = new New_Curve();
+
+        objCurve.MainTitle = "预塑时间曲线图";
+        objCurve.ProductTime = "生产时间:" + bDate + "至" + eDate;
+        objCurve.ObjectNo = "机器编号:" + MachineNo + " 模具编号:" + MouldNo + " 产品编号:" + ProductNo;
+
+        objCurve.Width = IMG_WIDTH;
+        objCurve.Height = IMG_HEIGHT;
+
+        objCurve.XAxisTextAlign = "right";
+        objCurve.YAxisTextAlign = "top";
+        objCurve.XAxisText = XAxisText;
+        objCurve.YAxisText = "时间S";
+
+        objCurve.XSlice = XSlice;
+        objCurve.YSlice = 40f;
+        objCurve.YSliceHalf = 0.5f * 40;
+        objCurve.Across = Y_MAX_LENGHT;
+
+        objCurve.BMargin = 50f;
+        objCurve.TMargin = 110f;
+        objCurve.RMargin = (IMG_WIDTH - (X_MAX_LENGHT - 1) * XSlice) / 2;
+        objCurve.LMargin = (IMG_WIDTH - (X_MAX_LENGHT - 1) * XSlice) / 2;
+        objCurve.YSliceBegin = 0;
+
+        TempDraw objDraw = new TempDraw();
+        objDraw.isWriteExData = (URLID == "QualityTrack") ? true : false;
+        objDraw.ExDataFieldName = new string[] { "exPreInjectTime" };
+        objDraw.DrawPicture(X_MAX_LENGHT, Y_MAX_LENGHT, bDate, eDate, Stand_FieldName, Lived_FieldName, stand_dt, lived_dt);
+
+        objCurve.blnExData = objDraw.isWriteExData;
+        objCurve.ExData = objDraw.ExData;
+        objCurve.ExDataIndex = objDraw.ExDataIndex;
+
+        objCurve.XSliceValue = objDraw.XSliceValue;
+        objCurve.YSliceValue = objDraw.YSliceValue;
+
+        objCurve.Keys = objDraw.Keys;
+        objCurve.pArrayList = objDraw.vArrayList;
+
+        objCurve.StandParaCount = Stand_FieldName.Length;
+        objCurve.blnDrawData = false;
+        objCurve.CurveColors = new Color[] { Color.Gray, Color.Orange, Color.Blue, Color.Orange, Color.Green };
+
+        string lastip = (Dns.GetHostEntry(Dns.GetHostName()).AddressList)[0].ToString().Trim().Replace(".", "");
+
+        Bitmap bmp = objCurve.CreateImage();
+        MemoryStream imgStream = new MemoryStream();
+        bmp.Save(imgStream, ImageFormat.Jpeg);
+        byte[] bytes = imgStream.ToArray();
+
+        Session[URLID] = null;
+        Session[URLID] = bytes;
+        Image1.ImageUrl = string.Format("~/ShowImage.aspx?Flag=" + URLID);
+
+        bmp.Clone();
+        bmp.Dispose();
+    }
+
+    protected void LinkButton_Click(object sender, EventArgs e)
+    {
+        LinkButton tempLinkButton = sender as LinkButton;
+        int Mold = 100;
+        dboSetCtrls.ShowWhichPicture(tempLinkButton, lkbXiaPage, lkbShangPage, ddlImageIndex, Mold);
+
+        BindData(1);
+    }
+}

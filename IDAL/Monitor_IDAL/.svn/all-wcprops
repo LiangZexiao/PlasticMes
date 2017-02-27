@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/Monitor_IDAL
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/Monitor_IDAL/vssver2.scc
+END
+IMonitorMaterial.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/Monitor_IDAL/IMonitorMaterial.cs
+END
+IAlarmInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/Monitor_IDAL/IAlarmInfo.cs
+END
+IMonitorMachine.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/Monitor_IDAL/IMonitorMachine.cs
+END
+IMonitorDispatchMstr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/YinShanProject/!svn/ver/422/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/IDAL/Monitor_IDAL/IMonitorDispatchMstr.cs
+END

@@ -1,0 +1,211 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C11FB025-CB8B-43B9-BC34-13FFD10560C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Admin.Model</RootNamespace>
+    <AssemblyName>Admin.Model</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseInfo_MDL\AuxiliaryToolInfo_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\BadReason_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\ColorMessage_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\Employee_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\MouldMstr_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\RawMaterial_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\SalaryConfig_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\SalaryManage_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\StopReason_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\SalaryManageAdjust_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\SalaryManageTotal_MDL.cs" />
+    <Compile Include="Call_MDL\CallConfig_MDL.cs" />
+    <Compile Include="Call_MDL\CallMachineVacation_MDL.cs" />
+    <Compile Include="Collect_MDL\CardDetail_MDL.cs" />
+    <Compile Include="Collect_MDL\CommunicationInfo_MDL.cs" />
+    <Compile Include="Collect_MDL\ErrDataInfo_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\CustomerInfo_MDL.cs" />
+    <Compile Include="Log\Log_MDL.cs" />
+    <Compile Include="Machine_MDL\MachineMstr_MDL.cs" />
+    <Compile Include="BaseInfo_MDL\MouldDetail_MDL.cs" />
+    <Compile Include="Maintain_MDL\MaintainInfo_MDL.cs" />
+    <Compile Include="Manage_MDL.cs" />
+    <Compile Include="Monitor_MDL\AlarmInfo_MDL.cs" />
+    <Compile Include="Monitor_MDL\CollectRealProductDataInfo_MDL.cs" />
+    <Compile Include="Monitor_MDL\CollectRealProductData_MDL.cs" />
+    <Compile Include="Collect_MDL\DataHistory_MDL.cs" />
+    <Compile Include="Monitor_MDL\MonitorDispatchDtil_MDL.cs" />
+    <Compile Include="Monitor_MDL\MonitorDispatchMstr_MDL.cs" />
+    <Compile Include="Monitor_MDL\MonitorMachine_MDL.cs" />
+    <Compile Include="Monitor_MDL\MonitorMaterial_MDL.cs" />
+    <Compile Include="Monitor_MDL\UseMaterial_MDL.cs" />
+    <Compile Include="Product_MDL\AdjustMachine_MDL.cs" />
+    <Compile Include="Product_MDL\ClampManage_MDL.cs" />
+    <Compile Include="Product_MDL\DispatchOrderDetail_MDL.cs" />
+    <Compile Include="Product_MDL\ItemMstr_MDL.cs" />
+    <Compile Include="Product_MDL\MachineSuit_MDL.cs" />
+    <Compile Include="Product_MDL\ManMachineMap_MDL.cs" />
+    <Compile Include="Product_MDL\MPSResultDetail_MDL.cs" />
+    <Compile Include="Product_MDL\MPSResult_MDL.cs" />
+    <Compile Include="Product_MDL\PackageList_XSD.cs">
+      <DependentUpon>PackageList_XSD.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Product_MDL\PackageList_XSD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PackageList_XSD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Product_MDL\ProductMaterial_XSD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductMaterial_XSD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Product_MDL\SuitManage_MDL.cs" />
+    <Compile Include="Product_MDL\UpdateCycle_MDL.cs" />
+    <Compile Include="Product_MDL\UpdateMacCycle_MDL.cs" />
+    <Compile Include="Product_MDL\WorkOrder_MDL.cs" />
+    <Compile Include="Product_MDL\WorkPaper_XSD.cs">
+      <DependentUpon>WorkPaper_XSD.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Product_MDL\WorkPaper_XSD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkPaper_XSD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Quality_MDL\QC_ThroughDefect_MDL.cs" />
+    <Compile Include="Quality_MDL\QC_TableDetail_MDL.cs" />
+    <Compile Include="Quality_MDL\StandTechnicsParams_MDL.cs" />
+    <Compile Include="Roleadmin_MDL\BMClassInfo.cs" />
+    <Compile Include="Adminis_MDL\Department_MDL.cs" />
+    <Compile Include="Adminis_MDL\GroupInfo_MDL.cs" />
+    <Compile Include="Adminis_MDL\GroupProgramMap_MDL.cs" />
+    <Compile Include="Adminis_MDL\ProgramInfo_MDL.cs" />
+    <Compile Include="Adminis_MDL\SysClassInfo_MDL.cs" />
+    <Compile Include="Adminis_MDL\UserInfo_MDL.cs" />
+    <Compile Include="Adminis_MDL\UserProgramMap_MDL.cs" />
+    <Compile Include="Roleadmin_MDL\EventInfo.cs" />
+    <Compile Include="LikeQuery.cs" />
+    <Compile Include="Machine_MDL\MachineCollectMap_MDL.cs" />
+    <Compile Include="Machine_MDL\MachineMouldMap_MDL.cs" />
+    <Compile Include="Machine_MDL\MachineMstr0_MDL.cs" />
+    <Compile Include="Machine_MDL\MachineStatus_MDL.cs" />
+    <Compile Include="Machine_MDL\MachineStatusConfig_MDL.cs" />
+    <Compile Include="Machine_MDL\MouldMstr0_MDL.cs" />
+    <Compile Include="Product_MDL\DispatchOrder_MDL.cs" />
+    <Compile Include="Product_MDL\ItemMstr0_MDL.cs" />
+    <Compile Include="Product_MDL\OrderMstr_MDL.cs" />
+    <Compile Include="Product_MDL\PackageList_MDL.cs" />
+    <Compile Include="Product_MDL\ProductMaterial_MDL.cs" />
+    <Compile Include="Product_MDL\WorkPaper_MDL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quality_MDL\QC_Table_MDL.cs" />
+    <Compile Include="Roleadmin_MDL\RightclassInfo.cs" />
+    <Compile Include="Roleadmin_MDL\RightInfo.cs" />
+    <Compile Include="Roleadmin_MDL\RightsInRolesInfo.cs" />
+    <Compile Include="Roleadmin_MDL\RoleInfo.cs" />
+    <Compile Include="Roleadmin_MDL\TableInfo.cs" />
+    <Compile Include="StopReason.cs" />
+    <Compile Include="TableMstr.cs" />
+    <Compile Include="Roleadmin_MDL\UserInfo.cs" />
+    <Compile Include="Roleadmin_MDL\UserRightleftInfo.cs" />
+    <Compile Include="Roleadmin_MDL\UsersInRolesInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{276A3464-BB3E-47E8-BCCA-9D148E4892FA}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Product_MDL\PackageList_XSD.xsc">
+      <DependentUpon>PackageList_XSD.xsd</DependentUpon>
+    </None>
+    <None Include="Product_MDL\PackageList_XSD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PackageList_XSD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Product_MDL\PackageList_XSD.xss">
+      <DependentUpon>PackageList_XSD.xsd</DependentUpon>
+    </None>
+    <None Include="Product_MDL\ProductMaterial_XSD.xsc">
+      <DependentUpon>ProductMaterial_XSD.xsd</DependentUpon>
+    </None>
+    <None Include="Product_MDL\ProductMaterial_XSD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductMaterial_XSD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Product_MDL\ProductMaterial_XSD.xss">
+      <DependentUpon>ProductMaterial_XSD.xsd</DependentUpon>
+    </None>
+    <None Include="Product_MDL\WorkPaper_XSD.xsc">
+      <DependentUpon>WorkPaper_XSD.xsd</DependentUpon>
+    </None>
+    <None Include="Product_MDL\WorkPaper_XSD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkPaper_XSD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Product_MDL\WorkPaper_XSD.xss">
+      <DependentUpon>WorkPaper_XSD.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

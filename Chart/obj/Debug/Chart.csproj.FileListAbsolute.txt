@@ -1,0 +1,100 @@
+D:\项目开发\ChiefMes\Chart\bin\Debug\Chart.dll
+D:\项目开发\ChiefMes\Chart\bin\Debug\Chart.pdb
+D:\项目开发\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\Chart\obj\Debug\Chart.dll
+D:\项目开发\ChiefMes\Chart\obj\Debug\Chart.pdb
+F:\ChiefMes\Chart\bin\Debug\Chart.dll
+F:\ChiefMes\Chart\bin\Debug\Chart.pdb
+F:\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+F:\ChiefMes\Chart\obj\Debug\Chart.dll
+F:\ChiefMes\Chart\obj\Debug\Chart.pdb
+G:\源代码\公司\ChiefMes2009.12.30\Chart\bin\Debug\Chart.dll
+G:\源代码\公司\ChiefMes2009.12.30\Chart\bin\Debug\Chart.pdb
+G:\源代码\公司\ChiefMes2009.12.30\Chart\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes2009.12.30\Chart\obj\Debug\Chart.dll
+G:\源代码\公司\ChiefMes2009.12.30\Chart\obj\Debug\Chart.pdb
+G:\源代码\公司\ChiefMes(theFirst)\Chart\bin\Debug\Chart.dll
+G:\源代码\公司\ChiefMes(theFirst)\Chart\bin\Debug\Chart.pdb
+G:\源代码\公司\ChiefMes(theFirst)\Chart\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes(theFirst)\Chart\obj\Debug\Chart.dll
+G:\源代码\公司\ChiefMes(theFirst)\Chart\obj\Debug\Chart.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\Chart\bin\Debug\Chart.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\Chart\bin\Debug\Chart.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\Chart\obj\Debug\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\Chart\obj\Debug\Chart.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\Chart\obj\Debug\Chart.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\Chart\bin\Debug\Chart.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\Chart\bin\Debug\Chart.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1stMESClient\1.3ChiefMes\Chart\obj\Debug\Chart.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\Chart\obj\Debug\Chart.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\Chart\bin\Debug\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\Chart\bin\Debug\Chart.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\Chart\obj\Debug\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\Chart\obj\Debug\Chart.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\Chart\bin\Debug\Chart.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\Chart\bin\Debug\Chart.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\Chart\obj\Debug\Chart.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\Chart\obj\Debug\Chart.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\bin\Debug\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\bin\Debug\Chart.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\obj\Debug\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\Chart\obj\Debug\Chart.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\Chart\bin\Debug\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\Chart\bin\Debug\Chart.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\Chart\obj\Debug\Chart.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\Chart\obj\Debug\Chart.pdb
+F:\1.5ChiefMes\Chart\bin\Debug\Chart.dll
+F:\1.5ChiefMes\Chart\bin\Debug\Chart.pdb
+F:\1.5ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+F:\1.5ChiefMes\Chart\obj\Debug\Chart.dll
+F:\1.5ChiefMes\Chart\obj\Debug\Chart.pdb
+G:\源代码\公司\1.5ChiefMes\Chart\bin\Debug\Chart.dll
+G:\源代码\公司\1.5ChiefMes\Chart\bin\Debug\Chart.pdb
+G:\源代码\公司\1.5ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\Chart\obj\Debug\Chart.dll
+G:\源代码\公司\1.5ChiefMes\Chart\obj\Debug\Chart.pdb
+D:\Work\MES\1.5ChiefMes\Chart\bin\Debug\Chart.dll
+D:\Work\MES\1.5ChiefMes\Chart\bin\Debug\Chart.pdb
+D:\Work\MES\1.5ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\1.5ChiefMes\Chart\obj\Debug\Chart.dll
+D:\Work\MES\1.5ChiefMes\Chart\obj\Debug\Chart.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\Chart\bin\Debug\Chart.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\Chart\bin\Debug\Chart.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+G:\项目资料\MES\ChiefMes\ChiefMes\Chart\obj\Debug\Chart.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\Chart\obj\Debug\Chart.pdb
+D:\Work\MES\ChiefMes\Chart\bin\Debug\Chart.dll
+D:\Work\MES\ChiefMes\Chart\bin\Debug\Chart.pdb
+D:\Work\MES\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\ChiefMes\Chart\obj\Debug\Chart.dll
+D:\Work\MES\ChiefMes\Chart\obj\Debug\Chart.pdb
+E:\公司项目\MesTeam\ChiefMes\Chart\bin\Debug\Chart.dll
+E:\公司项目\MesTeam\ChiefMes\Chart\bin\Debug\Chart.pdb
+E:\公司项目\MesTeam\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\MesTeam\ChiefMes\Chart\obj\Debug\Chart.dll
+E:\公司项目\MesTeam\ChiefMes\Chart\obj\Debug\Chart.pdb
+E:\科易美\MES相关\ChiefMes\Chart\bin\Debug\Chart.dll
+E:\科易美\MES相关\ChiefMes\Chart\bin\Debug\Chart.pdb
+E:\科易美\MES相关\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+E:\科易美\MES相关\ChiefMes\Chart\obj\Debug\Chart.dll
+E:\科易美\MES相关\ChiefMes\Chart\obj\Debug\Chart.pdb
+E:\MES\ChiefMes\Chart\bin\Debug\Chart.dll
+E:\MES\ChiefMes\Chart\bin\Debug\Chart.pdb
+E:\MES\ChiefMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+E:\MES\ChiefMes\Chart\obj\Debug\Chart.dll
+E:\MES\ChiefMes\Chart\obj\Debug\Chart.pdb
+D:\GloryProg\Plastic_Song\Chart\bin\Debug\Chart.dll
+D:\GloryProg\Plastic_Song\Chart\bin\Debug\Chart.pdb
+D:\GloryProg\Plastic_Song\Chart\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\Plastic_Song\Chart\obj\Debug\Chart.dll
+D:\GloryProg\Plastic_Song\Chart\obj\Debug\Chart.pdb
+D:\GloryProg\PlasticMes\Chart\bin\Debug\Chart.dll
+D:\GloryProg\PlasticMes\Chart\bin\Debug\Chart.pdb
+D:\GloryProg\PlasticMes\Chart\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\PlasticMes\Chart\obj\Debug\Chart.dll
+D:\GloryProg\PlasticMes\Chart\obj\Debug\Chart.pdb

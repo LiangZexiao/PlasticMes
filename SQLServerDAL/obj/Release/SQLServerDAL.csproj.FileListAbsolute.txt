@@ -1,0 +1,18 @@
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\obj\Release\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.SQLServerDAL.dll.config
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.SQLServerDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.SQLServerDAL.XmlSerializers.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.SQLServerDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.DBUtility.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.IDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.Model.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\App_Code.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.IDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\App_Code.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\bin\Release\Admin.Model.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\obj\Release\Admin.SQLServerDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\obj\Release\Admin.SQLServerDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\SQLServerDAL\obj\Release\Admin.SQLServerDAL.XmlSerializers.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\SQLServerDAL\obj\Release\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\SQLServerDAL\obj\Release\Admin.SQLServerDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\SQLServerDAL\obj\Release\Admin.SQLServerDAL.XmlSerializers.dll

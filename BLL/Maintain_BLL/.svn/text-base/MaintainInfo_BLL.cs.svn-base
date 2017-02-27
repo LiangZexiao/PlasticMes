@@ -1,0 +1,42 @@
+﻿using System;
+using System.Data;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+using Admin.Model.Maintain_MDL;
+using Admin.SQLServerDAL.Maintain_DAL;
+using Admin.IDAL.Maintain_IDAL;
+
+namespace Admin.BLL.Maintain_BLL
+{
+    public class MaintainInfo_BLL
+    {
+        private static readonly IMaintainInfo factory = Admin.DALFactory.DataAccess.selectMaintainInfo();
+
+        public static IList<MaintainInfo_MDL> selectMaintainInfo(int id, string colname, string coltext, string WebUIName)
+        {
+            return factory.selectMaintainInfo(id, colname, coltext, WebUIName);
+        }
+
+        public static IList<MaintainInfo_MDL> existsMaintainInfo(string vRepairBillID)
+        {
+            return factory.existsMaintainInfo(vRepairBillID);
+        }
+
+        public static void ChangeMaintainInfo(int ID,
+            string vRepairBillID, string vRepareDate, string vDeviceType, string vDeviceNo, string vRepairType,
+            string vRepairContent, string vBeginDate, string vEndDate, string vCompleteFlag, string vApplier,
+            string vDutyMan, string vChecker, string vRemark, string vMessageFlag,decimal vRepairHour , string IU)
+        {
+            factory.ChangeMaintainInfo(ID,
+             vRepairBillID, vRepareDate, vDeviceType, vDeviceNo, vRepairType,
+             vRepairContent, vBeginDate, vEndDate, vCompleteFlag, vApplier,
+             vDutyMan, vChecker, vRemark, vMessageFlag, vRepairHour, IU);
+        }
+
+        public static void cancelMaintainInfo(ArrayList _IDList)
+        {
+            factory.cancelMaintainInfo(_IDList);
+        }
+    }
+}

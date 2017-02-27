@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL
+END
+Employee_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/Employee_MDL.cs
+END
+SalaryManageAdjust_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/SalaryManageAdjust_MDL.cs
+END
+AuxiliaryToolInfo_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/AuxiliaryToolInfo_MDL.cs
+END
+SalaryConfig_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/SalaryConfig_MDL.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/vssver2.scc
+END
+MouldDetail_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/MouldDetail_MDL.cs
+END
+SalaryManage_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/SalaryManage_MDL.cs
+END
+MouldMstr_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/MouldMstr_MDL.cs
+END
+SalaryManageTotal_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/SalaryManageTotal_MDL.cs
+END
+CustomerInfo_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/CustomerInfo_MDL.cs
+END
+StopReason_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/StopReason_MDL.cs
+END
+BadReason_MDL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/YinShanProject/!svn/ver/423/04-Source%20Code/001-MES/0002-MESClient/Tags/1.3/Model/BaseInfo_MDL/BadReason_MDL.cs
+END

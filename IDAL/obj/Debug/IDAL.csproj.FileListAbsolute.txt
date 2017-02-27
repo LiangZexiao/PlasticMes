@@ -1,0 +1,154 @@
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+D:\项目开发\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+D:\项目开发\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\项目开发\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+D:\项目开发\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+F:\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+F:\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+F:\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+F:\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+F:\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+F:\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+G:\源代码\公司\ChiefMes2009.12.30\IDAL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\ChiefMes2009.12.30\IDAL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\ChiefMes2009.12.30\IDAL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\ChiefMes2009.12.30\IDAL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\ChiefMes2009.12.30\IDAL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes2009.12.30\IDAL\obj\Debug\Admin.IDAL.dll
+G:\源代码\公司\ChiefMes2009.12.30\IDAL\obj\Debug\Admin.IDAL.pdb
+G:\源代码\公司\ChiefMes(theFirst)\IDAL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\ChiefMes(theFirst)\IDAL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\ChiefMes(theFirst)\IDAL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\ChiefMes(theFirst)\IDAL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\ChiefMes(theFirst)\IDAL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\ChiefMes(theFirst)\IDAL\obj\Debug\Admin.IDAL.dll
+G:\源代码\公司\ChiefMes(theFirst)\IDAL\obj\Debug\Admin.IDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\IDAL\bin\Debug\Admin.IDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\IDAL\bin\Debug\Admin.IDAL.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\IDAL\bin\Debug\Admin.Model.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\IDAL\bin\Debug\Admin.Model.pdb
+E:\YinShanProject\0002-MESClient\Tags\1.3\IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\YinShanProject\0002-MESClient\Tags\1.3\IDAL\obj\Debug\Admin.IDAL.dll
+E:\YinShanProject\0002-MESClient\Tags\1.3\IDAL\obj\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\1stMESClient\1.3ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1stMESClient\1.3ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+G:\源代码\公司\1stMESClient\1.3ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.3ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+G:\源代码\公司\1.3ChiefMes\1.3ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+E:\02-My Project\2010-01-YinShan Project\01-SourceCode\1.5ChiefMes\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+F:\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+F:\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+F:\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+F:\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+F:\1.5ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+F:\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+G:\源代码\公司\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+G:\源代码\公司\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+G:\源代码\公司\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+G:\源代码\公司\1.5ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+G:\源代码\公司\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+G:\源代码\公司\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+D:\Work\MES\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+D:\Work\MES\1.5ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+D:\Work\MES\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+D:\Work\MES\1.5ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+D:\Work\MES\1.5ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+D:\Work\MES\1.5ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+G:\项目资料\MES\ChiefMes\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+G:\项目资料\MES\ChiefMes\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+G:\项目资料\MES\ChiefMes\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+D:\Work\MES\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+D:\Work\MES\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+D:\Work\MES\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+D:\Work\MES\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+D:\Work\MES\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\MES\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+D:\Work\MES\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+E:\公司项目\MesTeam\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+E:\公司项目\MesTeam\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+E:\公司项目\MesTeam\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+E:\公司项目\MesTeam\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+E:\公司项目\MesTeam\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\MesTeam\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+E:\公司项目\MesTeam\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+E:\科易美\MES相关\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+E:\科易美\MES相关\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+E:\科易美\MES相关\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+E:\科易美\MES相关\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+E:\科易美\MES相关\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\科易美\MES相关\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+E:\科易美\MES相关\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+E:\MES\ChiefMes\IDAL\bin\Debug\Admin.IDAL.dll
+E:\MES\ChiefMes\IDAL\bin\Debug\Admin.IDAL.pdb
+E:\MES\ChiefMes\IDAL\bin\Debug\Admin.Model.dll
+E:\MES\ChiefMes\IDAL\bin\Debug\Admin.Model.pdb
+E:\MES\ChiefMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\MES\ChiefMes\IDAL\obj\Debug\Admin.IDAL.dll
+E:\MES\ChiefMes\IDAL\obj\Debug\Admin.IDAL.pdb
+D:\GloryProg\Plastic_Song\IDAL\bin\Debug\Admin.IDAL.dll
+D:\GloryProg\Plastic_Song\IDAL\bin\Debug\Admin.IDAL.pdb
+D:\GloryProg\Plastic_Song\IDAL\bin\Debug\Admin.Model.dll
+D:\GloryProg\Plastic_Song\IDAL\bin\Debug\Admin.Model.pdb
+D:\GloryProg\Plastic_Song\IDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\Plastic_Song\IDAL\obj\Debug\Admin.IDAL.dll
+D:\GloryProg\Plastic_Song\IDAL\obj\Debug\Admin.IDAL.pdb
+D:\GloryProg\PlasticMes\IDAL\bin\Debug\Admin.IDAL.dll
+D:\GloryProg\PlasticMes\IDAL\bin\Debug\Admin.IDAL.pdb
+D:\GloryProg\PlasticMes\IDAL\bin\Debug\Admin.Model.dll
+D:\GloryProg\PlasticMes\IDAL\bin\Debug\Admin.Model.pdb
+D:\GloryProg\PlasticMes\IDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\GloryProg\PlasticMes\IDAL\obj\Debug\Admin.IDAL.dll
+D:\GloryProg\PlasticMes\IDAL\obj\Debug\Admin.IDAL.pdb
+D:\BorchProg\PlasticMes\IDAL\bin\Debug\Admin.IDAL.dll
+D:\BorchProg\PlasticMes\IDAL\bin\Debug\Admin.IDAL.pdb
+D:\BorchProg\PlasticMes\IDAL\bin\Debug\Admin.Model.dll
+D:\BorchProg\PlasticMes\IDAL\bin\Debug\Admin.Model.pdb
+D:\BorchProg\PlasticMes\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+D:\BorchProg\PlasticMes\IDAL\obj\Debug\Admin.IDAL.dll
+D:\BorchProg\PlasticMes\IDAL\obj\Debug\Admin.IDAL.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\IDAL\bin\Debug\Admin.IDAL.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\IDAL\bin\Debug\Admin.IDAL.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\IDAL\bin\Debug\Admin.Model.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\IDAL\bin\Debug\Admin.Model.pdb
+H:\博创\博创任务\Mes_Install\PlasticMes\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+H:\博创\博创任务\Mes_Install\PlasticMes\IDAL\obj\Debug\Admin.IDAL.dll
+H:\博创\博创任务\Mes_Install\PlasticMes\IDAL\obj\Debug\Admin.IDAL.pdb
